@@ -1,12 +1,48 @@
-const { Product } = require("../db");
+const { Product, Categorie } = require("../db");
 
-getAllProducts = async (req, res) => {
+/* GET ALL PRODUCTS FROM DB */
+const getAllProducts = async (req, res, next) => {
   try {
-    const products = await Product.findAll();
-    res.status(200).send(products);
-  } catch (error) {
-    res.status(500).send({msg: 'something went wrong' + error});
-  }
-}
+    const AllProducts = await Product?.findAll({
+      include: {
+        model: Categorie,
+        attributes: ["name"],
+      },
+    });
 
-module.exports = { getAllProducts };
+    res.status(200).send(AllProducts);
+  } catch (error) {
+    next(error);
+  }
+};
+
+/* CREATE NEW PRODUCT IN THE DATABASE */
+const createProduct = async (req, res, next) => {
+  try {
+    /* ME TRAIGO TODOS LOS VALORES DEL CUERPO DE LA PETICION */
+    const { name, features, price, image, status, stock, category_id } =
+      req.body;
+    /* CREATE NEW PRODUCT */
+    const newProduct = await Product.create({
+      name,
+      features,
+      price,
+      image,
+      status,
+      stock,
+      category_id,
+    });
+
+    res.status(200).json({
+      succMsg: "Product Created Successfully!",
+      newProduct,
+    });
+  } catch (error) {
+    next(error);
+  }
+};
+
+module.exports = {
+  getAllProducts,
+  createProduct,
+};
