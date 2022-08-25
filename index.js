@@ -1,6 +1,5 @@
-const server = require("./src/app.js");
-const { database } = require("./src/db.js");
-require("dotenv").config(); //para leer las variables de entorno
+const server = require('./src/app.js');
+const { conn } = require('./src/db.js');
 
 
 const PORT = process.env.PORT || 3001;
@@ -10,6 +9,5 @@ const PORT = process.env.PORT || 3001;
 database.sync({ force: true }).then(() => {
   server.listen(PORT, () => {
     console.log(`Server Listening in http://localhost:${PORT}/`);
-    
   });
 });
