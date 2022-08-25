@@ -1,8 +1,12 @@
 const server = require('./src/app.js');
 const { conn } = require('./src/db.js');
 
-conn.sync({ alter: true }).then(() => {
-  server.listen(process.env.PORT, () => {
-    console.log('%s listening at 3001');
+const PORT = process.env.PORT || 3001;
+
+// Syncing all the models at once.
+//Con {force:true} ==>es un sincronizado forzado por lo que se reescribe la Bd al recargar la app
+database.sync({ force: false }).then(() => {
+  server.listen(PORT, () => {
+    console.log(`Server Listening in http://localhost:${PORT}/`);
   });
 });
