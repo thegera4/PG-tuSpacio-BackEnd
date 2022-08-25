@@ -1,4 +1,3 @@
-
 const { Categorie } = require("../db");
 
 /* GET ALL CATEGORIES FROM DB */
