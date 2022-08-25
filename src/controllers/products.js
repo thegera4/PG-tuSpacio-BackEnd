@@ -16,6 +16,33 @@ const getAllProducts = async (req, res, next) => {
   }
 };
 
+/* CREATE NEW PRODUCT IN THE DATABASE */
+const createProduct = async (req, res, next) => {
+  try {
+    /* ME TRAIGO TODOS LOS VALORES DEL CUERPO DE LA PETICION */
+    const { name, features, price, image, status, stock, category_id } =
+      req.body;
+    /* CREATE NEW PRODUCT */
+    const newProduct = await Product.create({
+      name,
+      features,
+      price,
+      image,
+      status,
+      stock,
+      category_id,
+    });
+
+    res.status(200).json({
+      succMsg: "Product Created Successfully!",
+      newProduct,
+    });
+  } catch (error) {
+    next(error);
+  }
+};
+
 module.exports = {
   getAllProducts,
+  createProduct,
 };
