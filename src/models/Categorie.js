@@ -20,7 +20,6 @@ module.exports = (sequelize) => {
         type: DataTypes.STRING,
         allowNull: false,
         validate: {
-          is: /^([a-zA-Z -_]+)$/,
           notNull: { msg: "The Category name field cannot be null " },
           notEmpty: true,
         },

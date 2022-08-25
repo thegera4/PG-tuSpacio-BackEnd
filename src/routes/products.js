@@ -28,14 +28,16 @@ const bodySchema = Joi.object({
   category_id: Joi.string().min(1).max(50).required(),
 });
 
-const { getAllProducts } = require("../controllers/products");
+const { getAllProducts, createProduct } = require("../controllers/products");
 
 const router = Router();
 
 /* SE ARMAN LAS RUTAS PASANDO LAS VALIDACIONES COMO MIDDLEWARES */
 
-/* GET ALL PRODUCTS */
+/* GET ALL PRODUCTS FRONT THE DATABASE */
 router.get("/", getAllProducts);
 
+/* CREATE NEW PRODUCT IN THE DATABASE */
+router.post("/", validator.body(bodySchema), createProduct);
 
 module.exports = router;
