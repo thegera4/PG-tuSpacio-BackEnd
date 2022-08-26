@@ -17,5 +17,4 @@ async function uploadCategoryDb () {
         }) 
 }
 
-
 module.exports = {uploadCategoryDb}

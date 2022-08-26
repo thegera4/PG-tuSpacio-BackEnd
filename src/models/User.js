@@ -33,8 +33,7 @@ module.exports = (sequelize) => {
     status: {
       type: DataTypes.BOOLEAN,
       allowNull: false,
-    },
-    
+    },  
     rol_id: {
       type: DataTypes.UUID,
       allowNull: false,
