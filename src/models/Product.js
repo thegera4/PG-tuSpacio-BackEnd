@@ -28,8 +28,8 @@ module.exports = (sequelize) => {
         },
       },
 
-      features: {
-        type: DataTypes.TEXT,
+      product_colors: {
+        type: DataTypes.STRING,
         allowNull: false,
         validate: {
           notNull: { msg: "The product features field cannot be null " },
@@ -46,8 +46,26 @@ module.exports = (sequelize) => {
         },
       },
 
+      "price_sign": {
+        type: DataTypes.STRING,
+        allowNull: false,
+        validate: {
+          notNull: { msg: "The product price field cannot be null " },
+          isNumeric: true,
+        },
+      },
+
+      features: {
+        type: DataTypes.STRING,
+        allowNull: false,
+        validate: {
+          notNull: { msg: "The product features field cannot be null " },
+          notEmpty: true,
+        },
+      },
+
       image: {
-        type: DataTypes.TEXT,
+        type: DataTypes.STRING,
         allowNull: true,
         validate: {
           isUrl: true,
