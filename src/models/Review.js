@@ -1,4 +1,5 @@
 const { DataTypes } = require('sequelize');
+const {Product} = require('./Product')
 module.exports = (sequelize) => {
   sequelize.define('review', {
     id:{
@@ -18,6 +19,14 @@ module.exports = (sequelize) => {
     score:{
       type: DataTypes.INTEGER,
       allowNull: false,
-    }
+    },
+    product_id: {
+      type: DataTypes.UUID,
+      allowNull: false,
+      references: {
+        model: Product,
+        key: "id",
+      },
+    },
   });
 };
