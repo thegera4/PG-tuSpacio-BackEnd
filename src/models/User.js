@@ -34,7 +34,7 @@ module.exports = (sequelize) => {
       allowNull: false,
     },
     rolId: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.UUID,
       allowNull: false,
     },
 
