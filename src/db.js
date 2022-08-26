@@ -50,27 +50,38 @@ sequelize.models = Object.fromEntries(capsEntries);
 // Para relacionarlos hacemos un destructuring
 
 // Ejemplo: 
-const { Product, Review, Categorie, Order, Rol, User } = sequelize.models;
+const { Product, Review, Categorie, Order, Rol, User, Favorite } = sequelize.models;
 
-// Aca vendrian las relaciones
-// Ejemplo:
-Product.hasMany(Review);
-Review.belongsTo(Product);
-Product.belongsToMany(User, { through: 'favorites' });
-User.belongsToMany(Product, { through: 'favorites' });
-User.hasMany(Order);
-Order.belongsTo(User);
-Order.belongsToMany(Product, { through: 'order_products' });
-Product.belongsToMany(Order, { through: 'order_products' });
-Product.belongsTo(Categorie);
-Categorie.hasMany(Product);
-User.belongsTo(Rol);
-Rol.hasMany(User);
+/*===========================RELATION Rol - User 1:N==============================*/
+Rol.hasMany(User, { foreignKey: "user_id" });
+User.belongsTo(Rol, { foreignKey: "user_id" });
 
+/*===========================RELATION User - Favorite N:M==============================*/
+User.belongsToMany(Favorite, { through: "Favorite_User" });
+Favorite.belongsToMany(User, { through: "Favorite_User" });
 
 /*===========================RELATION CATEGORY - PRODUCTS 1:N==============================*/
 Categorie.hasMany(Product, { foreignKey: "category_id" });
 Product.belongsTo(Categorie, { foreignKey: "category_id" });
+
+/*===========================RELATION USER - ORDER 1:1==============================*/
+User.hasMany(Order, { foreignKey: "user_id" });
+Order.belongsTo(User, { foreignKey: "user_id" });
+
+/*===========================RELATION ORDER - PRODUCTS N:M==============================*/
+Order.belongsToMany(Product, { through: 'order_products' });
+Product.belongsToMany(Order, { through: 'order_products' });
+
+/*===========================RELATION PRODUCTS - REVIEWS 1:N==============================*/
+Product.hasMany(Review, { foreignKey: "product_id" });
+Review.belongsTo(Product, { foreignKey: "product_id" });
+
+
+
+
+
+
+
 
 module.exports = {
   ...sequelize.models, // para poder importar los modelos así: const { Product, User } = require('./db.js');

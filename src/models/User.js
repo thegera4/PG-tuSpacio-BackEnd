@@ -1,4 +1,5 @@
 const { DataTypes } = require('sequelize');
+const {Rol} = require('./Rol')
 module.exports = (sequelize) => {
   sequelize.define('user', {
     id:{
@@ -33,11 +34,14 @@ module.exports = (sequelize) => {
       type: DataTypes.BOOLEAN,
       allowNull: false,
     },
-    rolId: {
-      type: DataTypes.INTEGER,
+    user_id: {
+      type: DataTypes.UUID,
       allowNull: false,
+      references: {
+        model: Rol,
+        key: "id",
+      },
     },
-
 
   });
 };
