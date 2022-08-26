@@ -1,11 +1,12 @@
-const { DataTypes } = require('sequelize');
+const { DataTypes } = require("sequelize");
+const { Rol } = require("./Rol");
 module.exports = (sequelize) => {
-  sequelize.define('user', {
-    id:{
+  sequelize.define("user", {
+    id: {
       type: DataTypes.UUID,
       defaultValue: DataTypes.UUIDV4,
       primaryKey: true,
-      allowNull: false
+      allowNull: false,
     },
     username: {
       type: DataTypes.STRING,
@@ -22,10 +23,10 @@ module.exports = (sequelize) => {
     image: {
       type: DataTypes.STRING(1234),
       allowNull: true,
-      defaultValue: null
+      defaultValue: null,
     },
 
-    address:{
+    address: {
       type: DataTypes.STRING,
       allowNull: false,
     },
@@ -33,12 +34,15 @@ module.exports = (sequelize) => {
       type: DataTypes.BOOLEAN,
       allowNull: false,
     },
-    rolId: {
-      type: DataTypes.INTEGER,
+    
+    rol_id: {
+      type: DataTypes.UUID,
       allowNull: false,
+      references: {
+        model: Rol,
+        key: "id",
+      },
     },
-
-
   });
 };
 
