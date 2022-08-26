@@ -23,6 +23,8 @@ const bodySchema = Joi.object({
 const {
   getAllCategories,
   createCategory,
+  updateCategory,
+  deleteCategory
 } = require("../controllers/categories");
 
 const router = Router();
@@ -32,5 +34,11 @@ router.get("/", getAllCategories);
 
 /* CREATE NEW CATEGORY IN THE DATABASE */
 router.post("/", validator.body(bodySchema), createCategory);
+
+/* UPDATE CATEGORY IN THE DATABASE */
+router.put("/:id", validator.params(paramsSchema), updateCategory);
+
+/* DELETE CATEGORY IN THE DATABASE */
+router.delete("/:id", validator.params(paramsSchema), deleteCategory);
 
 module.exports = router;

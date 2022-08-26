@@ -1,18 +1,11 @@
 const { DataTypes } = require('sequelize');
+const {User} = require('./User')
 module.exports = (sequelize) => {
   sequelize.define('order', {
     id:{
       type: DataTypes.UUID,
       defaultValue: DataTypes.UUIDV4,
       primaryKey: true,
-      allowNull: false,
-    },
-    userId: {
-      type: DataTypes.UUID,
-      allowNull: false,
-    },
-    productId: {
-      type: DataTypes.UUID,
       allowNull: false,
     },
     quantity: {
@@ -23,6 +16,14 @@ module.exports = (sequelize) => {
       type: DataTypes.BOOLEAN,
         allowNull: false,
         defaultValue: false,
+    },
+    user_id: {
+      type: DataTypes.UUID,
+      allowNull: false,
+      references: {
+        model: User,
+        key: "id",
+      },
     },
   });
 };
