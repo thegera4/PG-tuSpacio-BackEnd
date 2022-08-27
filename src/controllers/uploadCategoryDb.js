@@ -1,10 +1,10 @@
 const axios = require("axios")
 const { Categorie } = require("../db");
-const { URL_INVENTARIO } = require("./globalConst")
+const { URL_API } = require("./globalConst")
 
 /** LOADING OF CATEGORIES IN THE DB */
 async function uploadCategoryDb() {
-  const apiCategory = await axios(URL_INVENTARIO)
+  const apiCategory = await axios(URL_API)
   let data = apiCategory.data.map(e => e.category)
   const dataArr = new Set(data);
   let result = [...dataArr];
