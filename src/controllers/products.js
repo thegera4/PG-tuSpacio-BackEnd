@@ -6,7 +6,7 @@ const { URL_API } = require("./globalConst")
 /* GET ALL PRODUCTS FROM DB */
 const getAllProducts = async (req, res, next) => {
   try {
-    const api = await axios(URL_INVENTARIO)
+    const api = await axios(URL_API)
 
     const e = api.data;
     //let allProducts = e.map(e => {
@@ -43,12 +43,12 @@ const getAllProducts = async (req, res, next) => {
       // newProduct.addCategorie(categoryId)
       // } 
     // }
-    })
+    // })
 
-    //res.send(categoryId)
-//   } catch (error) {
-//     next(error);
-//   }
+    res.send(e)
+  } catch (error) {
+    next(error);
+  }
 };
 
 /* CREATE NEW PRODUCT IN THE DATABASE */
