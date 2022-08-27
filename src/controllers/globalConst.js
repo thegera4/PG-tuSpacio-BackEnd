@@ -1,10 +1,10 @@
 /**
- * UTILIZADO PARA UTILIZAR LAS URLS COMO VARIABLES GENERICAS DESDE EL ARCHIVO JSON
+ * UTILIZADO PARA UTILIZAR LAS URLS COMO VARIABLES GENERICAS
  */
 
-    const URL_PRODUCTS = "http://localhost:3004/results"
+    const URL_API = "http://localhost:3004/results"
     
 
 module.exports = {
-    URL_PRODUCTS,
+    URL_API,
 }
