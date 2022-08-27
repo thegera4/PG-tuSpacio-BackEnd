@@ -42,8 +42,81 @@ const createProduct = async (req, res, next) => {
   }
 };
 
+/* UPDATE ONE PRODUCT IN THE DATABASE */
+const updateProduct = async (req, res, next) => {
+  try {
+    const { id } = req.params;
+    const { name, features, price, image, status, stock, category_id } =
+      req.body;
+
+    /* BUSCO EL PRODUCT DE LA BD POR EL ID */
+    let productDB = await Product.findOne({
+      where: {
+        id: id,
+      },
+    });
+    /* ACTUALIZO EL PRODUCT CON LOS DATOS QUE RECIBO DEL BODY */
+    const updatedProduct = await productDB.update({
+      name,
+      features,
+      price,
+      image,
+      status,
+      stock,
+      category_id,
+    });
+    res.status(200).send({
+      succMsg: "Product Updated Successfully!",
+      updatedProduct,
+    });
+  } catch (error) {
+    next(error);
+  }
+};
+
+/* DISABLED ONE PRODUCT IN THE DATABASE */
+const disableProduct = async (req, res, next) => {
+  try {
+    const { id } = req.params;
+      await Product.update(
+        { status: false },
+        {
+          where: {
+            id: id,
+          },
+        }
+      );
+  
+      const disabledProduct = await Product.findByPk(id, {
+        attributes: [
+          "id",
+          "name",
+          "features",
+          "price",
+          "image",
+          "status",
+          "stock",
+          "category_id",
+        ],
+        include: {
+          model: Categorie,
+          attributes: ["name", "id"],
+        },
+      });
+  
+      res.status(200).json({
+        ok: true,
+        disabledProduct,
+      });
+
+  } catch (error) {
+    next(error);
+  }
+};
+
 module.exports = {
   getAllProducts,
   createProduct,
+  updateProduct,
+  disableProduct
 };
-
