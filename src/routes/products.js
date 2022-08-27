@@ -28,7 +28,7 @@ const bodySchema = Joi.object({
   category_id: Joi.string().min(1).max(50).required(),
 });
 
-const { getAllProducts, createProduct } = require("../controllers/products");
+const { getAllProducts, createProduct, updateProduct, disableProduct } = require("../controllers/products");
 
 const router = Router();
 
@@ -39,5 +39,12 @@ router.get("/", getAllProducts);
 
 /* CREATE NEW PRODUCT IN THE DATABASE */
 router.post("/", validator.body(bodySchema), createProduct);
+
+/* UPDATE PRODUCT IN THE DATABASE */
+router.put("/:id", validator.params(paramsSchema), validator.body(bodySchema), updateProduct);
+
+/* DISABLED PRODUCT IN THE DATABASE */
+router.delete("/:id", validator.params(paramsSchema), disableProduct);
+
 
 module.exports = router;

@@ -13,10 +13,7 @@ module.exports = (sequelize) => {
         primaryKey: true,
         defaultValue: DataTypes.UUIDV4,
         allowNull: false,
-        validate: {
-          isUUID: 4,
-          notNull: { msg: "The product id field cannot be null " },
-        },
+
       },
 
       name: {
