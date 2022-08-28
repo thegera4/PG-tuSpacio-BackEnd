@@ -8,18 +8,27 @@ https://github.com/evanshortiss/express-joi-validation#readme
 */
 
 /* SE CREAN LOS OBJETOS CON LOS TIPOS DE VALIDACIONES */
+const querySchema = Joi.object({
+    name: Joi.string().regex(/^[a-zA-Z\s]+$/),
+});
+
 const paramsSchema = Joi.object({
     id: Joi.string().regex(/^([a-zA-Z0-9-]+)$/),
 });
 
+const bodySchema = Joi.object({
+    name: Joi.string().min(3).max(100).required(),
+});
+
 const {
-    getOneCategorie,
-} = require("../controllers/oneCategorie.js");
+    getSearchProducts,
+    // getOneCategorie,
+} = require("../controllers/searchProducts.js");
 
 const router = Router();
 
 /* GET DETAIL PRODUCT FRONT THE DATABASE */
 
-router.get("/", validator.params(paramsSchema), getOneCategorie);
+router.get("/", validator.params(paramsSchema), getSearchProducts);
 
 module.exports = router;
