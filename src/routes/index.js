@@ -3,11 +3,22 @@ const { Router } = require('express');
 const productsRoute = require('./products');
 const categoriesRoute = require('./categories');
 const detailProductRoute = require('./detailproduct.js');
+const oneCategoriesRoute = require('./oneCategorie.js') 
 
 const router = Router();
 
-router.use("/products", productsRoute);
+/*_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/
+                RUTAS DE PRODUCTS
+_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/*/
 router.use("/product", detailProductRoute);
+router.use("/products", productsRoute);
+
+/*_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/
+                RUTAS DE CATEGORIES
+_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/*/
+router.use("/categorie", oneCategoriesRoute);
 router.use("/categories", categoriesRoute);
+
+
 
 module.exports = router;
