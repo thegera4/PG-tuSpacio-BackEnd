@@ -3,6 +3,7 @@ const { Router } = require('express');
 const productsRoute = require('./products');
 const categoriesRoute = require('./categories');
 const detailProductRoute = require('./detailproduct.js');
+const searchProductsRoute = require('./searchproducts.js');
 const oneCategoriesRoute = require('./oneCategorie.js') 
 
 const router = Router();
@@ -11,6 +12,7 @@ const router = Router();
                 RUTAS DE PRODUCTS
 _/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/*/
 router.use("/product", detailProductRoute);
+router.use("/productos/search/", searchProductsRoute);
 router.use("/products", productsRoute);
 
 /*_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/
