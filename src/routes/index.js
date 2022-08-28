@@ -12,8 +12,9 @@ const router = Router();
                 RUTAS DE PRODUCTS
 _/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/*/
 router.use("/product", detailProductRoute);
-router.use("/productos/search/", searchProductsRoute);
+router.use("/products/search/", searchProductsRoute);
 router.use("/products", productsRoute);
+// router.use("/product/rating")
 
 /*_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/
                 RUTAS DE CATEGORIES
