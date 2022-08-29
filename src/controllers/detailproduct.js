@@ -11,7 +11,13 @@ const getDetailProduct = async (req, res, next) => {
     const detail = resp.data
     try {
         let detail2 = detail.find(e => e.id == id)
-        res.send(detail2);
+
+        /* FILTRADO DE PAGINAS CON IMAGENES QUE NO FUNCIONAN */
+    const e = detail2.filter(e => !e.image_link.includes("purpicks") )
+    const e1 = e.filter(e => !e.image_link.includes("static-assets.glossier") )
+    const e2 = e1.filter(e => !e.image_link.includes("d3t32hsnjxo7q6.cloudfront.net/") )
+
+        res.send(e2);
     } catch (error) {
         next(error);
     }

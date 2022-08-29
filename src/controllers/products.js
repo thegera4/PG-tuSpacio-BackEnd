@@ -7,9 +7,12 @@ const { URL_API } = require("./globalConst")
 const getAllProducts = async (req, res, next) => {
   try {
     const api = await axios(URL_API)
-
-    const e = api.data;
-    //let allProducts = e.map(e => {
+    
+    /* FILTRADO DE PAGINAS CON IMAGENES QUE NO FUNCIONAN */
+    const e = api.data.filter(e => !e.image_link.includes("purpicks") )
+    const e1 = e.filter(e => !e.image_link.includes("static-assets.glossier") )
+    const e2 = e1.filter(e => !e.image_link.includes("imancosmetics") )
+    // const e2 = e1.filter(e => !e.image_link.includes("d3t32hsnjxo7q6.cloudfront.net/") )
 
       //e.brand
       // return {
@@ -45,7 +48,7 @@ const getAllProducts = async (req, res, next) => {
     // }
     // })
 
-    res.send(e)
+    res.send(e2)
   } catch (error) {
     next(error);
   }
