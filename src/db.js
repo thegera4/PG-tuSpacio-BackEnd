@@ -70,9 +70,9 @@ User.belongsTo(Rol, { foreignKey: "rol_id" });
 User.belongsToMany(Favorite, { through: "Favorite_Users" });
 Favorite.belongsToMany(User, { through: "Favorite_Users" });
 
-/*===========================RELATION CATEGORY - PRODUCTS 1:N==============================*/
-Categorie.hasMany(Product, { foreignKey: "category_id" });
-Product.belongsTo(Categorie, { foreignKey: "category_id" });
+/*===========================RELATION CATEGORY - PRODUCTS N:M==============================*/
+Categorie.belongsToMany(Product, { through: "categoryProduct" });
+Product.belongsToMany(Categorie, { through: "categoryProduct"  });
 
 /*===========================RELATION USER - ORDER 1:1==============================*/
 User.hasMany(Order, { foreignKey: "user_id" });

@@ -69,22 +69,14 @@ module.exports = (sequelize) => {
 
       rating: {
         type: DataTypes.INTEGER,
-        allowNull: true,
+        allowNull: false,
         validate: {
-          //notNull: { msg: "The product stock field cannot be null " },
+          notNull: { msg: "The product stock field cannot be null " },
           isNumeric: true,
           min: 0,
         },
       },
 
-      category_id: {
-        type: DataTypes.UUID,
-        allowNull: false,
-        references: {
-          model: Categorie,
-          key: "id",
-        },
-      },
     },
     {
       timestamps: true,
