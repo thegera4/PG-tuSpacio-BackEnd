@@ -35,14 +35,14 @@ const bodySchema = Joi.object({
   // category_id: Joi.string().min(1).max(50).required(),
 });
 
-const { getAllProducts, createProduct, updateProduct, disableProduct } = require("../controllers/products");
+const { getApiProducts, getDbProducts, createProduct, updateProduct, disableProduct } = require("../controllers/products");
 
 const router = Router();
 
 /* SE ARMAN LAS RUTAS PASANDO LAS VALIDACIONES COMO MIDDLEWARES */
 
 /* GET ALL PRODUCTS FRONT THE DATABASE */
-router.get("/", getAllProducts);
+router.get("/", getApiProducts , getDbProducts);
 
 /* CREATE NEW PRODUCT IN THE DATABASE */
 router.post("/", validator.body(bodySchema), createProduct);
