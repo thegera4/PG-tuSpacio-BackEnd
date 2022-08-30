@@ -7,14 +7,11 @@ const { URL_API } = require("./globalConst")
 const getAllProducts = async (req, res, next) => {
   try {
     const api = await axios(URL_API)
-    const c = "cream"
-    
+  
     /* FILTRADO DE PAGINAS CON IMAGENES QUE NO FUNCIONAN */
     const e = api.data.filter(e => !e.image_link.includes("purpicks") )
     const e1 = e.filter(e => !e.image_link.includes("static-assets.glossier") )
     const e2 = e1.filter(e => !e.image_link.includes("imancosmetics") )
-   
-
     res.status(200).json(e2);
   
   } catch (error) {
@@ -23,21 +20,24 @@ const getAllProducts = async (req, res, next) => {
   }
 }
 
-
 /* CREATE NEW PRODUCT IN THE DATABASE */
 const createProduct = async (req, res, next) => {
   try {
     /* ME TRAIGO TODOS LOS VALORES DEL CUERPO DE LA PETICION */
-    const { name, description, price, currency, image, rating, categories } =
+    const { brand, name,price, currency,image,description, rating, product_type, tag_list, product_colors, categories } =
       req.body;
     /* CREATE NEW PRODUCT */
     const newProduct = await Product.create({
+      brand,
       name,
-      description,
       price,
       currency,
       image,
-      rating
+      description,
+      rating,
+      product_type,
+      tag_list,
+      product_colors
     });
 
     const categoriesDb = await Categorie.findAll({where: { name: categories }});  
