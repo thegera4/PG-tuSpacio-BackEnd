@@ -13,14 +13,14 @@ const getSearchProducts = async (req, res, next) => {
 
     if (name) {
         try {
-            let resultCategory = dataApi.filter(e => e.name = name)
+            let resultCategory = dataApi.filter(e => e.name?.includes( name))
             res.send(resultCategory);
         } catch (error) {
             next(error);
         }
     } else if (product_type) {
         try {
-            let resultCategory = dataApi.filter(e => e.product_type=product_type)
+            let resultCategory = dataApi.filter(e => e.product_type?.includes(product_type))
 
             res.send(resultCategory);
         } catch (error) {
@@ -29,7 +29,7 @@ const getSearchProducts = async (req, res, next) => {
     } else if (categorie) {
 
         try {
-            let resultCategory = dataApi.filter(e => e.category = categorie)
+            let resultCategory = dataApi.filter(e => e.category == categorie)
             res.send(resultCategory);
         } catch (error) {
             next(error);
