@@ -66,7 +66,7 @@ module.exports = (sequelize) => {
       },
 
       rating: {
-        type: DataTypes.INTEGER,
+        type: DataTypes.DECIMAL (10, 1),
         allowNull: false,
         validate: {
           notNull: { msg: "The product rating field cannot be null " },
@@ -93,7 +93,7 @@ module.exports = (sequelize) => {
         validate: {
           notNull: { msg: "The product colors field cannot be null " },
           notEmpty: true,
-        },
+        }, 
       },
 
     },

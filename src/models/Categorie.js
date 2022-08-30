@@ -21,7 +21,7 @@ module.exports = (sequelize) => {
         allowNull: false,
         validate: {
           notNull: { msg: "The Category name field cannot be null " },
-          notEmpty: true,
+          notEmpty: true, 
         },
       },
     },
