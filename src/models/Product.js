@@ -14,7 +14,14 @@ module.exports = (sequelize) => {
         defaultValue: DataTypes.UUIDV4,
         allowNull: false,
       },
-
+      brand: {
+        type: DataTypes.STRING,
+        allowNull: false,
+        validate: {
+          notNull: { msg: "The brand field cannot be null " },
+          notEmpty: true,
+        },
+      },
       name: {
         type: DataTypes.STRING,
         allowNull: false,
@@ -23,23 +30,6 @@ module.exports = (sequelize) => {
           notEmpty: true,
         },
       },
-
-      description: {
-        type: DataTypes.TEXT,
-        allowNull: false,
-        validate: {
-          notNull: { msg: "The product features field cannot be null " },
-          notEmpty: true,
-        },
-      },
-      // features: {
-      //   type: DataTypes.TEXT,
-      //   allowNull: false,
-      //   validate: {
-      //     notNull: { msg: "The product features field cannot be null " },
-      //     notEmpty: true,
-      //   },
-      // },
 
       price: {
         type: DataTypes.DECIMAL(10, 2),
@@ -54,11 +44,10 @@ module.exports = (sequelize) => {
         type: DataTypes.TEXT,
         allowNull: false,
         validate: {
-          notNull: { msg: "The product features field cannot be null " },
+          notNull: { msg: "The product currency field cannot be null " },
           notEmpty: true,
         },
       },
-
       image: {
         type: DataTypes.TEXT,
         allowNull: true,
@@ -67,14 +56,44 @@ module.exports = (sequelize) => {
         },
       },
 
-      rating: {
-        type: DataTypes.INTEGER,
+      description: {
+        type: DataTypes.TEXT,
         allowNull: false,
         validate: {
-          notNull: { msg: "The product stock field cannot be null " },
+          notNull: { msg: "The product description field cannot be null " },
+          notEmpty: true,
+        },
+      },
+
+      rating: {
+        type: DataTypes.DECIMAL (10, 1),
+        allowNull: false,
+        validate: {
+          notNull: { msg: "The product rating field cannot be null " },
           isNumeric: true,
           min: 0,
+          max: 5,
         },
+      },
+      product_type: { 
+        type: DataTypes.TEXT,
+        allowNull: false,
+        validate: {
+          notNull: { msg: "The product type field cannot be null " },
+          notEmpty: true,
+        },
+      },
+      tag_list: {
+        type: DataTypes.ARRAY(DataTypes.TEXT),
+        allowNull: true,
+      },
+      product_colors: { 
+        type: DataTypes.ARRAY(DataTypes.TEXT),
+        allowNull: false,
+        validate: {
+          notNull: { msg: "The product colors field cannot be null " },
+          notEmpty: true,
+        }, 
       },
 
     },

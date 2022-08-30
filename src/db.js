@@ -60,7 +60,7 @@ sequelize.models = Object.fromEntries(capsEntries);
 
 // Ejemplo:
 const { Product, Review, Categorie, Order, Rol, User, Favorite } =
-  sequelize.models;
+  sequelize.models; 
 
 /*===========================RELATION Rol - User 1:N==============================*/
 Rol.hasMany(User, { foreignKey: "rol_id" });
