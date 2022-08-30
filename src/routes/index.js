@@ -5,8 +5,11 @@ const detailProductRoute = require('./detailproduct.js');
 const searchProductsRoute = require('./searchproducts.js');
 const ratingRoute = require('./ratingproducts.js');
 const productsNameRoute = require('./productsName.js');
+const brandProductsRoute = require('./productsBrand.js');
+
 const categoriesRoute = require('./categories');
 const oneCategoriesRoute = require('./oneCategorie.js') 
+
 
 const router = Router();
 
@@ -17,6 +20,7 @@ router.use("/product", detailProductRoute);
 router.use("/products", productsRoute);
 router.use("/products/name", productsNameRoute);
 router.use("/products/search/", searchProductsRoute);
+router.use("/products/brand/", brandProductsRoute);
 router.use("/products/rating/", ratingRoute);
 
 /*_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/
