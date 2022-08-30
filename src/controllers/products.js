@@ -4,7 +4,7 @@ const { URL_API } = require("./globalConst")
 
 
 /* GET ALL PRODUCTS FROM DB */
-const getAllProducts = async (req, res, next) => {
+const getApiProducts = async (req, res, next) => {
   try {
     const api = await axios(URL_API)
     const resultAll = api.data;
@@ -12,10 +12,44 @@ const getAllProducts = async (req, res, next) => {
     res.send(resultAll);
   
   } catch (error) {
-    next(error);
-  
+    console.log(error)
   }
+  
 }
+
+
+  const getDbProducts =  async(req, res) => { 
+    try{
+    const dbInfo = await Product.findAll({
+      include: {
+        model: Categorie,
+        attributes: ["name"],
+        through: { attributes: [] },
+      },
+    });
+    console.log(dbInfo)
+    res.send(dbInfo)
+    }catch(error){
+      console.log(error)
+    }
+
+
+  } 
+
+
+
+  
+// const getAllProducts = async (req, res) => {
+//     const apiInfo = await getApiProducts()
+    
+//     const dbInfo = await getDbProducts()
+//     console.log(apiInfo , dbInfo)
+//     const infoTotal= [...apiInfo, ...dbInfo]
+
+//     res.send(infoTotal)
+// }
+
+
 
 /* CREATE NEW PRODUCT IN THE DATABASE */
 const createProduct = async (req, res, next) => {
@@ -123,8 +157,9 @@ const disableProduct = async (req, res, next) => {
 };
 
 module.exports = {
-  getAllProducts,
+  getApiProducts,
+  getDbProducts,
   createProduct,
   updateProduct,
-  disableProduct
+  disableProduct,
 };
