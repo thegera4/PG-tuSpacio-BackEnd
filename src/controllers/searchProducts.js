@@ -20,7 +20,7 @@ const getSearchProducts = async (req, res, next) => {
         }
     } else if (product_type) {
         try {
-            let resultCategory = dataApi.filter(e => e.product_type.toLowerCase().includes(product_type.toLowerCase()))
+            let resultCategory = dataApi.filter(e => e.product_type=product_type)
 
             res.send(resultCategory);
         } catch (error) {
