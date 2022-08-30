@@ -1,5 +1,5 @@
 const { DataTypes } = require("sequelize");
-const { Categorie } = require('./Categorie')
+const { Categorie } = require("./Categorie");
 // Exportamos una funcion que define el modelo
 // Luego le injectamos la conexion a sequelize.
 
@@ -13,7 +13,6 @@ module.exports = (sequelize) => {
         primaryKey: true,
         defaultValue: DataTypes.UUIDV4,
         allowNull: false,
-
       },
       brand: {
         type: DataTypes.STRING,
@@ -56,6 +55,7 @@ module.exports = (sequelize) => {
           isUrl: true,
         },
       },
+
       description: {
         type: DataTypes.TEXT,
         allowNull: false,
@@ -64,6 +64,7 @@ module.exports = (sequelize) => {
           notEmpty: true,
         },
       },
+
       rating: {
         type: DataTypes.INTEGER,
         allowNull: false,
@@ -94,6 +95,7 @@ module.exports = (sequelize) => {
           notEmpty: true,
         },
       },
+
     },
     {
       timestamps: true,
