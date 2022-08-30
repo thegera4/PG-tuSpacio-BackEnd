@@ -7,13 +7,11 @@ const { URL_API } = require("./globalConst")
 const getAllProducts = async (req, res, next) => {
   try {
     const api = await axios(URL_API)
-   
-    
+  
     /* FILTRADO DE PAGINAS CON IMAGENES QUE NO FUNCIONAN */
     const e = api.data.filter(e => !e.image_link.includes("purpicks") )
     const e1 = e.filter(e => !e.image_link.includes("static-assets.glossier") )
     const e2 = e1.filter(e => !e.image_link.includes("imancosmetics") )
-
     res.status(200).json(e2);
   
   } catch (error) {
@@ -21,7 +19,6 @@ const getAllProducts = async (req, res, next) => {
   
   }
 }
-
 
 /* CREATE NEW PRODUCT IN THE DATABASE */
 const createProduct = async (req, res, next) => {
