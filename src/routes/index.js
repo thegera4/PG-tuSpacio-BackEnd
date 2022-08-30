@@ -5,6 +5,8 @@ const detailProductRoute = require('./detailproduct.js');
 const searchProductsRoute = require('./searchproducts.js');
 const ratingRoute = require('./ratingproducts.js');
 const productsNameRoute = require('./productsName.js');
+const orderPriceRoute = require('./orderByPrice.js');
+
 const categoriesRoute = require('./categories');
 const oneCategoriesRoute = require('./oneCategorie.js') 
 
@@ -18,6 +20,7 @@ router.use("/products", productsRoute);
 router.use("/products/name", productsNameRoute);
 router.use("/products/search/", searchProductsRoute);
 router.use("/products/rating/", ratingRoute);
+router.use("/products/price/", orderPriceRoute);
 
 /*_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/
                 RUTAS DE CATEGORIES

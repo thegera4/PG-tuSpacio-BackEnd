@@ -8,13 +8,13 @@ https://github.com/evanshortiss/express-joi-validation#readme
 */
 
 const {
-    getProductsBrand,
-} = require("../controllers/productsbrand.js");
+    orderProductsPrice,
+} = require("../controllers/orderByPrice.js");
 
 const router = Router();
 
-/* GET DETAIL PRODUCT FRONT THE DATABASE */
+/* ORDERING BY PRICE  */
 
-router.get("/", getProductsBrand);
+router.get("/", orderProductsPrice);
 
 module.exports = router;
