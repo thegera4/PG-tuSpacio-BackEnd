@@ -6,7 +6,7 @@
   "scripts": {
     "start": "nodemon -L",
     "test": "mocha -w ./tests/**/*.spec.js",
-    "json":"json-server --watch src/controllers/db_old.json --port 3004 "
+    "json":"json-server --watch src/controllers/db.json --port 3004 "
     
   },
   "author": "Henry",
