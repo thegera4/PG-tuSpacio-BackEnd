@@ -18,14 +18,17 @@ const paramsSchema = Joi.object({
 
 const bodySchema = Joi.object({
   name: Joi.string().min(3).max(100).required(),
-  features: Joi.string().min(3).max(500).required(),
+  description: Joi.string().min(3).max(500).required(),
   price: Joi.number().min(1).precision(1).required(),
   image: Joi.string()
     .regex(/([a-z\-_0-9\/\:\.]*\.(jpg|jpeg|png|gif))/i)
     .max(255),
-  status: Joi.boolean(),
-  stock: Joi.number().min(1).required(),
-  category_id: Joi.string().min(1).max(50).required(),
+  currency: Joi.string().regex(/^[a-zA-Z\s]+$/),
+  rating: Joi.number().min(0).max(5),
+  categories: Joi.array().items(Joi.string().regex(/^[a-zA-Z\s]+$/)),
+  // status: Joi.boolean(),
+  // stock: Joi.number().min(1).required(),
+  // category_id: Joi.string().min(1).max(50).required(),
 });
 
 const { getAllProducts, createProduct, updateProduct, disableProduct } = require("../controllers/products");

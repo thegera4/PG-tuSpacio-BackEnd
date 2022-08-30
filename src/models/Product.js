@@ -67,25 +67,25 @@ module.exports = (sequelize) => {
           isUrl: true,
         },
       },
-      
+       
       rating: {
         type: DataTypes.INTEGER,
-        allowNull: true,
+        allowNull: false,
         validate: {
-          //notNull: { msg: "The product stock field cannot be null " },
+          notNull: { msg: "The product stock field cannot be null " },
           isNumeric: true,
           min: 0,
         },
       },
       //! ******************HACER QUE EL CATEGORY SE GUARDE EN LA TABLA RELACIONAL
-      category_id: {
-        type: DataTypes.UUID,
-        allowNull: false,
-        references: {
-          model: Categorie,
-          key: "id",
-        },
-      },
+      // category_id: {
+      //   type: DataTypes.UUID,
+      //   allowNull: false,
+      //   references: {
+      //     model: Categorie,
+      //     key: "id",
+      //   },
+      // },
     },
     {
       timestamps: true,

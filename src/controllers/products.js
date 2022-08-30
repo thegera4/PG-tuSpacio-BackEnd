@@ -7,6 +7,7 @@ const { URL_API } = require("./globalConst")
 const getAllProducts = async (req, res, next) => {
   try {
     const api = await axios(URL_API)
+    const c = "cream"
     
     /* FILTRADO DE PAGINAS CON IMAGENES QUE NO FUNCIONAN */
     const e = api.data.filter(e => !e.image_link.includes("purpicks") )
@@ -18,6 +19,51 @@ const getAllProducts = async (req, res, next) => {
       // return {
       // async function newProduct(){  
       //   return (
+     
+      
+        //         return categoryDb
+    // e2.forEach (e => {
+       const newProduct = Product.create({
+        name: "namess",
+        description: "description",
+        price: 12,
+        currency: "currency",
+        image: "e.image_link",
+        rating: "e.rating",
+
+      });  
+  
+   const categorieDb = await Categorie.findAll({
+  attributes: ["name"],
+  where: { name: "cream" }
+});
+ 
+   
+
+console.log(newProduct)
+     
+      console.log(categorieDb)
+      newProduct.addCategorie(categorieDb)
+
+          
+    res.status(200).json(e2);
+  
+  } catch (error) {
+    next(error);
+  
+  }
+}
+
+
+
+
+
+
+
+
+
+ 
+
       //   Product.create({
       //   brand: e.brand,
       //   name: e.name,
@@ -48,30 +94,33 @@ const getAllProducts = async (req, res, next) => {
     // }
     // })
 
-    res.send(e2)
-  } catch (error) {
-    next(error);
-  }
-};
+//     res.send(categorieDb)
+//   } catch (error) {
+//     next(error);
+//   }
+// }
+
+
 
 /* CREATE NEW PRODUCT IN THE DATABASE */
 const createProduct = async (req, res, next) => {
   try {
     /* ME TRAIGO TODOS LOS VALORES DEL CUERPO DE LA PETICION */
-    const { name, features, price, image, status, stock, category_id } =
+    const { name, description, price, currency, image, rating, categories } =
       req.body;
     /* CREATE NEW PRODUCT */
     const newProduct = await Product.create({
       name,
-      features,
+      description,
       price,
-      price_sign,
+      currency,
       image,
-      status,
-      stock,
-      category_id,
-      product_colors
+      rating
     });
+
+    const categoriesDb = await Categorie.findAll({where: { name: categories }});  
+    newProduct.addCategorie(categoriesDb);
+ 
 
     res.status(200).json({
       succMsg: "Product Created Successfully!",
