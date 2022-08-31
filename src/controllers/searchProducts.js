@@ -9,11 +9,11 @@ const getSearchProducts = async (req, res, next) => {
 
     const resp = await axios.get(URL_API)
     const dataApi = resp.data
-    
+
 
     if (name) {
         try {
-            let resultCategory = dataApi.filter(e => e.name?.includes( name))
+            resultCategory = dataApi.filter(e=>e.name.toLowerCase().includes(name.toLowerCase()))
             res.send(resultCategory);
         } catch (error) {
             next(error);
@@ -21,7 +21,6 @@ const getSearchProducts = async (req, res, next) => {
     } else if (product_type) {
         try {
             let resultCategory = dataApi.filter(e => e.product_type?.includes(product_type))
-
             res.send(resultCategory);
         } catch (error) {
             next(error);
