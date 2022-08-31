@@ -14417,7 +14417,7 @@
         {
             "id": 893,
             "brand": "nyx",
-            "name": "#LOTD Lip Of The Day Liquid Lip Liner",
+            "name": "LOTD Lip Of The Day Liquid Lip Liner",
             "price": "7.0",
             "price_sign": "$",
             "currency": "USD",
@@ -15267,7 +15267,7 @@
         {
             "id": 768,
             "brand": "clinique",
-            "name": " Quickliner&trade; For Lips Intense",
+            "name": "Quickliner&trade; For Lips Intense",
             "price": "17.5",
             "price_sign": "$",
             "currency": "USD",
@@ -16435,7 +16435,7 @@
         {
             "id": 936,
             "brand": "nyx",
-            "name": "#NOFILTER Finishing Powder",
+            "name": "NOFILTER Finishing Powder",
             "price": "12.0",
             "price_sign": "$",
             "currency": "USD",
@@ -40089,7 +40089,7 @@
         {
             "id": 893,
             "brand": "nyx",
-            "name": "#LOTD Lip Of The Day Liquid Lip Liner",
+            "name": "LOTD Lip Of The Day Liquid Lip Liner",
             "price": "7.0",
             "price_sign": "$",
             "currency": "USD",
@@ -40939,7 +40939,7 @@
         {
             "id": 768,
             "brand": "clinique",
-            "name": " Quickliner&trade; For Lips Intense",
+            "name": "Quickliner&trade; For Lips Intense",
             "price": "17.5",
             "price_sign": "$",
             "currency": "USD",
@@ -42145,7 +42145,7 @@
         {
             "id": 936,
             "brand": "nyx",
-            "name": "#NOFILTER Finishing Powder",
+            "name": "NOFILTER Finishing Powder",
             "price": "12.0",
             "price_sign": "$",
             "currency": "USD",
@@ -60599,7 +60599,7 @@
             {
             "id": 529,
             "brand": "smashbox",
-            "name": "#ShapeMatters Palette",
+            "name": "ShapeMatters Palette",
             "price": "55.0",
             "price_sign": null,
             "currency": null,
