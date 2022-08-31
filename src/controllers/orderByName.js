@@ -13,8 +13,6 @@ const orderProductsName = async (req, res, next) => {
     if (orderby === 'z-to-a') {   
         try {
             dataApi.sort((a, b) => {
-                // const nameA = a.name.replace(".",""); //remove the dot from the name
-                // const nameB = b.name.replace(".",""); //remove the dot from the name
                 if ( a.name  > b.name) return -1;
                 if (a.nameA < b.name) return 1;
                 return 0
