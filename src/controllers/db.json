@@ -3,7 +3,7 @@
         {
             "id": 740,
             "brand": "dior",
-            "name": "\n                            Junon\n                            ",
+            "name": "Junon",
             "price": "20.0",
             "price_sign": "£",
             "currency": "GBP",
@@ -109,7 +109,7 @@
         {
             "id": 730,
             "brand": "dior",
-            "name": "\n                            Matte\n                            ",
+            "name": "Matte",
             "price": "20.0",
             "price_sign": "£",
             "currency": "GBP",
@@ -147,7 +147,7 @@
         {
             "id": 729,
             "brand": "dior",
-            "name": "\n                            Poison Metal\n                            ",
+            "name": "Poison Metal",
             "price": "20.0",
             "price_sign": "£",
             "currency": "GBP",
@@ -185,7 +185,7 @@
         {
             "id": 728,
             "brand": "dior",
-            "name": "\n                            Jungle Matte\n                            ",
+            "name": "Jungle Matte",
             "price": "20.0",
             "price_sign": "£",
             "currency": "GBP",
@@ -223,7 +223,7 @@
         {
             "id": 727,
             "brand": "dior",
-            "name": "\n                            Miss Satin\n                            ",
+            "name": "Miss Satin",
             "price": "20.0",
             "price_sign": "£",
             "currency": "GBP",
@@ -261,7 +261,7 @@
         {
             "id": 726,
             "brand": "dior",
-            "name": "\n                            Mineral\n                            ",
+            "name": "Mineral",
             "price": "20.0",
             "price_sign": "£",
             "currency": "GBP",
@@ -287,7 +287,7 @@
         {
             "id": 725,
             "brand": "dior",
-            "name": "\n                            Sauvage\n                            ",
+            "name": "Sauvage",
             "price": "20.0",
             "price_sign": "£",
             "currency": "GBP",
@@ -321,7 +321,7 @@
         {
             "id": 724,
             "brand": "dior",
-            "name": "\n                            Diabolo\n                            ",
+            "name": "Diabolo",
             "price": "20.0",
             "price_sign": "£",
             "currency": "GBP",
@@ -355,7 +355,7 @@
         {
             "id": 723,
             "brand": "dior",
-            "name": "\n                            Tease\n                            ",
+            "name": "Tease",
             "price": "20.0",
             "price_sign": "£",
             "currency": "GBP",
@@ -389,12 +389,12 @@
         {
             "id": 722,
             "brand": "dior",
-            "name": "\n                            Precious Rocks\n                            ",
+            "name": "priceus Rocks",
             "price": "20.5",
             "price_sign": "£",
             "currency": "GBP",
             "image_link": "https://www.dior.com/beauty/version-5.1432748111912/resize-image/ep/0/214/90/0/packshots%252FPDG_Y0002880_F000288001.jpg",
-            "product_link": "https://www.dior.com/beauty/en_gb/fragrance-beauty/makeup/look-exclusives/precious-rocks-collection/pr-preciousrockslook-y0002880_f000288001-nail-liner-shine-precision.html",
+            "product_link": "https://www.dior.com/beauty/en_gb/fragrance-beauty/makeup/look-exclusives/priceus-rocks-collection/pr-priceusrockslook-y0002880_f000288001-nail-liner-shine-precision.html",
             "website_link": "https://www.dior.com",
             "description": "Diorific reveals a nail liner designed to decorate your nails like gemstones with festive shades. In one ultra-precise golden stroke, Dior Vernis Liner delivers a clear varnish strewn with gold, platinum, and silver glitter in various sizes, showering nails with countless little gems.",
             "rating": null,
@@ -408,21 +408,21 @@
             "product_colors": [
                 {
                     "hex_value": "#CAAB54",
-                    "colour_name": "001 Precious Rocks"
+                    "colour_name": "001 priceus Rocks"
                 }
             ]
         },
         {
             "id": 721,
             "brand": "dior",
-            "name": "\n                            Amethyst\n                            ",
+            "name": "Amethyst",
             "price": "20.5",
             "price_sign": "£",
             "currency": "GBP",
             "image_link": "https://www.dior.com/beauty/version-5.1432748111912/resize-image/ep/0/214/90/0/packshots%252FPDG_Y0002986_F000298998.jpg",
-            "product_link": "https://www.dior.com/beauty/en_gb/fragrance-beauty/makeup/look-exclusives/precious-rocks-collection/pr-preciousrockslook-y0002986_f000298998-couture-colour-gel-shine-long-wear.html",
+            "product_link": "https://www.dior.com/beauty/en_gb/fragrance-beauty/makeup/look-exclusives/priceus-rocks-collection/pr-priceusrockslook-y0002986_f000298998-couture-colour-gel-shine-long-wear.html",
             "website_link": "https://www.dior.com",
-            "description": "The sparkling, vibrant tones of Diorific Vernis nail polishes are modeled after precious stones.",
+            "description": "The sparkling, vibrant tones of Diorific Vernis nail polishes are modeled after priceus stones.",
             "rating": null,
             "category": "N/A",
             "product_type": "nail_polish",
@@ -453,14 +453,14 @@
         {
             "id": 720,
             "brand": "dior",
-            "name": "\n                            Emerald\n                            ",
+            "name": "Emerald",
             "price": "20.5",
             "price_sign": "£",
             "currency": "GBP",
             "image_link": "https://www.dior.com/beauty/version-5.1432748111912/resize-image/ep/0/214/90/0/packshots%252FPDG_Y0002986_F000298809.jpg",
-            "product_link": "https://www.dior.com/beauty/en_gb/fragrance-beauty/makeup/look-exclusives/precious-rocks-collection/pr-preciousrockslook-y0002986_f000298809-couture-colour-gel-shine-long-wear.html",
+            "product_link": "https://www.dior.com/beauty/en_gb/fragrance-beauty/makeup/look-exclusives/priceus-rocks-collection/pr-priceusrockslook-y0002986_f000298809-couture-colour-gel-shine-long-wear.html",
             "website_link": "https://www.dior.com",
-            "description": "The sparkling, vibrant tones of Diorific Vernis nail polishes are modeled after precious stones.",
+            "description": "The sparkling, vibrant tones of Diorific Vernis nail polishes are modeled after priceus stones.",
             "rating": null,
             "category": "N/A",
             "product_type": "nail_polish",
@@ -491,14 +491,14 @@
         {
             "id": 719,
             "brand": "dior",
-            "name": "\n                            Grenat\n                            ",
+            "name": "Grenat",
             "price": "0.0",
             "price_sign": "£",
             "currency": "GBP",
             "image_link": "https://www.dior.com/beauty/version-5.1432748111912/resize-image/ep/0/214/90/0/packshots%252FPDG_Y0002986_F000298745.jpg",
-            "product_link": "https://www.dior.com/beauty/en_gb/fragrance-beauty/makeup/look-exclusives/precious-rocks-collection/pr-preciousrockslook-y0002986_f000298745-couture-colour-gel-shine-long-wear.html",
+            "product_link": "https://www.dior.com/beauty/en_gb/fragrance-beauty/makeup/look-exclusives/priceus-rocks-collection/pr-priceusrockslook-y0002986_f000298745-couture-colour-gel-shine-long-wear.html",
             "website_link": "https://www.dior.com",
-            "description": "The sparkling, vibrant tones of Diorific Vernis nail polishes are modeled after precious stones.",
+            "description": "The sparkling, vibrant tones of Diorific Vernis nail polishes are modeled after priceus stones.",
             "rating": null,
             "category": "N/A",
             "product_type": "nail_polish",
@@ -529,14 +529,14 @@
         {
             "id": 718,
             "brand": "dior",
-            "name": "\n                            Ruby\n                            ",
+            "name": "Ruby",
             "price": "20.5",
             "price_sign": "£",
             "currency": "GBP",
             "image_link": "https://www.dior.com/beauty/version-5.1432748111912/resize-image/ep/0/214/90/0/packshots%252FPDG_Y0002986_F000298673.jpg",
-            "product_link": "https://www.dior.com/beauty/en_gb/fragrance-beauty/makeup/look-exclusives/precious-rocks-collection/pr-preciousrockslook-y0002986_f000298673-couture-colour-gel-shine-long-wear.html",
+            "product_link": "https://www.dior.com/beauty/en_gb/fragrance-beauty/makeup/look-exclusives/priceus-rocks-collection/pr-priceusrockslook-y0002986_f000298673-couture-colour-gel-shine-long-wear.html",
             "website_link": "https://www.dior.com",
-            "description": "The sparkling, vibrant tones of Diorific Vernis nail polishes are modeled after precious stones.",
+            "description": "The sparkling, vibrant tones of Diorific Vernis nail polishes are modeled after priceus stones.",
             "rating": null,
             "category": "N/A",
             "product_type": "nail_polish",
@@ -5219,81 +5219,81 @@
                 "Sin Gluten",
                 "Canadiense"
             ],
-            "Creado en": "2016-10-01T18:10:46.893Z",
-            "actualizado_en": "2017-12-23T20:31:46.013Z",
-            "producto_api_url": "https://maquillaje-api.herokuapp.com/api/v1/products/1.json",
+            "created_at": "2016-10-01T18:10:46.893Z",
+            "updated_at": "2017-12-23T20:31:46.013Z",
+            "product_api_url": "https://maquillaje-api.herokuapp.com/api/v1/products/1.json",
             "api_featured_image": "//s3.amazonaws.com/donovanbailey/products/api_featured_images/000/000/001/original/data?1514061104",
-            "productos_colores": [
+            "product_colors": [
                 {
-                    "valor_hexadecimal": "#000000",
-                    "color_nombre": "negro"
+                    "hex_value": "#000000",
+                    "color_name": "negro"
                 },
                 {
-                    "valor_hexadecimal": "#3E2829",
-                    "color_nombre": "marrón"
+                    "hex_value": "#3E2829",
+                    "color_name": "marrón"
                 }
             ]
         },
         {
-            "identificación": 1047,
-            "marca": "color pop",
-            "nombre": "Labio manchado",
-            "precio": "5.5",
-            "precio_signo": "$",
-            "divisa": "CAD",
-            "Enlace de imágen": "https://cdn.shopify.com/s/files/1/1338/0845/products/brain-freeze_a_800x1200.jpg?v=1502255076",
-            "producto_enlace": "https://colourpop.com/collections/lippie-stix?filter=blotted-lip",
-            "enlace de página web": "https://colorpop.com",
-            "descripción": "¡Lápiz labial mate Blotted Lip Sheer que crea el puchero perfecto! La fórmula es liviana, mate y edificable para una cobertura de ligera a media",
+            "id": 1047,
+            "brand": "color pop",
+            "name": "Labio manchado",
+            "price": "5.5",
+            "price_sign": "$",
+            "currency": "CAD",
+            "image_link": "https://cdn.shopify.com/s/files/1/1338/0845/products/brain-freeze_a_800x1200.jpg?v=1502255076",
+            "product_link": "https://colourpop.com/collections/lippie-stix?filter=blotted-lip",
+            "website_link": "https://colorpop.com",
+            "description": "¡Lápiz labial mate Blotted Lip Sheer que crea el puchero perfecto! La fórmula es liviana, mate y edificable para una cobertura de ligera a media",
             "clasificación": null,
-            "categoría": "lápiz labial",
-            "tipo de producto": "lápiz labial",
-            "lista de etiquetas": [
+            "category": "lápiz labial",
+            "product_type": "lápiz labial",
+            "tag_list": [
                 "libre de crueldad",
                 "Vegano"
             ],
-            "Creado en": "2018-07-08T22:01:20.178Z",
-            "actualizado_en": "2018-07-09T00:53:23.287Z",
-            "producto_api_url": "https://maquillaje-api.herokuapp.com/api/v1/products/1047.json",
+            "created_at": "2018-07-08T22:01:20.178Z",
+            "updated_at": "2018-07-09T00:53:23.287Z",
+            "product_api_url": "https://maquillaje-api.herokuapp.com/api/v1/products/1047.json",
             "api_featured_image": "//s3.amazonaws.com/donovanbailey/products/api_featured_images/000/001/047/original/open-uri20180708-4-e7idod?1531087336",
-            "productos_colores": [
+            "product_colors": [
                 {
-                    "valor_hexadecimal": "#b72227",
-                    "color_nombre": "Rodillas de abeja"
+                    "hex_value": "#b72227",
+                    "color_name": "Rodillas de abeja"
                 },
                 {
-                    "valor_hexadecimal": "#BB656B",
-                    "color_nombre": "Congelación de cerebro"
+                    "hex_value": "#BB656B",
+                    "color_name": "Congelación de cerebro"
                 },
                 {
-                    "valor_hexadecimal": "#8E4140",
-                    "color_nombre": "goteo"
+                    "hex_value": "#8E4140",
+                    "color_name": "goteo"
                 },
                 {
-                    "valor_hexadecimal": "#A12A33",
-                    "color_nombre": "En un palo"
+                    "hex_value": "#A12A33",
+                    "color_name": "En un palo"
                 },
                 {
-                    "valor_hexadecimal": "#904550",
-                    "color_nombre": "Cubo de hielo"
+                    "hex_value": "#904550",
+                    "color_name": "Cubo de hielo"
                 },
                 {
-                    "valor_hexadecimal": "#452222",
-                    "color_nombre": "Lolly"
+                    "hex_value": "#452222",
+                    "color_name": "Lolly"
                 },
                 {
-                    "valor_hexadecimal": "#7C3F35",
-                    "color_nombre": "Algodón"
+                    "hex_value": "#7C3F35",
+                    "color_name": "Algodón"
                 }
             ]
         },
         {
-            "identificación": 1046,
-            "marca": "color pop",
-            "nombre": "Lippie Stix",
-            "precio": "5.5",
-            "precio_signo": "$",
-            "divisa": "CAD",
+            "id": 1046,
+            "brand": "color pop",
+            "name": "Lippie Stix",
+            "price": "5.5",
+            "price_sign": "$",
+            "currency": "CAD",
             "image_link": "https://cdn.shopify.com/s/files/1/1338/0845/collections/blottedlip-lippie-stix_grande.jpg?v=1512588803",
             "product_link": "https://colourpop.com/collections/lippie-stix",
             "website_link": "https://colourpop.com",
@@ -5492,21 +5492,21 @@
                 },
                 {
                     "hex_value": "#975450",
-                    "color_nombre": "Kapish"
+                    "color_name": "Kapish"
                 }
             ]
         },
         {
-            "identificación": 1044,
-            "marca": "boosh",
-            "nombre": "Lápiz labial",
-            "precio": "26.0",
-            "precio_signo": "$",
-            "divisa": "CAD",
-            "Enlace de imágen": "https://cdn.shopify.com/s/files/1/1016/3243/products/LIPBALM_LID_grande.jpg?v=1496848378",
-            "producto_enlace": "https://www.boosh.ca/collections/all",
-            "enlace de página web": "https://www.boosh.ca/",
-            "descripción": "All of our products are free from lead and heavy metals, parabens, phthalates, artificial colourants, and synthetic fragrances.  Boosh lipstick glides on smoothly for clean & protective SPF coverage. They are filled with hydrating oils and butters to preserve and enhance your lips natural surface. Organic sweet orange oil gives a light and cheerful scent.",
+            "id": 1044,
+            "brand": "boosh",
+            "name": "Lápiz labial",
+            "price": "26.0",
+            "price_sign": "$",
+            "currency": "CAD",
+            "image_link": "https://cdn.shopify.com/s/files/1/1016/3243/products/LIPBALM_LID_grande.jpg?v=1496848378",
+            "product_link": "https://www.boosh.ca/collections/all",
+            "website_link": "https://www.boosh.ca/",
+            "description": "All of our products are free from lead and heavy metals, parabens, phthalates, artificial colourants, and synthetic fragrances.  Boosh lipstick glides on smoothly for clean & protective SPF coverage. They are filled with hydrating oils and butters to preserve and enhance your lips natural surface. Organic sweet orange oil gives a light and cheerful scent.",
             "rating": null,
             "category": "lipstick",
             "product_type": "lipstick",
@@ -9734,7 +9734,7 @@
             "price_sign": "£",
             "currency": "GBP",
             "image_link": "https://www.dior.com/beauty/version-5.1432748111912/resize-image/ep/0/390/100/0/packshots%252FPDG_Y0278001_F027800006_v2.jpg",
-            "product_link": "https://www.dior.com/beauty/en_gb/fragrance-beauty/makeup/look-exclusives/precious-rocks-collection/pr-preciousrockslook-y0278001_f027800005-lip-cheek-velvet-colour.html",
+            "product_link": "https://www.dior.com/beauty/en_gb/fragrance-beauty/makeup/look-exclusives/priceus-rocks-collection/pr-priceusrockslook-y0278001_f027800005-lip-cheek-velvet-colour.html",
             "website_link": "https://www.dior.com",
             "description": "A Dior essential, Diorific Matte Fluid tinges lips and cheeks with a matte texture in four exclusive shades.",
             "rating": null,
@@ -9764,7 +9764,7 @@
             "price_sign": "£",
             "currency": "GBP",
             "image_link": "https://www.dior.com/beauty/version-5.1432748111912/resize-image/ep/0/390/100/0/packshots%252FPDG_Y0027647_F002764751.jpg",
-            "product_link": "https://www.dior.com/beauty/en_gb/fragrance-beauty/makeup/look-exclusives/precious-rocks-collection/pr-preciousrockslook-y0027647_f002764341-powder-lipstick-ultra-pigmented-long-wear-intensity.html",
+            "product_link": "https://www.dior.com/beauty/en_gb/fragrance-beauty/makeup/look-exclusives/priceus-rocks-collection/pr-priceusrockslook-y0027647_f002764341-powder-lipstick-ultra-pigmented-long-wear-intensity.html",
             "website_link": "https://www.dior.com",
             "description": "For the first time at Dior, Diorific is now available as Lip Khôl designed to adorn your lips in intense colour with a powdery, matte finish.",
             "rating": null,
@@ -10220,7 +10220,7 @@
             "price_sign": "£",
             "currency": "GBP",
             "image_link": "https://www.dior.com/beauty/version-5.1432748111912/resize-image/ep/0/390/100/0/packshots%252FPDG_Y0027859_F002785999.jpg",
-            "product_link": "https://www.dior.com/beauty/en_gb/fragrance-beauty/makeup/look-exclusives/precious-rocks-collection/pr-preciousrockslook-y0027859_f002785999-jewel-lipstick-couture-colour-comfort-wear.html",
+            "product_link": "https://www.dior.com/beauty/en_gb/fragrance-beauty/makeup/look-exclusives/priceus-rocks-collection/pr-priceusrockslook-y0027859_f002785999-jewel-lipstick-couture-colour-comfort-wear.html",
             "website_link": "https://www.dior.com",
             "description": "The must-have of the collection, Rouge Dior has been reinterpreted for the holiday season, with the Bijou edition of the 999 Matte shade featuring a faceted cannage band.",
             "rating": null,
@@ -12566,7 +12566,7 @@
             "image_link": "https://d3t32hsnjxo7q6.cloudfront.net/i/739bc21253ce772c2b2e7ad40d9d3f44_ra,w158,h184_pa,w158,h184.jpeg",
             "product_link": "https://well.ca/products/loreal-color-riche-extraordinaire_86250.html",
             "website_link": "https://well.ca",
-            "description": "Transform lips from ordinary to extraordinary. Color is richer, lip \nsurface is smoother and shine is magnified. Formulated with precious \nmicro-oils and rich color pigments, Extraordinaire provides the ideal \nbalance of color and care for perfect lips. The unique soft-touch \napplicator allows for a silky-smooth, gliding application.Directions: Use the wand to apply starting in the center of your upper lip. Work \nfrom the center to outer edges of your lips, following the contour of \nyour mouth. Then glide across the entire bottom lip.\n\t\t",
+            "description": "Transform lips from ordinary to extraordinary. Color is richer, lip \nsurface is smoother and shine is magnified. Formulated with priceus \nmicro-oils and rich color pigments, Extraordinaire provides the ideal \nbalance of color and care for perfect lips. The unique soft-touch \napplicator allows for a silky-smooth, gliding application.Directions: Use the wand to apply starting in the center of your upper lip. Work \nfrom the center to outer edges of your lips, following the contour of \nyour mouth. Then glide across the entire bottom lip.\n\t\t",
             "rating": 4.0,
             "category": "lipstick",
             "product_type": "lipstick",
@@ -13319,7 +13319,7 @@
             "image_link": "https://d3t32hsnjxo7q6.cloudfront.net/i/81fd80f898674d00f1860cd0724460f4_ra,w158,h184_pa,w158,h184.png",
             "product_link": "https://well.ca/products/maybelline-color-sensational-creamy_100322.html",
             "website_link": "https://well.ca",
-            "description": "Maybelline Creamy Mattes by Color Sensational deliver a burst of bold lip color and a surge of creamy texture in great make-a-statement shades, for mattes your lips will love to wear!Features: Lips slip into this creamy matteMattifying cream pure pigments and three precious oilsMake-a-statement shades",
+            "description": "Maybelline Creamy Mattes by Color Sensational deliver a burst of bold lip color and a surge of creamy texture in great make-a-statement shades, for mattes your lips will love to wear!Features: Lips slip into this creamy matteMattifying cream pure pigments and three priceus oilsMake-a-statement shades",
             "rating": 5.0,
             "category": "lipstick",
             "product_type": "lipstick",
@@ -16037,78 +16037,78 @@
             "product_colors": []
         },
         {
-            "identificación": 1045,
-            "marca": "color pop",
-            "nombre": "Base sin filtro",
-            "precio": "12.0",
-            "precio_signo": "$",
-            "divisa": "CAD",
-            "Enlace de imágen": "https://cdn.shopify.com/s/files/1/1338/0845/products/foundations-lineup_800x1200.jpg?v=1528927785",
-            "producto_enlace": "https://colourpop.com/products/base-mate-sin-filtro",
-            "enlace de página web": "https://colourpop.com/products/base-mate-sin-filtro",
-            "descripción": "Desarrollada para la era de las selfies, nuestra base mate natural de cobertura completa construible brinda una piel de aspecto impecable del día a la noche. La fórmula liviana y sin aceite se mezcla suavemente y se puede personalizar fácilmente para crear la cobertura que desea. Constrúyalo o límpialo, fue desarrollado con pigmentos innovadores que difuminan suavemente para brindar un color verdadero mientras se ve y se siente natural. ¡La bomba bloqueable es fácil de usar y mantiene su rutina libre de desorden! Como siempre, 100% libre de crueldad y vegano. ",
+            "id": 1045,
+            "brand": "color pop",
+            "name": "Base sin filtro",
+            "price": "12.0",
+            "price_sign": "$",
+            "currency": "CAD",
+            "image_link": "https://cdn.shopify.com/s/files/1/1338/0845/products/foundations-lineup_800x1200.jpg?v=1528927785",
+            "product_link": "https://colourpop.com/products/base-mate-sin-filtro",
+            "website_link": "https://colourpop.com/products/base-mate-sin-filtro",
+            "description": "Desarrollada para la era de las selfies, nuestra base mate natural de cobertura completa construible brinda una piel de aspecto impecable del día a la noche. La fórmula liviana y sin aceite se mezcla suavemente y se puede personalizar fácilmente para crear la cobertura que desea. Constrúyalo o límpialo, fue desarrollado con pigmentos innovadores que difuminan suavemente para brindar un color verdadero mientras se ve y se siente natural. ¡La bomba bloqueable es fácil de usar y mantiene su rutina libre de desorden! Como siempre, 100% libre de crueldad y vegano. ",
             "clasificación": null,
-            "categoría": "líquido",
-            "tipo de producto": "fundamento",
-            "lista de etiquetas": [
+            "category": "líquido",
+            "product_type": "fundamento",
+            "tag_list": [
                 "libre de crueldad",
                 "Vegano"
             ],
-            "Creado en": "2018-07-08T18:22:25.273Z",
-            "actualizado_en": "2018-07-09T00:53:23.313Z",
-            "producto_api_url": "https://maquillaje-api.herokuapp.com/api/v1/products/1045.json",
+            "created_at": "2018-07-08T18:22:25.273Z",
+            "updated_at": "2018-07-09T00:53:23.313Z",
+            "product_api_url": "https://maquillaje-api.herokuapp.com/api/v1/products/1045.json",
             "api_featured_image": "//s3.amazonaws.com/donovanbailey/products/api_featured_images/000/001/045/original/open-uri20180708-4-4bvqii?1531074237",
-            "productos_colores": [
+            "product_colors": [
                 {
-                    "valor_hexadecimal": "#F2DEC3",
-                    "color_nombre": "Feria 05"
+                    "hex_value": "#F2DEC3",
+                    "color_name": "Feria 05"
                 },
                 {
-                    "valor_hexadecimal": "#F3DAC4",
-                    "color_nombre": "Justo 10"
+                    "hex_value": "#F3DAC4",
+                    "color_name": "Justo 10"
                 },
                 {
-                    "valor_hexadecimal": "#F1D9C0",
-                    "color_nombre": "Feria 15"
+                    "hex_value": "#F1D9C0",
+                    "color_name": "Feria 15"
                 },
                 {
-                    "valor_hexadecimal": "#EFD2BA",
-                    "color_nombre": "Feria 20"
+                    "hex_value": "#EFD2BA",
+                    "color_name": "Feria 20"
                 },
                 {
-                    "valor_hexadecimal": "#F1D7B3",
-                    "color_nombre": "Feria 25"
+                    "hex_value": "#F1D7B3",
+                    "color_name": "Feria 25"
                 },
                 {
-                    "valor_hexadecimal": "#EDD0B4",
-                    "color_nombre": "Feria 30"
+                    "hex_value": "#EDD0B4",
+                    "color_name": "Feria 30"
                 },
                 {
-                    "valor_hexadecimal": "#D9B295",
-                    "color_nombre": "Feria 35"
+                    "hex_value": "#D9B295",
+                    "color_name": "Feria 35"
                 },
                 {
-                    "valor_hexadecimal": "#CAA17B",
-                    "color_nombre": "Luz 45"
+                    "hex_value": "#CAA17B",
+                    "color_name": "Luz 45"
                 },
                 {
-                    "valor_hexadecimal": "#E8C2A4",
-                    "color_nombre": "Luz 50"
+                    "hex_value": "#E8C2A4",
+                    "color_name": "Luz 50"
                 },
                 {
-                    "valor_hexadecimal": "#E8C3A6",
-                    "color_nombre": "Luz 55"
+                    "hex_value": "#E8C3A6",
+                    "color_name": "Luz 55"
                 },
                 {
-                    "valor_hexadecimal": "#E9C2A4",
-                    "color_nombre": "Luz 60"
+                    "hex_value": "#E9C2A4",
+                    "color_name": "Luz 60"
                 },
                 {
-                    "valor_hexadecimal": "#E1B68E",
-                    "color_nombre": "Luz 65"
+                    "hex_value": "#E1B68E",
+                    "color_name": "Luz 65"
                 },
                 {
-                    "valor_hexadecimal": "#E4C096",
+                    "hex_value": "#E4C096",
                     "colour_name": "Light 70"
                 },
                 {
@@ -16204,39 +16204,39 @@
                     "colour_name": "Oscuridad profunda 115"
                 },
                 {
-                    "valor_hexadecimal": "#A07967",
-                    "color_nombre": "Oscuridad profunda 115"
+                    "hex_value": "#A07967",
+                    "color_name": "Oscuridad profunda 115"
                 },
                 {
-                    "valor_hexadecimal": "#946D5A",
-                    "color_nombre": "Oscuridad profunda 115"
+                    "hex_value": "#946D5A",
+                    "color_name": "Oscuridad profunda 115"
                 },
                 {
-                    "valor_hexadecimal": "#865F4D",
-                    "color_nombre": "Oscuridad profunda 115"
+                    "hex_value": "#865F4D",
+                    "color_name": "Oscuridad profunda 115"
                 },
                 {
-                    "valor_hexadecimal": "#896A5A",
-                    "color_nombre": "Oscuridad profunda 80"
+                    "hex_value": "#896A5A",
+                    "color_name": "Oscuridad profunda 80"
                 },
                 {
-                    "valor_hexadecimal": "#795F52",
-                    "color_nombre": "Oscuridad profunda 80"
+                    "hex_value": "#795F52",
+                    "color_name": "Oscuridad profunda 80"
                 },
                 {
-                    "valor_hexadecimal": "#6B5148",
-                    "color_nombre": "Oscuridad profunda 80"
+                    "hex_value": "#6B5148",
+                    "color_name": "Oscuridad profunda 80"
                 }
             ]
         },
         {
-            "identificación": 1043,
-            "marca": "deciem",
-            "nombre": "Base de suero",
-            "precio": "6.7",
-            "precio_signo": "$",
-            "divisa": "CAD",
-            "Enlace de imágen": "https://3bc01d2807fb1bc0d25c-a86d2521f1af8989841b9619f5314be5.ssl.cf1.rackcdn.com/products/market-img/rdn-serum-foundation-30-r-30ml.png?v=6ab9fcb8ca2abb9828afcf9dcdad9f94",
+            "id": 1043,
+            "brand": "deciem",
+            "name": "Base de suero",
+            "price": "6.7",
+            "price_sign": "$",
+            "currency": "CAD",
+            "image_link": "https://3bc01d2807fb1bc0d25c-a86d2521f1af8989841b9619f5314be5.ssl.cf1.rackcdn.com/products/market-img/rdn-serum-foundation-30-r-30ml.png?v=6ab9fcb8ca2abb9828afcf9dcdad9f94",
             "product_link": "https://deciem.com/product/rdn-serum-foundation-30-r-30ml",
             "website_link": "https://deciem.com/",
             "description": "Serum Foundations are lightweight medium-coverage formulations available in a comprehensive shade range across 21 shades. These foundations offer moderate coverage that looks natural with a very lightweight serum feel. They are very low in viscosity and are dispensed with the supplied pump or with the optional glass dropper available for purchase separately if preferred. ",
@@ -20574,14 +20574,14 @@
         {
             "id": 679,
             "brand": "dior",
-            "name": "DIORIFIC PRECIOUS ROCKS - Christmas 2017 Limited Edition",
+            "name": "DIORIFIC priceUS ROCKS - Christmas 2017 Limited Edition",
             "price": "40.0",
             "price_sign": "£",
             "currency": "GBP",
             "image_link": "https://www.dior.com/beauty/version-5.1432748111912/resize-image/ep/0/390/100/0/packshots%252FPDG_Y0719390_F071939001_v2.jpg",
-            "product_link": "https://www.dior.com/beauty/en_gb/fragrance-beauty/makeup/look-exclusives/precious-rocks-collection/pr-preciousrockslook-y0719390_f071939001-golden-glow-loose-powder.html",
+            "product_link": "https://www.dior.com/beauty/en_gb/fragrance-beauty/makeup/look-exclusives/priceus-rocks-collection/pr-priceusrockslook-y0719390_f071939001-golden-glow-loose-powder.html",
             "website_link": "https://www.dior.com",
-            "description": "Diorific unveils a limited-edition gold loose powder. The finishing touch, Diorific Precious Rocks bathes your skin in a delicate glow and sculpts with a subtle, golden shimmer.",
+            "description": "Diorific unveils a limited-edition gold loose powder. The finishing touch, Diorific priceus Rocks bathes your skin in a delicate glow and sculpts with a subtle, golden shimmer.",
             "rating": null,
             "category": "powder",
             "product_type": "foundation",
@@ -20593,7 +20593,7 @@
             "product_colors": [
                 {
                     "hex_value": "#F3D7B2",
-                    "colour_name": "001 Precious Rocks"
+                    "colour_name": "001 priceus Rocks"
                 }
             ]
         },
@@ -21493,7 +21493,7 @@
             "image_link": "https://d3t32hsnjxo7q6.cloudfront.net/i/e468ef6f9534484e1f21e0f971d92c48_ra,w158,h184_pa,w158,h184.jpeg",
             "product_link": "https://well.ca/products/sante-soft-cream-foundation_51624.html",
             "website_link": "https://well.ca",
-            "description": "Sante soft cream foundation has precious mineral pigments for a \nvelvety, especially flawless complexion. Gives your skin a fresh, \npleasant feel with cupuacu butter, pomegranate extract and valuable \norganic jojoba oil. Free of paraffin and silicone oils. Colours: Ingredients: AQUA (WATER), HYDROGENATED VEGETABLE OIL, GLYCINE SOJA (SOYBEAN) OIL*, GLYCERIN, SIMMONDSIA CHINENSIS (JOJOBA) SEED OIL*, SQUALANE, TALC, POTASSIUM CETYL PHOSPHATE, PALMITIC ACID, STEARIC ACID, PARFUM (ESSENTIAL OILS), HYDROGENATED PALM GLYCERIDES, THEOBROMA GRANDIFLORUM SEED BUTTER*, PUNICA GRANATUM SEED EXTRACT*, SORBITOL, GALACTOARABINAN, XANTHAN DUM, HYDROGENATED LECITHIN, SODIUM CITRATE, ASCORBYL PALMITATE, LECITHIN, CITRIC ACID, TOCOPHEROL, HYDROGENATED PALM GLYCERIDES CITRATE, FARNESOL, [+/- CI 77891 (TITANIUM DIOXIDE), CI 77492 (IRON OXIDES), CI 77491 (IRON OXIDES)] * organically grown",
+            "description": "Sante soft cream foundation has priceus mineral pigments for a \nvelvety, especially flawless complexion. Gives your skin a fresh, \npleasant feel with cupuacu butter, pomegranate extract and valuable \norganic jojoba oil. Free of paraffin and silicone oils. Colours: Ingredients: AQUA (WATER), HYDROGENATED VEGETABLE OIL, GLYCINE SOJA (SOYBEAN) OIL*, GLYCERIN, SIMMONDSIA CHINENSIS (JOJOBA) SEED OIL*, SQUALANE, TALC, POTASSIUM CETYL PHOSPHATE, PALMITIC ACID, STEARIC ACID, PARFUM (ESSENTIAL OILS), HYDROGENATED PALM GLYCERIDES, THEOBROMA GRANDIFLORUM SEED BUTTER*, PUNICA GRANATUM SEED EXTRACT*, SORBITOL, GALACTOARABINAN, XANTHAN DUM, HYDROGENATED LECITHIN, SODIUM CITRATE, ASCORBYL PALMITATE, LECITHIN, CITRIC ACID, TOCOPHEROL, HYDROGENATED PALM GLYCERIDES CITRATE, FARNESOL, [+/- CI 77891 (TITANIUM DIOXIDE), CI 77492 (IRON OXIDES), CI 77491 (IRON OXIDES)] * organically grown",
             "rating": 3.8,
             "category": "cream",
             "product_type": "foundation",
@@ -23867,27 +23867,27 @@
             "website_link": "https://well.ca",
             "description": "Achieve even skin tone \nand naturally radiant skin with this moisturizing sheer tint of color.  \nThe smooth formula enhances your complexion with the nourishing key \ningredients Aloe, Cucumber and Vitamins A, C & E.Shades: \n\t\t\t\t\t\t\n\t\t\t\t\t\n\t\t\t\t\tACTIVE: Benzophenone-3, Ethylhexyl Isopalmitate, Titanium Dioxide. \nINACTIVE: Water, Mineral Oil, Cyclomethicone, C12-15 Alkyl Benzoate, \nPropylene Glycol, Dimethicone, Steareth-21 Cetearyl Alcohol, \nCeteareth-2, Glyceryl Stearate, Xanthan Gum, Methylparaben, \nPropylparabem, Tocopherol(VE), Retinyl Acetate(VA), Ascorbyk \nPalmitate(VC), Aloe Barbadensis (Aloe Vera) Leaf Juice, Cucumis Sativus \n(Cucumber) Fruit Extract, MAY CONTAIN: Iron Oxides (CI 77491, CI 77492, \nCI 77499), Titanium Dioxide (CI 77891)\n\t\t\t\t\t\n\t\t\t\t",
             "rating": 3.8,
-            "categoría": "líquido",
-            "tipo de producto": "fundamento",
-            "lista de etiquetas": [
+            "category": "líquido",
+            "product_type": "fundamento",
+            "tag_list": [
                 "Vegano"
             ],
-            "Creado en": "2016-10-01T18:31:21.140Z",
-            "actualizado_en": "2017-12-23T21:08:20.082Z",
-            "producto_api_url": "https://maquillaje-api.herokuapp.com/api/v1/products/315.json",
+            "created_at": "2016-10-01T18:31:21.140Z",
+            "updated_at": "2017-12-23T21:08:20.082Z",
+            "product_api_url": "https://maquillaje-api.herokuapp.com/api/v1/products/315.json",
             "api_featured_image": "//s3.amazonaws.com/donovanbailey/products/api_featured_images/000/000/315/original/data?1514063300",
-            "productos_colores": [
+            "product_colors": [
                 {
-                    "valor_hexadecimal": "#EFC698",
-                    "color_nombre": "Porcelana"
+                    "hex_value": "#EFC698",
+                    "color_name": "Porcelana"
                 },
                 {
-                    "valor_hexadecimal": "#EBB579",
-                    "color_nombre": "desnudo"
+                    "hex_value": "#EBB579",
+                    "color_name": "desnudo"
                 },
                 {
-                    "valor_hexadecimal": "#D99A67",
-                    "color_nombre": "Beige"
+                    "hex_value": "#D99A67",
+                    "color_name": "Beige"
                 }
             ]
         },
@@ -25177,7 +25177,7 @@
             "image_link": "https://d3t32hsnjxo7q6.cloudfront.net/i/4e90929a9c24a51c3db3988b205f3b43_ra,w158,h184_pa,w158,h184.jpeg",
             "product_link": "https://well.ca/products/covergirl-clean-glow-bronzer_78622.html",
             "website_link": "https://well.ca",
-            "description": "Flaunt the coveted beach-bronze glow in one simple step. This versatile \n3-in-1 multi-shade compact lets you customize your color to create a \nradiant effect. Use just one color or all three!Features: Beautiful bronze glow in just one stepBlendable, multi-shade compactClean and natural lookHow to Apply: Dip powder brush in bronzer and tap off any excess.\nSweep bronzer on your cheeks and temples.\nUsing a lighter touch, sweep bronzer where the sun naturally hits your face, including your nose, chin, and forehead.\n                            ",
+            "description": "Flaunt the coveted beach-bronze glow in one simple step. This versatile \n3-in-1 multi-shade compact lets you customize your color to create a \nradiant effect. Use just one color or all three!Features: Beautiful bronze glow in just one stepBlendable, multi-shade compactClean and natural lookHow to Apply: Dip powder brush in bronzer and tap off any excess.\nSweep bronzer on your cheeks and temples.\nUsing a lighter touch, sweep bronzer where the sun naturally hits your face, including your nose, chin, and forehead.",
             "rating": 5.0,
             "category": "N/A",
             "product_type": "bronzer",
@@ -25880,7 +25880,7 @@
         {
             "id": 740,
             "brand": "dior",
-            "name": "\n                            Junon\n                            ",
+            "name": "Junon",
             "price": "20.0",
             "price_sign": "£",
             "currency": "GBP",
@@ -25986,7 +25986,7 @@
         {
             "id": 730,
             "brand": "dior",
-            "name": "\n                            Matte\n                            ",
+            "name": "Matte",
             "price": "20.0",
             "price_sign": "£",
             "currency": "GBP",
@@ -26024,7 +26024,7 @@
         {
             "id": 729,
             "brand": "dior",
-            "name": "\n                            Poison Metal\n                            ",
+            "name": "Poison Metal",
             "price": "20.0",
             "price_sign": "£",
             "currency": "GBP",
@@ -26062,7 +26062,7 @@
         {
             "id": 728,
             "brand": "dior",
-            "name": "\n                            Jungle Matte\n                            ",
+            "name": "Jungle Matte",
             "price": "20.0",
             "price_sign": "£",
             "currency": "GBP",
@@ -26100,7 +26100,7 @@
         {
             "id": 727,
             "brand": "dior",
-            "name": "\n                            Miss Satin\n                            ",
+            "name": "Miss Satin",
             "price": "20.0",
             "price_sign": "£",
             "currency": "GBP",
@@ -26138,7 +26138,7 @@
         {
             "id": 726,
             "brand": "dior",
-            "name": "\n                            Mineral\n                            ",
+            "name": "Mineral",
             "price": "20.0",
             "price_sign": "£",
             "currency": "GBP",
@@ -26164,7 +26164,7 @@
         {
             "id": 725,
             "brand": "dior",
-            "name": "\n                            Sauvage\n                            ",
+            "name": "Sauvage",
             "price": "20.0",
             "price_sign": "£",
             "currency": "GBP",
@@ -26198,7 +26198,7 @@
         {
             "id": 724,
             "brand": "dior",
-            "name": "\n                            Diabolo\n                            ",
+            "name": "Diabolo",
             "price": "20.0",
             "price_sign": "£",
             "currency": "GBP",
@@ -26232,7 +26232,7 @@
         {
             "id": 723,
             "brand": "dior",
-            "name": "\n                            Tease\n                            ",
+            "name": "Tease",
             "price": "20.0",
             "price_sign": "£",
             "currency": "GBP",
@@ -26266,12 +26266,12 @@
         {
             "id": 722,
             "brand": "dior",
-            "name": "\n                            Precious Rocks\n                            ",
+            "name": "priceus Rocks",
             "price": "20.5",
             "price_sign": "£",
             "currency": "GBP",
             "image_link": "https://www.dior.com/beauty/version-5.1432748111912/resize-image/ep/0/214/90/0/packshots%252FPDG_Y0002880_F000288001.jpg",
-            "product_link": "https://www.dior.com/beauty/en_gb/fragrance-beauty/makeup/look-exclusives/precious-rocks-collection/pr-preciousrockslook-y0002880_f000288001-nail-liner-shine-precision.html",
+            "product_link": "https://www.dior.com/beauty/en_gb/fragrance-beauty/makeup/look-exclusives/priceus-rocks-collection/pr-priceusrockslook-y0002880_f000288001-nail-liner-shine-precision.html",
             "website_link": "https://www.dior.com",
             "description": "Diorific reveals a nail liner designed to decorate your nails like gemstones with festive shades. In one ultra-precise golden stroke, Dior Vernis Liner delivers a clear varnish strewn with gold, platinum, and silver glitter in various sizes, showering nails with countless little gems.",
             "rating": null,
@@ -26285,21 +26285,21 @@
             "product_colors": [
                 {
                     "hex_value": "#CAAB54",
-                    "colour_name": "001 Precious Rocks"
+                    "colour_name": "001 priceus Rocks"
                 }
             ]
         },
         {
             "id": 721,
             "brand": "dior",
-            "name": "\n                            Amethyst\n                            ",
+            "name": "Amethyst",
             "price": "20.5",
             "price_sign": "£",
             "currency": "GBP",
             "image_link": "https://www.dior.com/beauty/version-5.1432748111912/resize-image/ep/0/214/90/0/packshots%252FPDG_Y0002986_F000298998.jpg",
-            "product_link": "https://www.dior.com/beauty/en_gb/fragrance-beauty/makeup/look-exclusives/precious-rocks-collection/pr-preciousrockslook-y0002986_f000298998-couture-colour-gel-shine-long-wear.html",
+            "product_link": "https://www.dior.com/beauty/en_gb/fragrance-beauty/makeup/look-exclusives/priceus-rocks-collection/pr-priceusrockslook-y0002986_f000298998-couture-colour-gel-shine-long-wear.html",
             "website_link": "https://www.dior.com",
-            "description": "The sparkling, vibrant tones of Diorific Vernis nail polishes are modeled after precious stones.",
+            "description": "The sparkling, vibrant tones of Diorific Vernis nail polishes are modeled after priceus stones.",
             "rating": null,
             "category": "N/A",
             "product_type": "nail_polish",
@@ -26330,14 +26330,14 @@
         {
             "id": 720,
             "brand": "dior",
-            "name": "\n                            Emerald\n                            ",
+            "name": "Emerald",
             "price": "20.5",
             "price_sign": "£",
             "currency": "GBP",
             "image_link": "https://www.dior.com/beauty/version-5.1432748111912/resize-image/ep/0/214/90/0/packshots%252FPDG_Y0002986_F000298809.jpg",
-            "product_link": "https://www.dior.com/beauty/en_gb/fragrance-beauty/makeup/look-exclusives/precious-rocks-collection/pr-preciousrockslook-y0002986_f000298809-couture-colour-gel-shine-long-wear.html",
+            "product_link": "https://www.dior.com/beauty/en_gb/fragrance-beauty/makeup/look-exclusives/priceus-rocks-collection/pr-priceusrockslook-y0002986_f000298809-couture-colour-gel-shine-long-wear.html",
             "website_link": "https://www.dior.com",
-            "description": "The sparkling, vibrant tones of Diorific Vernis nail polishes are modeled after precious stones.",
+            "description": "The sparkling, vibrant tones of Diorific Vernis nail polishes are modeled after priceus stones.",
             "rating": null,
             "category": "N/A",
             "product_type": "nail_polish",
@@ -26368,14 +26368,14 @@
         {
             "id": 719,
             "brand": "dior",
-            "name": "\n                            Grenat\n                            ",
+            "name": "Grenat",
             "price": "0.0",
             "price_sign": "£",
             "currency": "GBP",
             "image_link": "https://www.dior.com/beauty/version-5.1432748111912/resize-image/ep/0/214/90/0/packshots%252FPDG_Y0002986_F000298745.jpg",
-            "product_link": "https://www.dior.com/beauty/en_gb/fragrance-beauty/makeup/look-exclusives/precious-rocks-collection/pr-preciousrockslook-y0002986_f000298745-couture-colour-gel-shine-long-wear.html",
+            "product_link": "https://www.dior.com/beauty/en_gb/fragrance-beauty/makeup/look-exclusives/priceus-rocks-collection/pr-priceusrockslook-y0002986_f000298745-couture-colour-gel-shine-long-wear.html",
             "website_link": "https://www.dior.com",
-            "description": "The sparkling, vibrant tones of Diorific Vernis nail polishes are modeled after precious stones.",
+            "description": "The sparkling, vibrant tones of Diorific Vernis nail polishes are modeled after priceus stones.",
             "rating": null,
             "category": "N/A",
             "product_type": "nail_polish",
@@ -26406,14 +26406,14 @@
         {
             "id": 718,
             "brand": "dior",
-            "name": "\n                            Ruby\n                            ",
+            "name": "Ruby",
             "price": "20.5",
             "price_sign": "£",
             "currency": "GBP",
             "image_link": "https://www.dior.com/beauty/version-5.1432748111912/resize-image/ep/0/214/90/0/packshots%252FPDG_Y0002986_F000298673.jpg",
-            "product_link": "https://www.dior.com/beauty/en_gb/fragrance-beauty/makeup/look-exclusives/precious-rocks-collection/pr-preciousrockslook-y0002986_f000298673-couture-colour-gel-shine-long-wear.html",
+            "product_link": "https://www.dior.com/beauty/en_gb/fragrance-beauty/makeup/look-exclusives/priceus-rocks-collection/pr-priceusrockslook-y0002986_f000298673-couture-colour-gel-shine-long-wear.html",
             "website_link": "https://www.dior.com",
-            "description": "The sparkling, vibrant tones of Diorific Vernis nail polishes are modeled after precious stones.",
+            "description": "The sparkling, vibrant tones of Diorific Vernis nail polishes are modeled after priceus stones.",
             "rating": null,
             "category": "N/A",
             "product_type": "nail_polish",
@@ -31077,81 +31077,81 @@
                 "Sin Gluten",
                 "Canadiense"
             ],
-            "Creado en": "2016-10-01T18:10:46.893Z",
-            "actualizado_en": "2017-12-23T20:31:46.013Z",
-            "producto_api_url": "https://maquillaje-api.herokuapp.com/api/v1/products/1.json",
+            "created_at": "2016-10-01T18:10:46.893Z",
+            "updated_at": "2017-12-23T20:31:46.013Z",
+            "product_api_url": "https://maquillaje-api.herokuapp.com/api/v1/products/1.json",
             "api_featured_image": "//s3.amazonaws.com/donovanbailey/products/api_featured_images/000/000/001/original/data?1514061104",
-            "productos_colores": [
+            "product_colors": [
                 {
-                    "valor_hexadecimal": "#000000",
-                    "color_nombre": "negro"
+                    "hex_value": "#000000",
+                    "color_name": "negro"
                 },
                 {
-                    "valor_hexadecimal": "#3E2829",
-                    "color_nombre": "marrón"
+                    "hex_value": "#3E2829",
+                    "color_name": "marrón"
                 }
             ]
         },
         {
-            "identificación": 1047,
-            "marca": "color pop",
-            "nombre": "Labio manchado",
-            "precio": "5.5",
-            "precio_signo": "$",
-            "divisa": "CAD",
-            "Enlace de imágen": "https://cdn.shopify.com/s/files/1/1338/0845/products/brain-freeze_a_800x1200.jpg?v=1502255076",
-            "producto_enlace": "https://colourpop.com/collections/lippie-stix?filter=blotted-lip",
-            "enlace de página web": "https://colorpop.com",
-            "descripción": "¡Lápiz labial mate Blotted Lip Sheer que crea el puchero perfecto! La fórmula es liviana, mate y edificable para una cobertura de ligera a media",
+            "id": 1047,
+            "brand": "color pop",
+            "name": "Labio manchado",
+            "price": "5.5",
+            "price_sign": "$",
+            "currency": "CAD",
+            "image_link": "https://cdn.shopify.com/s/files/1/1338/0845/products/brain-freeze_a_800x1200.jpg?v=1502255076",
+            "product_link": "https://colourpop.com/collections/lippie-stix?filter=blotted-lip",
+            "website_link": "https://colorpop.com",
+            "description": "¡Lápiz labial mate Blotted Lip Sheer que crea el puchero perfecto! La fórmula es liviana, mate y edificable para una cobertura de ligera a media",
             "clasificación": null,
-            "categoría": "lápiz labial",
-            "tipo de producto": "lápiz labial",
-            "lista de etiquetas": [
+            "category": "lápiz labial",
+            "product_type": "lápiz labial",
+            "tag_list": [
                 "libre de crueldad",
                 "Vegano"
             ],
-            "Creado en": "2018-07-08T22:01:20.178Z",
-            "actualizado_en": "2018-07-09T00:53:23.287Z",
-            "producto_api_url": "https://maquillaje-api.herokuapp.com/api/v1/products/1047.json",
+            "created_at": "2018-07-08T22:01:20.178Z",
+            "updated_at": "2018-07-09T00:53:23.287Z",
+            "product_api_url": "https://maquillaje-api.herokuapp.com/api/v1/products/1047.json",
             "api_featured_image": "//s3.amazonaws.com/donovanbailey/products/api_featured_images/000/001/047/original/open-uri20180708-4-e7idod?1531087336",
-            "productos_colores": [
+            "product_colors": [
                 {
-                    "valor_hexadecimal": "#b72227",
-                    "color_nombre": "Rodillas de abeja"
+                    "hex_value": "#b72227",
+                    "color_name": "Rodillas de abeja"
                 },
                 {
-                    "valor_hexadecimal": "#BB656B",
-                    "color_nombre": "Congelación de cerebro"
+                    "hex_value": "#BB656B",
+                    "color_name": "Congelación de cerebro"
                 },
                 {
-                    "valor_hexadecimal": "#8E4140",
-                    "color_nombre": "goteo"
+                    "hex_value": "#8E4140",
+                    "color_name": "goteo"
                 },
                 {
-                    "valor_hexadecimal": "#A12A33",
-                    "color_nombre": "En un palo"
+                    "hex_value": "#A12A33",
+                    "color_name": "En un palo"
                 },
                 {
-                    "valor_hexadecimal": "#904550",
-                    "color_nombre": "Cubo de hielo"
+                    "hex_value": "#904550",
+                    "color_name": "Cubo de hielo"
                 },
                 {
-                    "valor_hexadecimal": "#452222",
-                    "color_nombre": "Lolly"
+                    "hex_value": "#452222",
+                    "color_name": "Lolly"
                 },
                 {
-                    "valor_hexadecimal": "#7C3F35",
-                    "color_nombre": "Algodón"
+                    "hex_value": "#7C3F35",
+                    "color_name": "Algodón"
                 }
             ]
         },
         {
-            "identificación": 1046,
-            "marca": "color pop",
-            "nombre": "Lippie Stix",
-            "precio": "5.5",
-            "precio_signo": "$",
-            "divisa": "CAD",
+            "id": 1046,
+            "brand": "color pop",
+            "name": "Lippie Stix",
+            "price": "5.5",
+            "price_sign": "$",
+            "currency": "CAD",
             "image_link": "https://cdn.shopify.com/s/files/1/1338/0845/collections/blottedlip-lippie-stix_grande.jpg?v=1512588803",
             "product_link": "https://colourpop.com/collections/lippie-stix",
             "website_link": "https://colourpop.com",
@@ -31350,21 +31350,21 @@
                 },
                 {
                     "hex_value": "#975450",
-                    "color_nombre": "Kapish"
+                    "color_name": "Kapish"
                 }
             ]
         },
         {
-            "identificación": 1044,
-            "marca": "boosh",
-            "nombre": "Lápiz labial",
-            "precio": "26.0",
-            "precio_signo": "$",
-            "divisa": "CAD",
-            "Enlace de imágen": "https://cdn.shopify.com/s/files/1/1016/3243/products/LIPBALM_LID_grande.jpg?v=1496848378",
-            "producto_enlace": "https://www.boosh.ca/collections/all",
-            "enlace de página web": "https://www.boosh.ca/",
-            "descripción": "All of our products are free from lead and heavy metals, parabens, phthalates, artificial colourants, and synthetic fragrances.  Boosh lipstick glides on smoothly for clean & protective SPF coverage. They are filled with hydrating oils and butters to preserve and enhance your lips natural surface. Organic sweet orange oil gives a light and cheerful scent.",
+            "id": 1044,
+            "brand": "boosh",
+            "name": "Lápiz labial",
+            "price": "26.0",
+            "price_sign": "$",
+            "currency": "CAD",
+            "image_link": "https://cdn.shopify.com/s/files/1/1016/3243/products/LIPBALM_LID_grande.jpg?v=1496848378",
+            "product_link": "https://www.boosh.ca/collections/all",
+            "website_link": "https://www.boosh.ca/",
+            "description": "All of our products are free from lead and heavy metals, parabens, phthalates, artificial colourants, and synthetic fragrances.  Boosh lipstick glides on smoothly for clean & protective SPF coverage. They are filled with hydrating oils and butters to preserve and enhance your lips natural surface. Organic sweet orange oil gives a light and cheerful scent.",
             "rating": null,
             "category": "lipstick",
             "product_type": "lipstick",
@@ -35592,7 +35592,7 @@
             "price_sign": "£",
             "currency": "GBP",
             "image_link": "https://www.dior.com/beauty/version-5.1432748111912/resize-image/ep/0/390/100/0/packshots%252FPDG_Y0278001_F027800006_v2.jpg",
-            "product_link": "https://www.dior.com/beauty/en_gb/fragrance-beauty/makeup/look-exclusives/precious-rocks-collection/pr-preciousrockslook-y0278001_f027800005-lip-cheek-velvet-colour.html",
+            "product_link": "https://www.dior.com/beauty/en_gb/fragrance-beauty/makeup/look-exclusives/priceus-rocks-collection/pr-priceusrockslook-y0278001_f027800005-lip-cheek-velvet-colour.html",
             "website_link": "https://www.dior.com",
             "description": "A Dior essential, Diorific Matte Fluid tinges lips and cheeks with a matte texture in four exclusive shades.",
             "rating": null,
@@ -35622,7 +35622,7 @@
             "price_sign": "£",
             "currency": "GBP",
             "image_link": "https://www.dior.com/beauty/version-5.1432748111912/resize-image/ep/0/390/100/0/packshots%252FPDG_Y0027647_F002764751.jpg",
-            "product_link": "https://www.dior.com/beauty/en_gb/fragrance-beauty/makeup/look-exclusives/precious-rocks-collection/pr-preciousrockslook-y0027647_f002764341-powder-lipstick-ultra-pigmented-long-wear-intensity.html",
+            "product_link": "https://www.dior.com/beauty/en_gb/fragrance-beauty/makeup/look-exclusives/priceus-rocks-collection/pr-priceusrockslook-y0027647_f002764341-powder-lipstick-ultra-pigmented-long-wear-intensity.html",
             "website_link": "https://www.dior.com",
             "description": "For the first time at Dior, Diorific is now available as Lip Khôl designed to adorn your lips in intense colour with a powdery, matte finish.",
             "rating": null,
@@ -36078,7 +36078,7 @@
             "price_sign": "£",
             "currency": "GBP",
             "image_link": "https://www.dior.com/beauty/version-5.1432748111912/resize-image/ep/0/390/100/0/packshots%252FPDG_Y0027859_F002785999.jpg",
-            "product_link": "https://www.dior.com/beauty/en_gb/fragrance-beauty/makeup/look-exclusives/precious-rocks-collection/pr-preciousrockslook-y0027859_f002785999-jewel-lipstick-couture-colour-comfort-wear.html",
+            "product_link": "https://www.dior.com/beauty/en_gb/fragrance-beauty/makeup/look-exclusives/priceus-rocks-collection/pr-priceusrockslook-y0027859_f002785999-jewel-lipstick-couture-colour-comfort-wear.html",
             "website_link": "https://www.dior.com",
             "description": "The must-have of the collection, Rouge Dior has been reinterpreted for the holiday season, with the Bijou edition of the 999 Matte shade featuring a faceted cannage band.",
             "rating": null,
@@ -37312,7 +37312,7 @@
             "image_link": "https://d3t32hsnjxo7q6.cloudfront.net/i/df00e1e6268dc7d208b993d5692c9772_ra,w158,h184_pa,w158,h184.jpg",
             "product_link": "https://well.ca/products/revlon-colorstay-moisture-stain_100976.html",
             "website_link": "https://well.ca",
-            "description": "Revlon Colorstay Moisture Stain offers a new level of glossy wet color!It gives you saturated lips with brilliant shine and vivid colorFeatures:Drenches lips in glossy wet colorUltra-light creamy lipstain with Vitamin E and Aloe\n88% of women felt lips were instantly moisturized without stickiness\n\n                            ",
+            "description": "Revlon Colorstay Moisture Stain offers a new level of glossy wet color!It gives you saturated lips with brilliant shine and vivid colorFeatures:Drenches lips in glossy wet colorUltra-light creamy lipstain with Vitamin E and Aloe\n88% of women felt lips were instantly moisturized without stickiness\n",
             "rating": 4.0,
             "category": "lip_stain",
             "product_type": "lipstick",
@@ -38399,7 +38399,7 @@
             "image_link": "https://d3t32hsnjxo7q6.cloudfront.net/i/739bc21253ce772c2b2e7ad40d9d3f44_ra,w158,h184_pa,w158,h184.jpeg",
             "product_link": "https://well.ca/products/loreal-color-riche-extraordinaire_86250.html",
             "website_link": "https://well.ca",
-            "description": "Transform lips from ordinary to extraordinary. Color is richer, lip \nsurface is smoother and shine is magnified. Formulated with precious \nmicro-oils and rich color pigments, Extraordinaire provides the ideal \nbalance of color and care for perfect lips. The unique soft-touch \napplicator allows for a silky-smooth, gliding application.Directions: Use the wand to apply starting in the center of your upper lip. Work \nfrom the center to outer edges of your lips, following the contour of \nyour mouth. Then glide across the entire bottom lip.\n\t\t",
+            "description": "Transform lips from ordinary to extraordinary. Color is richer, lip \nsurface is smoother and shine is magnified. Formulated with priceus \nmicro-oils and rich color pigments, Extraordinaire provides the ideal \nbalance of color and care for perfect lips. The unique soft-touch \napplicator allows for a silky-smooth, gliding application.Directions: Use the wand to apply starting in the center of your upper lip. Work \nfrom the center to outer edges of your lips, following the contour of \nyour mouth. Then glide across the entire bottom lip.\n\t\t",
             "rating": 4.0,
             "category": "lipstick",
             "product_type": "lipstick",
@@ -39152,7 +39152,7 @@
             "image_link": "https://d3t32hsnjxo7q6.cloudfront.net/i/81fd80f898674d00f1860cd0724460f4_ra,w158,h184_pa,w158,h184.png",
             "product_link": "https://well.ca/products/maybelline-color-sensational-creamy_100322.html",
             "website_link": "https://well.ca",
-            "description": "Maybelline Creamy Mattes by Color Sensational deliver a burst of bold lip color and a surge of creamy texture in great make-a-statement shades, for mattes your lips will love to wear!Features: Lips slip into this creamy matteMattifying cream pure pigments and three precious oilsMake-a-statement shades",
+            "description": "Maybelline Creamy Mattes by Color Sensational deliver a burst of bold lip color and a surge of creamy texture in great make-a-statement shades, for mattes your lips will love to wear!Features: Lips slip into this creamy matteMattifying cream pure pigments and three priceus oilsMake-a-statement shades",
             "rating": 5.0,
             "category": "lipstick",
             "product_type": "lipstick",
@@ -41747,78 +41747,78 @@
             "product_colors": []
         },
         {
-            "identificación": 1045,
-            "marca": "color pop",
-            "nombre": "Base sin filtro",
-            "precio": "12.0",
-            "precio_signo": "$",
-            "divisa": "CAD",
-            "Enlace de imágen": "https://cdn.shopify.com/s/files/1/1338/0845/products/foundations-lineup_800x1200.jpg?v=1528927785",
-            "producto_enlace": "https://colourpop.com/products/base-mate-sin-filtro",
-            "enlace de página web": "https://colourpop.com/products/base-mate-sin-filtro",
-            "descripción": "Desarrollada para la era de las selfies, nuestra base mate natural de cobertura completa construible brinda una piel de aspecto impecable del día a la noche. La fórmula liviana y sin aceite se mezcla suavemente y se puede personalizar fácilmente para crear la cobertura que desea. Constrúyalo o límpialo, fue desarrollado con pigmentos innovadores que difuminan suavemente para brindar un color verdadero mientras se ve y se siente natural. ¡La bomba bloqueable es fácil de usar y mantiene su rutina libre de desorden! Como siempre, 100% libre de crueldad y vegano. ",
+            "id": 1045,
+            "brand": "color pop",
+            "name": "Base sin filtro",
+            "price": "12.0",
+            "price_sign": "$",
+            "currency": "CAD",
+            "image_link": "https://cdn.shopify.com/s/files/1/1338/0845/products/foundations-lineup_800x1200.jpg?v=1528927785",
+            "product_link": "https://colourpop.com/products/base-mate-sin-filtro",
+            "website_link": "https://colourpop.com/products/base-mate-sin-filtro",
+            "description": "Desarrollada para la era de las selfies, nuestra base mate natural de cobertura completa construible brinda una piel de aspecto impecable del día a la noche. La fórmula liviana y sin aceite se mezcla suavemente y se puede personalizar fácilmente para crear la cobertura que desea. Constrúyalo o límpialo, fue desarrollado con pigmentos innovadores que difuminan suavemente para brindar un color verdadero mientras se ve y se siente natural. ¡La bomba bloqueable es fácil de usar y mantiene su rutina libre de desorden! Como siempre, 100% libre de crueldad y vegano. ",
             "clasificación": null,
-            "categoría": "líquido",
-            "tipo de producto": "fundamento",
-            "lista de etiquetas": [
+            "category": "líquido",
+            "product_type": "fundamento",
+            "tag_list": [
                 "libre de crueldad",
                 "Vegano"
             ],
-            "Creado en": "2018-07-08T18:22:25.273Z",
-            "actualizado_en": "2018-07-09T00:53:23.313Z",
-            "producto_api_url": "https://maquillaje-api.herokuapp.com/api/v1/products/1045.json",
+            "created_at": "2018-07-08T18:22:25.273Z",
+            "updated_at": "2018-07-09T00:53:23.313Z",
+            "product_api_url": "https://maquillaje-api.herokuapp.com/api/v1/products/1045.json",
             "api_featured_image": "//s3.amazonaws.com/donovanbailey/products/api_featured_images/000/001/045/original/open-uri20180708-4-4bvqii?1531074237",
-            "productos_colores": [
+            "product_colors": [
                 {
-                    "valor_hexadecimal": "#F2DEC3",
-                    "color_nombre": "Feria 05"
+                    "hex_value": "#F2DEC3",
+                    "color_name": "Feria 05"
                 },
                 {
-                    "valor_hexadecimal": "#F3DAC4",
-                    "color_nombre": "Justo 10"
+                    "hex_value": "#F3DAC4",
+                    "color_name": "Justo 10"
                 },
                 {
-                    "valor_hexadecimal": "#F1D9C0",
-                    "color_nombre": "Feria 15"
+                    "hex_value": "#F1D9C0",
+                    "color_name": "Feria 15"
                 },
                 {
-                    "valor_hexadecimal": "#EFD2BA",
-                    "color_nombre": "Feria 20"
+                    "hex_value": "#EFD2BA",
+                    "color_name": "Feria 20"
                 },
                 {
-                    "valor_hexadecimal": "#F1D7B3",
-                    "color_nombre": "Feria 25"
+                    "hex_value": "#F1D7B3",
+                    "color_name": "Feria 25"
                 },
                 {
-                    "valor_hexadecimal": "#EDD0B4",
-                    "color_nombre": "Feria 30"
+                    "hex_value": "#EDD0B4",
+                    "color_name": "Feria 30"
                 },
                 {
-                    "valor_hexadecimal": "#D9B295",
-                    "color_nombre": "Feria 35"
+                    "hex_value": "#D9B295",
+                    "color_name": "Feria 35"
                 },
                 {
-                    "valor_hexadecimal": "#CAA17B",
-                    "color_nombre": "Luz 45"
+                    "hex_value": "#CAA17B",
+                    "color_name": "Luz 45"
                 },
                 {
-                    "valor_hexadecimal": "#E8C2A4",
-                    "color_nombre": "Luz 50"
+                    "hex_value": "#E8C2A4",
+                    "color_name": "Luz 50"
                 },
                 {
-                    "valor_hexadecimal": "#E8C3A6",
-                    "color_nombre": "Luz 55"
+                    "hex_value": "#E8C3A6",
+                    "color_name": "Luz 55"
                 },
                 {
-                    "valor_hexadecimal": "#E9C2A4",
-                    "color_nombre": "Luz 60"
+                    "hex_value": "#E9C2A4",
+                    "color_name": "Luz 60"
                 },
                 {
-                    "valor_hexadecimal": "#E1B68E",
-                    "color_nombre": "Luz 65"
+                    "hex_value": "#E1B68E",
+                    "color_name": "Luz 65"
                 },
                 {
-                    "valor_hexadecimal": "#E4C096",
+                    "hex_value": "#E4C096",
                     "colour_name": "Light 70"
                 },
                 {
@@ -41914,39 +41914,39 @@
                     "colour_name": "Oscuridad profunda 115"
                 },
                 {
-                    "valor_hexadecimal": "#A07967",
-                    "color_nombre": "Oscuridad profunda 115"
+                    "hex_value": "#A07967",
+                    "color_name": "Oscuridad profunda 115"
                 },
                 {
-                    "valor_hexadecimal": "#946D5A",
-                    "color_nombre": "Oscuridad profunda 115"
+                    "hex_value": "#946D5A",
+                    "color_name": "Oscuridad profunda 115"
                 },
                 {
-                    "valor_hexadecimal": "#865F4D",
-                    "color_nombre": "Oscuridad profunda 115"
+                    "hex_value": "#865F4D",
+                    "color_name": "Oscuridad profunda 115"
                 },
                 {
-                    "valor_hexadecimal": "#896A5A",
-                    "color_nombre": "Oscuridad profunda 80"
+                    "hex_value": "#896A5A",
+                    "color_name": "Oscuridad profunda 80"
                 },
                 {
-                    "valor_hexadecimal": "#795F52",
-                    "color_nombre": "Oscuridad profunda 80"
+                    "hex_value": "#795F52",
+                    "color_name": "Oscuridad profunda 80"
                 },
                 {
-                    "valor_hexadecimal": "#6B5148",
-                    "color_nombre": "Oscuridad profunda 80"
+                    "hex_value": "#6B5148",
+                    "color_name": "Oscuridad profunda 80"
                 }
             ]
         },
         {
-            "identificación": 1043,
-            "marca": "deciem",
-            "nombre": "Base de suero",
-            "precio": "6.7",
-            "precio_signo": "$",
-            "divisa": "CAD",
-            "Enlace de imágen": "https://3bc01d2807fb1bc0d25c-a86d2521f1af8989841b9619f5314be5.ssl.cf1.rackcdn.com/products/market-img/rdn-serum-foundation-30-r-30ml.png?v=6ab9fcb8ca2abb9828afcf9dcdad9f94",
+            "id": 1043,
+            "brand": "deciem",
+            "name": "Base de suero",
+            "price": "6.7",
+            "price_sign": "$",
+            "currency": "CAD",
+            "image_link": "https://3bc01d2807fb1bc0d25c-a86d2521f1af8989841b9619f5314be5.ssl.cf1.rackcdn.com/products/market-img/rdn-serum-foundation-30-r-30ml.png?v=6ab9fcb8ca2abb9828afcf9dcdad9f94",
             "product_link": "https://deciem.com/product/rdn-serum-foundation-30-r-30ml",
             "website_link": "https://deciem.com/",
             "description": "Serum Foundations are lightweight medium-coverage formulations available in a comprehensive shade range across 21 shades. These foundations offer moderate coverage that looks natural with a very lightweight serum feel. They are very low in viscosity and are dispensed with the supplied pump or with the optional glass dropper available for purchase separately if preferred. ",
@@ -46322,14 +46322,14 @@
         {
             "id": 679,
             "brand": "dior",
-            "name": "DIORIFIC PRECIOUS ROCKS - Christmas 2017 Limited Edition",
+            "name": "DIORIFIC priceUS ROCKS - Christmas 2017 Limited Edition",
             "price": "40.0",
             "price_sign": "£",
             "currency": "GBP",
             "image_link": "https://www.dior.com/beauty/version-5.1432748111912/resize-image/ep/0/390/100/0/packshots%252FPDG_Y0719390_F071939001_v2.jpg",
-            "product_link": "https://www.dior.com/beauty/en_gb/fragrance-beauty/makeup/look-exclusives/precious-rocks-collection/pr-preciousrockslook-y0719390_f071939001-golden-glow-loose-powder.html",
+            "product_link": "https://www.dior.com/beauty/en_gb/fragrance-beauty/makeup/look-exclusives/priceus-rocks-collection/pr-priceusrockslook-y0719390_f071939001-golden-glow-loose-powder.html",
             "website_link": "https://www.dior.com",
-            "description": "Diorific unveils a limited-edition gold loose powder. The finishing touch, Diorific Precious Rocks bathes your skin in a delicate glow and sculpts with a subtle, golden shimmer.",
+            "description": "Diorific unveils a limited-edition gold loose powder. The finishing touch, Diorific priceus Rocks bathes your skin in a delicate glow and sculpts with a subtle, golden shimmer.",
             "rating": null,
             "category": "powder",
             "product_type": "foundation",
@@ -46341,7 +46341,7 @@
             "product_colors": [
                 {
                     "hex_value": "#F3D7B2",
-                    "colour_name": "001 Precious Rocks"
+                    "colour_name": "001 priceus Rocks"
                 }
             ]
         },
@@ -47241,7 +47241,7 @@
             "image_link": "https://d3t32hsnjxo7q6.cloudfront.net/i/e468ef6f9534484e1f21e0f971d92c48_ra,w158,h184_pa,w158,h184.jpeg",
             "product_link": "https://well.ca/products/sante-soft-cream-foundation_51624.html",
             "website_link": "https://well.ca",
-            "description": "Sante soft cream foundation has precious mineral pigments for a \nvelvety, especially flawless complexion. Gives your skin a fresh, \npleasant feel with cupuacu butter, pomegranate extract and valuable \norganic jojoba oil. Free of paraffin and silicone oils. Colours: Ingredients: AQUA (WATER), HYDROGENATED VEGETABLE OIL, GLYCINE SOJA (SOYBEAN) OIL*, GLYCERIN, SIMMONDSIA CHINENSIS (JOJOBA) SEED OIL*, SQUALANE, TALC, POTASSIUM CETYL PHOSPHATE, PALMITIC ACID, STEARIC ACID, PARFUM (ESSENTIAL OILS), HYDROGENATED PALM GLYCERIDES, THEOBROMA GRANDIFLORUM SEED BUTTER*, PUNICA GRANATUM SEED EXTRACT*, SORBITOL, GALACTOARABINAN, XANTHAN DUM, HYDROGENATED LECITHIN, SODIUM CITRATE, ASCORBYL PALMITATE, LECITHIN, CITRIC ACID, TOCOPHEROL, HYDROGENATED PALM GLYCERIDES CITRATE, FARNESOL, [+/- CI 77891 (TITANIUM DIOXIDE), CI 77492 (IRON OXIDES), CI 77491 (IRON OXIDES)] * organically grown",
+            "description": "Sante soft cream foundation has priceus mineral pigments for a \nvelvety, especially flawless complexion. Gives your skin a fresh, \npleasant feel with cupuacu butter, pomegranate extract and valuable \norganic jojoba oil. Free of paraffin and silicone oils. Colours: Ingredients: AQUA (WATER), HYDROGENATED VEGETABLE OIL, GLYCINE SOJA (SOYBEAN) OIL*, GLYCERIN, SIMMONDSIA CHINENSIS (JOJOBA) SEED OIL*, SQUALANE, TALC, POTASSIUM CETYL PHOSPHATE, PALMITIC ACID, STEARIC ACID, PARFUM (ESSENTIAL OILS), HYDROGENATED PALM GLYCERIDES, THEOBROMA GRANDIFLORUM SEED BUTTER*, PUNICA GRANATUM SEED EXTRACT*, SORBITOL, GALACTOARABINAN, XANTHAN DUM, HYDROGENATED LECITHIN, SODIUM CITRATE, ASCORBYL PALMITATE, LECITHIN, CITRIC ACID, TOCOPHEROL, HYDROGENATED PALM GLYCERIDES CITRATE, FARNESOL, [+/- CI 77891 (TITANIUM DIOXIDE), CI 77492 (IRON OXIDES), CI 77491 (IRON OXIDES)] * organically grown",
             "rating": 3.8,
             "category": "cream",
             "product_type": "foundation",
@@ -49615,27 +49615,27 @@
             "website_link": "https://well.ca",
             "description": "Achieve even skin tone \nand naturally radiant skin with this moisturizing sheer tint of color.  \nThe smooth formula enhances your complexion with the nourishing key \ningredients Aloe, Cucumber and Vitamins A, C & E.Shades: \n\t\t\t\t\t\t\n\t\t\t\t\t\n\t\t\t\t\tACTIVE: Benzophenone-3, Ethylhexyl Isopalmitate, Titanium Dioxide. \nINACTIVE: Water, Mineral Oil, Cyclomethicone, C12-15 Alkyl Benzoate, \nPropylene Glycol, Dimethicone, Steareth-21 Cetearyl Alcohol, \nCeteareth-2, Glyceryl Stearate, Xanthan Gum, Methylparaben, \nPropylparabem, Tocopherol(VE), Retinyl Acetate(VA), Ascorbyk \nPalmitate(VC), Aloe Barbadensis (Aloe Vera) Leaf Juice, Cucumis Sativus \n(Cucumber) Fruit Extract, MAY CONTAIN: Iron Oxides (CI 77491, CI 77492, \nCI 77499), Titanium Dioxide (CI 77891)\n\t\t\t\t\t\n\t\t\t\t",
             "rating": 3.8,
-            "categoría": "líquido",
-            "tipo de producto": "fundamento",
-            "lista de etiquetas": [
+            "category": "líquido",
+            "product_type": "fundamento",
+            "tag_list": [
                 "Vegano"
             ],
-            "Creado en": "2016-10-01T18:31:21.140Z",
-            "actualizado_en": "2017-12-23T21:08:20.082Z",
-            "producto_api_url": "https://maquillaje-api.herokuapp.com/api/v1/products/315.json",
+            "created_at": "2016-10-01T18:31:21.140Z",
+            "updated_at": "2017-12-23T21:08:20.082Z",
+            "product_api_url": "https://maquillaje-api.herokuapp.com/api/v1/products/315.json",
             "api_featured_image": "//s3.amazonaws.com/donovanbailey/products/api_featured_images/000/000/315/original/data?1514063300",
-            "productos_colores": [
+            "product_colors": [
                 {
-                    "valor_hexadecimal": "#EFC698",
-                    "color_nombre": "Porcelana"
+                    "hex_value": "#EFC698",
+                    "color_name": "Porcelana"
                 },
                 {
-                    "valor_hexadecimal": "#EBB579",
-                    "color_nombre": "desnudo"
+                    "hex_value": "#EBB579",
+                    "color_name": "desnudo"
                 },
                 {
-                    "valor_hexadecimal": "#D99A67",
-                    "color_nombre": "Beige"
+                    "hex_value": "#D99A67",
+                    "color_name": "Beige"
                 }
             ]
         },
@@ -50925,7 +50925,7 @@
             "image_link": "https://d3t32hsnjxo7q6.cloudfront.net/i/4e90929a9c24a51c3db3988b205f3b43_ra,w158,h184_pa,w158,h184.jpeg",
             "product_link": "https://well.ca/products/covergirl-clean-glow-bronzer_78622.html",
             "website_link": "https://well.ca",
-            "description": "Flaunt the coveted beach-bronze glow in one simple step. This versatile \n3-in-1 multi-shade compact lets you customize your color to create a \nradiant effect. Use just one color or all three!Features: Beautiful bronze glow in just one stepBlendable, multi-shade compactClean and natural lookHow to Apply: Dip powder brush in bronzer and tap off any excess.\nSweep bronzer on your cheeks and temples.\nUsing a lighter touch, sweep bronzer where the sun naturally hits your face, including your nose, chin, and forehead.\n                            ",
+            "description": "Flaunt the coveted beach-bronze glow in one simple step. This versatile \n3-in-1 multi-shade compact lets you customize your color to create a \nradiant effect. Use just one color or all three!Features: Beautiful bronze glow in just one stepBlendable, multi-shade compactClean and natural lookHow to Apply: Dip powder brush in bronzer and tap off any excess.\nSweep bronzer on your cheeks and temples.\nUsing a lighter touch, sweep bronzer where the sun naturally hits your face, including your nose, chin, and forehead.",
             "rating": 5.0,
             "category": "N/A",
             "product_type": "bronzer",
@@ -52532,12 +52532,12 @@
         {
             "id": 693,
             "brand": "dior",
-            "name": "5 COULEURS PRECIOUS ROCKS - Christmas 2017 Limited Edition",
+            "name": "5 COULEURS priceUS ROCKS - Christmas 2017 Limited Edition",
             "price": "43.5",
             "price_sign": "£",
             "currency": "GBP",
             "image_link": "https://www.dior.com/beauty/version-5.1432748111912/resize-image/ep/0/390/100/0/packshots%252FPDG_Y0148228_F014822857_v2.jpg",
-            "product_link": "https://www.dior.com/beauty/en_gb/fragrance-beauty/makeup/look-exclusives/precious-rocks-collection/pr-preciousrockslook-y0148223-high-fidelity-colours-effects-eyeshadow-palette.html",
+            "product_link": "https://www.dior.com/beauty/en_gb/fragrance-beauty/makeup/look-exclusives/priceus-rocks-collection/pr-priceusrockslook-y0148223-high-fidelity-colours-effects-eyeshadow-palette.html",
             "website_link": "https://www.dior.com",
             "description": "Emblematic of Dior eye makeup, this winter, the 5 Couleurs palette has been reinterpreted in two limited editions featuring ruby and emerald tones.",
             "rating": null,
@@ -54598,16 +54598,16 @@
             "website_link": "https://well.ca",
             "description": "Achieve color intensity for your eyes with twist-up ease - no sharpening\n required!  Glide on the soft gel liner side to create dramatic \ndefinition to the eyes.  The light-reflecting pigments help line the eye\n subtly but intensely for a fuller more enhanced effect.  Use the smooth\n glide shadow stick side for soft highlighting color on the eyes to \ncomplement the liner for a polished and finished look. Perfect for \ncreating an easy smoky eye!Eyeliner Ingredient: Synthetic Beeswax, Copernicia Cerifera (Carnauba) \nWax, Ceresin Wax, Bis-Diglyceryl Polyacyladipate-2, Phenyl Trimethicone,\n Cyclomethicone, Mica, Trimethylsiloxysilicate, BHT, Benzyl Alcohol, \nMethylchloroisothiazolinone, Methylisothiazolinone\n\nMay Contain:Iron Oxides (CI 77491 CI 77492 CI 77499), Titanium Dioxide (CI77891)\n\nShadow Ingredient: Paraffin Wax, Microcrystalline Wax, Copernicia \nCerifera (Carnauba) Wax, Castor Oil, Bis-Diglyceryl Polyacyladipate-2, \nPetrolatum, Isopropyl Palmitate, BHT, Benzyl Alcohol, \nMethylchloroisothiazolinone, Methylisothiazolinone \n\nMay Contain:Iron Oxides (CI 77491 CI 77492 CI 77499), Titanium Dioxide (CI77891)\n",
             "clasificación": 5.0,
-            "categoría": null,
-            "tipo de producto": "sombra de ojos",
-            "lista de etiquetas": [
+            "category": null,
+            "product_type": "sombra de ojos",
+            "tag_list": [
                 "Vegano"
             ],
-            "Creado en": "2016-10-01T18:27:54.039Z",
-            "actualizado_en": "2017-12-23T21:08:15.537Z",
-            "producto_api_url": "https://maquillaje-api.herokuapp.com/api/v1/products/182.json",
+            "created_at": "2016-10-01T18:27:54.039Z",
+            "updated_at": "2017-12-23T21:08:15.537Z",
+            "product_api_url": "https://maquillaje-api.herokuapp.com/api/v1/products/182.json",
             "api_featured_image": "//s3.amazonaws.com/donovanbailey/products/api_featured_images/000/000/182/original/data?1514063295",
-            "productos_colores": []
+            "product_colors": []
         },
         {
             "id": 969,
@@ -60370,7 +60370,7 @@
             "price_sign": "£",
             "currency": "GBP",
             "image_link": "https://www.dior.com/beauty/version-5.1432748111912/resize-image/ep/0/390/100/0/packshots%252FPDG_Y0929631_F092963004.jpg",
-            "product_link": "https://www.dior.com/beauty/en_gb/fragrance-beauty/makeup/look-exclusives/precious-rocks-collection/pr-preciousrockslook-y0929631_f092963004-brow-mascara-structure-shine-gold-edition.html",
+            "product_link": "https://www.dior.com/beauty/en_gb/fragrance-beauty/makeup/look-exclusives/priceus-rocks-collection/pr-priceusrockslook-y0929631_f092963004-brow-mascara-structure-shine-gold-edition.html",
             "website_link": "https://www.dior.com",
             "description": "This winter, Diorshow Bold Brow has all the sheer shine of gold. A striking little detail to create a bold beauty look or subtly enhance natural makeup.",
             "rating": null,
@@ -61924,7 +61924,7 @@
             "image_link": "https://d3t32hsnjxo7q6.cloudfront.net/i/4e90929a9c24a51c3db3988b205f3b43_ra,w158,h184_pa,w158,h184.jpeg",
             "product_link": "https://well.ca/products/covergirl-clean-glow-bronzer_78622.html",
             "website_link": "https://well.ca",
-            "description": "Flaunt the coveted beach-bronze glow in one simple step. This versatile \n3-in-1 multi-shade compact lets you customize your color to create a \nradiant effect. Use just one color or all three!Features: Beautiful bronze glow in just one stepBlendable, multi-shade compactClean and natural lookHow to Apply: Dip powder brush in bronzer and tap off any excess.\nSweep bronzer on your cheeks and temples.\nUsing a lighter touch, sweep bronzer where the sun naturally hits your face, including your nose, chin, and forehead.\n                            ",
+            "description": "Flaunt the coveted beach-bronze glow in one simple step. This versatile \n3-in-1 multi-shade compact lets you customize your color to create a \nradiant effect. Use just one color or all three!Features: Beautiful bronze glow in just one stepBlendable, multi-shade compactClean and natural lookHow to Apply: Dip powder brush in bronzer and tap off any excess.\nSweep bronzer on your cheeks and temples.\nUsing a lighter touch, sweep bronzer where the sun naturally hits your face, including your nose, chin, and forehead.",
             "rating": 5.0,
             "category": "N/A",
             "product_type": "bronzer",
@@ -63259,7 +63259,7 @@
                     },
                     {
                         "hex_value": "#f59494",
-                        "colour_name": "Precious Posy"
+                        "colour_name": "priceus Posy"
                     },
                     {
                         "hex_value": "#d78281",
@@ -63552,14 +63552,14 @@
             {
                 "id": 686,
                 "brand": "dior",
-                "name": "DIORBLUSH PRECIOUS ROCKS - Christmas 2017 Limited Edition",
+                "name": "DIORBLUSH priceUS ROCKS - Christmas 2017 Limited Edition",
                 "price": "0.0",
                 "price_sign": "£",
                 "currency": "GBP",
                 "image_link": "https://www.dior.com/beauty/version-5.1432748111912/resize-image/ep/0/390/100/0/packshots%252FPDG_Y0715928_F071592864.jpg",
-                "product_link": "https://www.dior.com/beauty/en_gb/fragrance-beauty/makeup/look-exclusives/precious-rocks-collection/pr-preciousrockslook-y0715928_f071592864-vibrant-colour-powderblush.html",
+                "product_link": "https://www.dior.com/beauty/en_gb/fragrance-beauty/makeup/look-exclusives/priceus-rocks-collection/pr-priceusrockslook-y0715928_f071592864-vibrant-colour-powderblush.html",
                 "website_link": "https://www.dior.com",
-                "description": "The new limited-edition Diorblush showcases every facet of the Precious Rocks collection. Printed with a prismatic motif that reflects that of a precious stone, its sheer, peach colour blends seamlessly with your skin to deliver a fresh, crystal-clear complexion.",
+                "description": "The new limited-edition Diorblush showcases every facet of the priceus Rocks collection. Printed with a prismatic motif that reflects that of a priceus stone, its sheer, peach colour blends seamlessly with your skin to deliver a fresh, crystal-clear complexion.",
                 "rating": null,
                 "category": "N/A",
                 "product_type": "blush",
@@ -63571,7 +63571,7 @@
                 "product_colors": [
                     {
                         "hex_value": "#EF8687",
-                        "colour_name": "864 Precious Rocks"
+                        "colour_name": "864 priceus Rocks"
                     }
                 ]
             },
@@ -64199,7 +64199,7 @@
                 "image_link": "https://d3t32hsnjxo7q6.cloudfront.net/i/48492123aba0c6d096945d57a070361d_ra,w158,h184_pa,w158,h184.jpeg",
                 "product_link": "https://well.ca/products/covergirl-clean-glow-blush_78620.html",
                 "website_link": "https://well.ca",
-                "description": "Complete your Clean® look with a flush of lightweight, blendable color. \nThis versatile 3-in-1 multi-shade compact lets you customize your color \nto create a radiant effect. Use just one color or all three!Features: 3-in-1 multi-shade compactLightweight, blendable flush of colorClean and natural lookHow to Apply:  Begin with the contour, or darkest, shade in your palette and apply to the hollow space below your cheekbones.\nApply the medium shade to the apples of your cheeks and sweep upwards toward the hairline.\nFor a youthful glow, highlight the tops of your cheeks with the lightest shade.\n                            ",
+                "description": "Complete your Clean® look with a flush of lightweight, blendable color. \nThis versatile 3-in-1 multi-shade compact lets you customize your color \nto create a radiant effect. Use just one color or all three!Features: 3-in-1 multi-shade compactLightweight, blendable flush of colorClean and natural lookHow to Apply:  Begin with the contour, or darkest, shade in your palette and apply to the hollow space below your cheekbones.\nApply the medium shade to the apples of your cheeks and sweep upwards toward the hairline.\nFor a youthful glow, highlight the tops of your cheeks with the lightest shade.",
                 "rating": null,
                 "category": "powder",
                 "product_type": "blush",
@@ -66203,12 +66203,12 @@
         {
             "id": 693,
             "brand": "dior",
-            "name": "5 COULEURS PRECIOUS ROCKS - Christmas 2017 Limited Edition",
+            "name": "5 COULEURS priceUS ROCKS - Christmas 2017 Limited Edition",
             "price": "43.5",
             "price_sign": "£",
             "currency": "GBP",
             "image_link": "https://www.dior.com/beauty/version-5.1432748111912/resize-image/ep/0/390/100/0/packshots%252FPDG_Y0148228_F014822857_v2.jpg",
-            "product_link": "https://www.dior.com/beauty/en_gb/fragrance-beauty/makeup/look-exclusives/precious-rocks-collection/pr-preciousrockslook-y0148223-high-fidelity-colours-effects-eyeshadow-palette.html",
+            "product_link": "https://www.dior.com/beauty/en_gb/fragrance-beauty/makeup/look-exclusives/priceus-rocks-collection/pr-priceusrockslook-y0148223-high-fidelity-colours-effects-eyeshadow-palette.html",
             "website_link": "https://www.dior.com",
             "description": "Emblematic of Dior eye makeup, this winter, the 5 Couleurs palette has been reinterpreted in two limited editions featuring ruby and emerald tones.",
             "rating": null,
@@ -68269,16 +68269,16 @@
             "website_link": "https://well.ca",
             "description": "Achieve color intensity for your eyes with twist-up ease - no sharpening\n required!  Glide on the soft gel liner side to create dramatic \ndefinition to the eyes.  The light-reflecting pigments help line the eye\n subtly but intensely for a fuller more enhanced effect.  Use the smooth\n glide shadow stick side for soft highlighting color on the eyes to \ncomplement the liner for a polished and finished look. Perfect for \ncreating an easy smoky eye!Eyeliner Ingredient: Synthetic Beeswax, Copernicia Cerifera (Carnauba) \nWax, Ceresin Wax, Bis-Diglyceryl Polyacyladipate-2, Phenyl Trimethicone,\n Cyclomethicone, Mica, Trimethylsiloxysilicate, BHT, Benzyl Alcohol, \nMethylchloroisothiazolinone, Methylisothiazolinone\n\nMay Contain:Iron Oxides (CI 77491 CI 77492 CI 77499), Titanium Dioxide (CI77891)\n\nShadow Ingredient: Paraffin Wax, Microcrystalline Wax, Copernicia \nCerifera (Carnauba) Wax, Castor Oil, Bis-Diglyceryl Polyacyladipate-2, \nPetrolatum, Isopropyl Palmitate, BHT, Benzyl Alcohol, \nMethylchloroisothiazolinone, Methylisothiazolinone \n\nMay Contain:Iron Oxides (CI 77491 CI 77492 CI 77499), Titanium Dioxide (CI77891)\n",
             "clasificación": 5.0,
-            "categoría": null,
-            "tipo de producto": "sombra de ojos",
-            "lista de etiquetas": [
+            "category": null,
+            "product_type": "sombra de ojos",
+            "tag_list": [
                 "Vegano"
             ],
-            "Creado en": "2016-10-01T18:27:54.039Z",
-            "actualizado_en": "2017-12-23T21:08:15.537Z",
-            "producto_api_url": "https://maquillaje-api.herokuapp.com/api/v1/products/182.json",
+            "created_at": "2016-10-01T18:27:54.039Z",
+            "updated_at": "2017-12-23T21:08:15.537Z",
+            "product_api_url": "https://maquillaje-api.herokuapp.com/api/v1/products/182.json",
             "api_featured_image": "//s3.amazonaws.com/donovanbailey/products/api_featured_images/000/000/182/original/data?1514063295",
-            "productos_colores": []
+            "product_colors": []
         }
     ]
 }

@@ -13,7 +13,7 @@ const getSearchProducts = async (req, res, next) => {
 
     if (name) {
         try {
-            let resultCategory = dataApi.filter(e => e.name?.includes( name))
+            resultCategory = dataApi.filter(e=>e.name.toLowerCase().includes(name.toLowerCase()))
             res.send(resultCategory);
         } catch (error) {
             next(error);
