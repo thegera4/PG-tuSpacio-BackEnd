@@ -3,7 +3,7 @@
         {
             "id": 740,
             "brand": "dior",
-            "name": "Junon",
+            "name": "\n                            Junon\n                            ",
             "price": "20.0",
             "price_sign": "£",
             "currency": "GBP",
@@ -109,7 +109,7 @@
         {
             "id": 730,
             "brand": "dior",
-            "name": "Matte",
+            "name": "\n                            Matte\n                            ",
             "price": "20.0",
             "price_sign": "£",
             "currency": "GBP",
@@ -147,7 +147,7 @@
         {
             "id": 729,
             "brand": "dior",
-            "name": "Poison Metal",
+            "name": "\n                            Poison Metal\n                            ",
             "price": "20.0",
             "price_sign": "£",
             "currency": "GBP",
@@ -185,7 +185,7 @@
         {
             "id": 728,
             "brand": "dior",
-            "name": "Jungle Matte",
+            "name": "\n                            Jungle Matte\n                            ",
             "price": "20.0",
             "price_sign": "£",
             "currency": "GBP",
@@ -223,7 +223,7 @@
         {
             "id": 727,
             "brand": "dior",
-            "name": "Miss Satin",
+            "name": "\n                            Miss Satin\n                            ",
             "price": "20.0",
             "price_sign": "£",
             "currency": "GBP",
@@ -261,7 +261,7 @@
         {
             "id": 726,
             "brand": "dior",
-            "name": "Mineral",
+            "name": "\n                            Mineral\n                            ",
             "price": "20.0",
             "price_sign": "£",
             "currency": "GBP",
@@ -287,7 +287,7 @@
         {
             "id": 725,
             "brand": "dior",
-            "name": "Sauvage",
+            "name": "\n                            Sauvage\n                            ",
             "price": "20.0",
             "price_sign": "£",
             "currency": "GBP",
@@ -321,7 +321,7 @@
         {
             "id": 724,
             "brand": "dior",
-            "name": "Diabolo",
+            "name": "\n                            Diabolo\n                            ",
             "price": "20.0",
             "price_sign": "£",
             "currency": "GBP",
@@ -355,7 +355,7 @@
         {
             "id": 723,
             "brand": "dior",
-            "name": "Tease",
+            "name": "\n                            Tease\n                            ",
             "price": "20.0",
             "price_sign": "£",
             "currency": "GBP",
@@ -389,7 +389,7 @@
         {
             "id": 722,
             "brand": "dior",
-            "name": "Precious Rocks",
+            "name": "\n                            Precious Rocks\n                            ",
             "price": "20.5",
             "price_sign": "£",
             "currency": "GBP",
@@ -415,7 +415,7 @@
         {
             "id": 721,
             "brand": "dior",
-            "name": "Amethyst",
+            "name": "\n                            Amethyst\n                            ",
             "price": "20.5",
             "price_sign": "£",
             "currency": "GBP",
@@ -453,7 +453,7 @@
         {
             "id": 720,
             "brand": "dior",
-            "name": "Emerald",
+            "name": "\n                            Emerald\n                            ",
             "price": "20.5",
             "price_sign": "£",
             "currency": "GBP",
@@ -491,7 +491,7 @@
         {
             "id": 719,
             "brand": "dior",
-            "name": "Grenat",
+            "name": "\n                            Grenat\n                            ",
             "price": "0.0",
             "price_sign": "£",
             "currency": "GBP",
@@ -529,7 +529,7 @@
         {
             "id": 718,
             "brand": "dior",
-            "name": "Ruby",
+            "name": "\n                            Ruby\n                            ",
             "price": "20.5",
             "price_sign": "£",
             "currency": "GBP",
@@ -5226,25 +5226,25 @@
             "productos_colores": [
                 {
                     "valor_hexadecimal": "#000000",
-                    "color_name": "negro"
+                    "color_nombre": "negro"
                 },
                 {
                     "valor_hexadecimal": "#3E2829",
-                    "color_name": "marrón"
+                    "color_nombre": "marrón"
                 }
             ]
         },
         {
-            "id": 1047,
-            "brand": "color pop",
-            "name": "Labio manchado",
-            "price": "5.5",
-            "price_sign": "$",
-            "currency": "CAD",
-            "image_link": "https://cdn.shopify.com/s/files/1/1338/0845/products/brain-freeze_a_800x1200.jpg?v=1502255076",
-            "product_link": "https://colourpop.com/collections/lippie-stix?filter=blotted-lip",
-            "website_link": "https://colorpop.com",
-            "description": "¡Lápiz labial mate Blotted Lip Sheer que crea el puchero perfecto! La fórmula es liviana, mate y edificable para una cobertura de ligera a media",
+            "identificación": 1047,
+            "marca": "color pop",
+            "nombre": "Labio manchado",
+            "precio": "5.5",
+            "precio_signo": "$",
+            "divisa": "CAD",
+            "Enlace de imágen": "https://cdn.shopify.com/s/files/1/1338/0845/products/brain-freeze_a_800x1200.jpg?v=1502255076",
+            "producto_enlace": "https://colourpop.com/collections/lippie-stix?filter=blotted-lip",
+            "enlace de página web": "https://colorpop.com",
+            "descripción": "¡Lápiz labial mate Blotted Lip Sheer que crea el puchero perfecto! La fórmula es liviana, mate y edificable para una cobertura de ligera a media",
             "clasificación": null,
             "categoría": "lápiz labial",
             "tipo de producto": "lápiz labial",
@@ -5259,41 +5259,41 @@
             "productos_colores": [
                 {
                     "valor_hexadecimal": "#b72227",
-                    "color_name": "Rodillas de abeja"
+                    "color_nombre": "Rodillas de abeja"
                 },
                 {
                     "valor_hexadecimal": "#BB656B",
-                    "color_name": "Congelación de cerebro"
+                    "color_nombre": "Congelación de cerebro"
                 },
                 {
                     "valor_hexadecimal": "#8E4140",
-                    "color_name": "goteo"
+                    "color_nombre": "goteo"
                 },
                 {
                     "valor_hexadecimal": "#A12A33",
-                    "color_name": "En un palo"
+                    "color_nombre": "En un palo"
                 },
                 {
                     "valor_hexadecimal": "#904550",
-                    "color_name": "Cubo de hielo"
+                    "color_nombre": "Cubo de hielo"
                 },
                 {
                     "valor_hexadecimal": "#452222",
-                    "color_name": "Lolly"
+                    "color_nombre": "Lolly"
                 },
                 {
                     "valor_hexadecimal": "#7C3F35",
-                    "color_name": "Algodón"
+                    "color_nombre": "Algodón"
                 }
             ]
         },
         {
-            "id": 1046,
-            "brand": "color pop",
-            "name": "Lippie Stix",
-            "price": "5.5",
-            "price_sign": "$",
-            "currency": "CAD",
+            "identificación": 1046,
+            "marca": "color pop",
+            "nombre": "Lippie Stix",
+            "precio": "5.5",
+            "precio_signo": "$",
+            "divisa": "CAD",
             "image_link": "https://cdn.shopify.com/s/files/1/1338/0845/collections/blottedlip-lippie-stix_grande.jpg?v=1512588803",
             "product_link": "https://colourpop.com/collections/lippie-stix",
             "website_link": "https://colourpop.com",
@@ -5492,21 +5492,21 @@
                 },
                 {
                     "hex_value": "#975450",
-                    "color_name": "Kapish"
+                    "color_nombre": "Kapish"
                 }
             ]
         },
         {
-            "id": 1044,
-            "brand": "boosh",
-            "name": "Lápiz labial",
-            "price": "26.0",
-            "price_sign": "$",
-            "currency": "CAD",
-            "image_link": "https://cdn.shopify.com/s/files/1/1016/3243/products/LIPBALM_LID_grande.jpg?v=1496848378",
-            "product_link": "https://www.boosh.ca/collections/all",
-            "website_link": "https://www.boosh.ca/",
-            "description": "All of our products are free from lead and heavy metals, parabens, phthalates, artificial colourants, and synthetic fragrances.  Boosh lipstick glides on smoothly for clean & protective SPF coverage. They are filled with hydrating oils and butters to preserve and enhance your lips natural surface. Organic sweet orange oil gives a light and cheerful scent.",
+            "identificación": 1044,
+            "marca": "boosh",
+            "nombre": "Lápiz labial",
+            "precio": "26.0",
+            "precio_signo": "$",
+            "divisa": "CAD",
+            "Enlace de imágen": "https://cdn.shopify.com/s/files/1/1016/3243/products/LIPBALM_LID_grande.jpg?v=1496848378",
+            "producto_enlace": "https://www.boosh.ca/collections/all",
+            "enlace de página web": "https://www.boosh.ca/",
+            "descripción": "All of our products are free from lead and heavy metals, parabens, phthalates, artificial colourants, and synthetic fragrances.  Boosh lipstick glides on smoothly for clean & protective SPF coverage. They are filled with hydrating oils and butters to preserve and enhance your lips natural surface. Organic sweet orange oil gives a light and cheerful scent.",
             "rating": null,
             "category": "lipstick",
             "product_type": "lipstick",
@@ -15267,7 +15267,7 @@
         {
             "id": 768,
             "brand": "clinique",
-            "name": "Quickliner&trade; For Lips Intense",
+            "name": " Quickliner&trade; For Lips Intense",
             "price": "17.5",
             "price_sign": "$",
             "currency": "USD",
@@ -16037,16 +16037,16 @@
             "product_colors": []
         },
         {
-            "id": 1045,
-            "brand": "color pop",
-            "name": "Base sin filtro",
-            "price": "12.0",
-            "price_sign": "$",
-            "currency": "CAD",
-            "image_link": "https://cdn.shopify.com/s/files/1/1338/0845/products/foundations-lineup_800x1200.jpg?v=1528927785",
-            "product_link": "https://colourpop.com/products/base-mate-sin-filtro",
-            "website_link": "https://colourpop.com/products/base-mate-sin-filtro",
-            "description": "Desarrollada para la era de las selfies, nuestra base mate natural de cobertura completa construible brinda una piel de aspecto impecable del día a la noche. La fórmula liviana y sin aceite se mezcla suavemente y se puede personalizar fácilmente para crear la cobertura que desea. Constrúyalo o límpialo, fue desarrollado con pigmentos innovadores que difuminan suavemente para brindar un color verdadero mientras se ve y se siente natural. ¡La bomba bloqueable es fácil de usar y mantiene su rutina libre de desorden! Como siempre, 100% libre de crueldad y vegano. ",
+            "identificación": 1045,
+            "marca": "color pop",
+            "nombre": "Base sin filtro",
+            "precio": "12.0",
+            "precio_signo": "$",
+            "divisa": "CAD",
+            "Enlace de imágen": "https://cdn.shopify.com/s/files/1/1338/0845/products/foundations-lineup_800x1200.jpg?v=1528927785",
+            "producto_enlace": "https://colourpop.com/products/base-mate-sin-filtro",
+            "enlace de página web": "https://colourpop.com/products/base-mate-sin-filtro",
+            "descripción": "Desarrollada para la era de las selfies, nuestra base mate natural de cobertura completa construible brinda una piel de aspecto impecable del día a la noche. La fórmula liviana y sin aceite se mezcla suavemente y se puede personalizar fácilmente para crear la cobertura que desea. Constrúyalo o límpialo, fue desarrollado con pigmentos innovadores que difuminan suavemente para brindar un color verdadero mientras se ve y se siente natural. ¡La bomba bloqueable es fácil de usar y mantiene su rutina libre de desorden! Como siempre, 100% libre de crueldad y vegano. ",
             "clasificación": null,
             "categoría": "líquido",
             "tipo de producto": "fundamento",
@@ -16061,51 +16061,51 @@
             "productos_colores": [
                 {
                     "valor_hexadecimal": "#F2DEC3",
-                    "color_name": "Feria 05"
+                    "color_nombre": "Feria 05"
                 },
                 {
                     "valor_hexadecimal": "#F3DAC4",
-                    "color_name": "Justo 10"
+                    "color_nombre": "Justo 10"
                 },
                 {
                     "valor_hexadecimal": "#F1D9C0",
-                    "color_name": "Feria 15"
+                    "color_nombre": "Feria 15"
                 },
                 {
                     "valor_hexadecimal": "#EFD2BA",
-                    "color_name": "Feria 20"
+                    "color_nombre": "Feria 20"
                 },
                 {
                     "valor_hexadecimal": "#F1D7B3",
-                    "color_name": "Feria 25"
+                    "color_nombre": "Feria 25"
                 },
                 {
                     "valor_hexadecimal": "#EDD0B4",
-                    "color_name": "Feria 30"
+                    "color_nombre": "Feria 30"
                 },
                 {
                     "valor_hexadecimal": "#D9B295",
-                    "color_name": "Feria 35"
+                    "color_nombre": "Feria 35"
                 },
                 {
                     "valor_hexadecimal": "#CAA17B",
-                    "color_name": "Luz 45"
+                    "color_nombre": "Luz 45"
                 },
                 {
                     "valor_hexadecimal": "#E8C2A4",
-                    "color_name": "Luz 50"
+                    "color_nombre": "Luz 50"
                 },
                 {
                     "valor_hexadecimal": "#E8C3A6",
-                    "color_name": "Luz 55"
+                    "color_nombre": "Luz 55"
                 },
                 {
                     "valor_hexadecimal": "#E9C2A4",
-                    "color_name": "Luz 60"
+                    "color_nombre": "Luz 60"
                 },
                 {
                     "valor_hexadecimal": "#E1B68E",
-                    "color_name": "Luz 65"
+                    "color_nombre": "Luz 65"
                 },
                 {
                     "valor_hexadecimal": "#E4C096",
@@ -16205,38 +16205,38 @@
                 },
                 {
                     "valor_hexadecimal": "#A07967",
-                    "color_name": "Oscuridad profunda 115"
+                    "color_nombre": "Oscuridad profunda 115"
                 },
                 {
                     "valor_hexadecimal": "#946D5A",
-                    "color_name": "Oscuridad profunda 115"
+                    "color_nombre": "Oscuridad profunda 115"
                 },
                 {
                     "valor_hexadecimal": "#865F4D",
-                    "color_name": "Oscuridad profunda 115"
+                    "color_nombre": "Oscuridad profunda 115"
                 },
                 {
                     "valor_hexadecimal": "#896A5A",
-                    "color_name": "Oscuridad profunda 80"
+                    "color_nombre": "Oscuridad profunda 80"
                 },
                 {
                     "valor_hexadecimal": "#795F52",
-                    "color_name": "Oscuridad profunda 80"
+                    "color_nombre": "Oscuridad profunda 80"
                 },
                 {
                     "valor_hexadecimal": "#6B5148",
-                    "color_name": "Oscuridad profunda 80"
+                    "color_nombre": "Oscuridad profunda 80"
                 }
             ]
         },
         {
-            "id": 1043,
-            "brand": "deciem",
-            "name": "Base de suero",
-            "price": "6.7",
-            "price_sign": "$",
-            "currency": "CAD",
-            "image_link": "https://3bc01d2807fb1bc0d25c-a86d2521f1af8989841b9619f5314be5.ssl.cf1.rackcdn.com/products/market-img/rdn-serum-foundation-30-r-30ml.png?v=6ab9fcb8ca2abb9828afcf9dcdad9f94",
+            "identificación": 1043,
+            "marca": "deciem",
+            "nombre": "Base de suero",
+            "precio": "6.7",
+            "precio_signo": "$",
+            "divisa": "CAD",
+            "Enlace de imágen": "https://3bc01d2807fb1bc0d25c-a86d2521f1af8989841b9619f5314be5.ssl.cf1.rackcdn.com/products/market-img/rdn-serum-foundation-30-r-30ml.png?v=6ab9fcb8ca2abb9828afcf9dcdad9f94",
             "product_link": "https://deciem.com/product/rdn-serum-foundation-30-r-30ml",
             "website_link": "https://deciem.com/",
             "description": "Serum Foundations are lightweight medium-coverage formulations available in a comprehensive shade range across 21 shades. These foundations offer moderate coverage that looks natural with a very lightweight serum feel. They are very low in viscosity and are dispensed with the supplied pump or with the optional glass dropper available for purchase separately if preferred. ",
@@ -23879,15 +23879,15 @@
             "productos_colores": [
                 {
                     "valor_hexadecimal": "#EFC698",
-                    "color_name": "Porcelana"
+                    "color_nombre": "Porcelana"
                 },
                 {
                     "valor_hexadecimal": "#EBB579",
-                    "color_name": "desnudo"
+                    "color_nombre": "desnudo"
                 },
                 {
                     "valor_hexadecimal": "#D99A67",
-                    "color_name": "Beige"
+                    "color_nombre": "Beige"
                 }
             ]
         },
@@ -25177,7 +25177,7 @@
             "image_link": "https://d3t32hsnjxo7q6.cloudfront.net/i/4e90929a9c24a51c3db3988b205f3b43_ra,w158,h184_pa,w158,h184.jpeg",
             "product_link": "https://well.ca/products/covergirl-clean-glow-bronzer_78622.html",
             "website_link": "https://well.ca",
-            "description": "Flaunt the coveted beach-bronze glow in one simple step. This versatile \n3-in-1 multi-shade compact lets you customize your color to create a \nradiant effect. Use just one color or all three!Features: Beautiful bronze glow in just one stepBlendable, multi-shade compactClean and natural lookHow to Apply: Dip powder brush in bronzer and tap off any excess.\nSweep bronzer on your cheeks and temples.\nUsing a lighter touch, sweep bronzer where the sun naturally hits your face, including your nose, chin, and forehead.",
+            "description": "Flaunt the coveted beach-bronze glow in one simple step. This versatile \n3-in-1 multi-shade compact lets you customize your color to create a \nradiant effect. Use just one color or all three!Features: Beautiful bronze glow in just one stepBlendable, multi-shade compactClean and natural lookHow to Apply: Dip powder brush in bronzer and tap off any excess.\nSweep bronzer on your cheeks and temples.\nUsing a lighter touch, sweep bronzer where the sun naturally hits your face, including your nose, chin, and forehead.\n                            ",
             "rating": 5.0,
             "category": "N/A",
             "product_type": "bronzer",
@@ -25880,7 +25880,7 @@
         {
             "id": 740,
             "brand": "dior",
-            "name": "Junon",
+            "name": "\n                            Junon\n                            ",
             "price": "20.0",
             "price_sign": "£",
             "currency": "GBP",
@@ -25986,7 +25986,7 @@
         {
             "id": 730,
             "brand": "dior",
-            "name": "Matte",
+            "name": "\n                            Matte\n                            ",
             "price": "20.0",
             "price_sign": "£",
             "currency": "GBP",
@@ -26024,7 +26024,7 @@
         {
             "id": 729,
             "brand": "dior",
-            "name": "Poison Metal",
+            "name": "\n                            Poison Metal\n                            ",
             "price": "20.0",
             "price_sign": "£",
             "currency": "GBP",
@@ -26062,7 +26062,7 @@
         {
             "id": 728,
             "brand": "dior",
-            "name": "Jungle Matte",
+            "name": "\n                            Jungle Matte\n                            ",
             "price": "20.0",
             "price_sign": "£",
             "currency": "GBP",
@@ -26100,7 +26100,7 @@
         {
             "id": 727,
             "brand": "dior",
-            "name": "Miss Satin",
+            "name": "\n                            Miss Satin\n                            ",
             "price": "20.0",
             "price_sign": "£",
             "currency": "GBP",
@@ -26138,7 +26138,7 @@
         {
             "id": 726,
             "brand": "dior",
-            "name": "Mineral",
+            "name": "\n                            Mineral\n                            ",
             "price": "20.0",
             "price_sign": "£",
             "currency": "GBP",
@@ -26164,7 +26164,7 @@
         {
             "id": 725,
             "brand": "dior",
-            "name": "Sauvage",
+            "name": "\n                            Sauvage\n                            ",
             "price": "20.0",
             "price_sign": "£",
             "currency": "GBP",
@@ -26198,7 +26198,7 @@
         {
             "id": 724,
             "brand": "dior",
-            "name": "Diabolo",
+            "name": "\n                            Diabolo\n                            ",
             "price": "20.0",
             "price_sign": "£",
             "currency": "GBP",
@@ -26232,7 +26232,7 @@
         {
             "id": 723,
             "brand": "dior",
-            "name": "Tease",
+            "name": "\n                            Tease\n                            ",
             "price": "20.0",
             "price_sign": "£",
             "currency": "GBP",
@@ -26266,7 +26266,7 @@
         {
             "id": 722,
             "brand": "dior",
-            "name": "Precious Rocks",
+            "name": "\n                            Precious Rocks\n                            ",
             "price": "20.5",
             "price_sign": "£",
             "currency": "GBP",
@@ -26292,7 +26292,7 @@
         {
             "id": 721,
             "brand": "dior",
-            "name": "Amethyst",
+            "name": "\n                            Amethyst\n                            ",
             "price": "20.5",
             "price_sign": "£",
             "currency": "GBP",
@@ -26330,7 +26330,7 @@
         {
             "id": 720,
             "brand": "dior",
-            "name": "Emerald",
+            "name": "\n                            Emerald\n                            ",
             "price": "20.5",
             "price_sign": "£",
             "currency": "GBP",
@@ -26368,7 +26368,7 @@
         {
             "id": 719,
             "brand": "dior",
-            "name": "Grenat",
+            "name": "\n                            Grenat\n                            ",
             "price": "0.0",
             "price_sign": "£",
             "currency": "GBP",
@@ -26406,7 +26406,7 @@
         {
             "id": 718,
             "brand": "dior",
-            "name": "Ruby",
+            "name": "\n                            Ruby\n                            ",
             "price": "20.5",
             "price_sign": "£",
             "currency": "GBP",
@@ -31084,25 +31084,25 @@
             "productos_colores": [
                 {
                     "valor_hexadecimal": "#000000",
-                    "color_name": "negro"
+                    "color_nombre": "negro"
                 },
                 {
                     "valor_hexadecimal": "#3E2829",
-                    "color_name": "marrón"
+                    "color_nombre": "marrón"
                 }
             ]
         },
         {
-            "id": 1047,
-            "brand": "color pop",
-            "name": "Labio manchado",
-            "price": "5.5",
-            "price_sign": "$",
-            "currency": "CAD",
-            "image_link": "https://cdn.shopify.com/s/files/1/1338/0845/products/brain-freeze_a_800x1200.jpg?v=1502255076",
-            "product_link": "https://colourpop.com/collections/lippie-stix?filter=blotted-lip",
-            "website_link": "https://colorpop.com",
-            "description": "¡Lápiz labial mate Blotted Lip Sheer que crea el puchero perfecto! La fórmula es liviana, mate y edificable para una cobertura de ligera a media",
+            "identificación": 1047,
+            "marca": "color pop",
+            "nombre": "Labio manchado",
+            "precio": "5.5",
+            "precio_signo": "$",
+            "divisa": "CAD",
+            "Enlace de imágen": "https://cdn.shopify.com/s/files/1/1338/0845/products/brain-freeze_a_800x1200.jpg?v=1502255076",
+            "producto_enlace": "https://colourpop.com/collections/lippie-stix?filter=blotted-lip",
+            "enlace de página web": "https://colorpop.com",
+            "descripción": "¡Lápiz labial mate Blotted Lip Sheer que crea el puchero perfecto! La fórmula es liviana, mate y edificable para una cobertura de ligera a media",
             "clasificación": null,
             "categoría": "lápiz labial",
             "tipo de producto": "lápiz labial",
@@ -31117,41 +31117,41 @@
             "productos_colores": [
                 {
                     "valor_hexadecimal": "#b72227",
-                    "color_name": "Rodillas de abeja"
+                    "color_nombre": "Rodillas de abeja"
                 },
                 {
                     "valor_hexadecimal": "#BB656B",
-                    "color_name": "Congelación de cerebro"
+                    "color_nombre": "Congelación de cerebro"
                 },
                 {
                     "valor_hexadecimal": "#8E4140",
-                    "color_name": "goteo"
+                    "color_nombre": "goteo"
                 },
                 {
                     "valor_hexadecimal": "#A12A33",
-                    "color_name": "En un palo"
+                    "color_nombre": "En un palo"
                 },
                 {
                     "valor_hexadecimal": "#904550",
-                    "color_name": "Cubo de hielo"
+                    "color_nombre": "Cubo de hielo"
                 },
                 {
                     "valor_hexadecimal": "#452222",
-                    "color_name": "Lolly"
+                    "color_nombre": "Lolly"
                 },
                 {
                     "valor_hexadecimal": "#7C3F35",
-                    "color_name": "Algodón"
+                    "color_nombre": "Algodón"
                 }
             ]
         },
         {
-            "id": 1046,
-            "brand": "color pop",
-            "name": "Lippie Stix",
-            "price": "5.5",
-            "price_sign": "$",
-            "currency": "CAD",
+            "identificación": 1046,
+            "marca": "color pop",
+            "nombre": "Lippie Stix",
+            "precio": "5.5",
+            "precio_signo": "$",
+            "divisa": "CAD",
             "image_link": "https://cdn.shopify.com/s/files/1/1338/0845/collections/blottedlip-lippie-stix_grande.jpg?v=1512588803",
             "product_link": "https://colourpop.com/collections/lippie-stix",
             "website_link": "https://colourpop.com",
@@ -31350,21 +31350,21 @@
                 },
                 {
                     "hex_value": "#975450",
-                    "color_name": "Kapish"
+                    "color_nombre": "Kapish"
                 }
             ]
         },
         {
-            "id": 1044,
-            "brand": "boosh",
-            "name": "Lápiz labial",
-            "price": "26.0",
-            "price_sign": "$",
-            "currency": "CAD",
-            "image_link": "https://cdn.shopify.com/s/files/1/1016/3243/products/LIPBALM_LID_grande.jpg?v=1496848378",
-            "product_link": "https://www.boosh.ca/collections/all",
-            "website_link": "https://www.boosh.ca/",
-            "description": "All of our products are free from lead and heavy metals, parabens, phthalates, artificial colourants, and synthetic fragrances.  Boosh lipstick glides on smoothly for clean & protective SPF coverage. They are filled with hydrating oils and butters to preserve and enhance your lips natural surface. Organic sweet orange oil gives a light and cheerful scent.",
+            "identificación": 1044,
+            "marca": "boosh",
+            "nombre": "Lápiz labial",
+            "precio": "26.0",
+            "precio_signo": "$",
+            "divisa": "CAD",
+            "Enlace de imágen": "https://cdn.shopify.com/s/files/1/1016/3243/products/LIPBALM_LID_grande.jpg?v=1496848378",
+            "producto_enlace": "https://www.boosh.ca/collections/all",
+            "enlace de página web": "https://www.boosh.ca/",
+            "descripción": "All of our products are free from lead and heavy metals, parabens, phthalates, artificial colourants, and synthetic fragrances.  Boosh lipstick glides on smoothly for clean & protective SPF coverage. They are filled with hydrating oils and butters to preserve and enhance your lips natural surface. Organic sweet orange oil gives a light and cheerful scent.",
             "rating": null,
             "category": "lipstick",
             "product_type": "lipstick",
@@ -37312,7 +37312,7 @@
             "image_link": "https://d3t32hsnjxo7q6.cloudfront.net/i/df00e1e6268dc7d208b993d5692c9772_ra,w158,h184_pa,w158,h184.jpg",
             "product_link": "https://well.ca/products/revlon-colorstay-moisture-stain_100976.html",
             "website_link": "https://well.ca",
-            "description": "Revlon Colorstay Moisture Stain offers a new level of glossy wet color!It gives you saturated lips with brilliant shine and vivid colorFeatures:Drenches lips in glossy wet colorUltra-light creamy lipstain with Vitamin E and Aloe\n88% of women felt lips were instantly moisturized without stickiness\n",
+            "description": "Revlon Colorstay Moisture Stain offers a new level of glossy wet color!It gives you saturated lips with brilliant shine and vivid colorFeatures:Drenches lips in glossy wet colorUltra-light creamy lipstain with Vitamin E and Aloe\n88% of women felt lips were instantly moisturized without stickiness\n\n                            ",
             "rating": 4.0,
             "category": "lip_stain",
             "product_type": "lipstick",
@@ -40939,7 +40939,7 @@
         {
             "id": 768,
             "brand": "clinique",
-            "name": "Quickliner&trade; For Lips Intense",
+            "name": " Quickliner&trade; For Lips Intense",
             "price": "17.5",
             "price_sign": "$",
             "currency": "USD",
@@ -41747,16 +41747,16 @@
             "product_colors": []
         },
         {
-            "id": 1045,
-            "brand": "color pop",
-            "name": "Base sin filtro",
-            "price": "12.0",
-            "price_sign": "$",
-            "currency": "CAD",
-            "image_link": "https://cdn.shopify.com/s/files/1/1338/0845/products/foundations-lineup_800x1200.jpg?v=1528927785",
-            "product_link": "https://colourpop.com/products/base-mate-sin-filtro",
-            "website_link": "https://colourpop.com/products/base-mate-sin-filtro",
-            "description": "Desarrollada para la era de las selfies, nuestra base mate natural de cobertura completa construible brinda una piel de aspecto impecable del día a la noche. La fórmula liviana y sin aceite se mezcla suavemente y se puede personalizar fácilmente para crear la cobertura que desea. Constrúyalo o límpialo, fue desarrollado con pigmentos innovadores que difuminan suavemente para brindar un color verdadero mientras se ve y se siente natural. ¡La bomba bloqueable es fácil de usar y mantiene su rutina libre de desorden! Como siempre, 100% libre de crueldad y vegano. ",
+            "identificación": 1045,
+            "marca": "color pop",
+            "nombre": "Base sin filtro",
+            "precio": "12.0",
+            "precio_signo": "$",
+            "divisa": "CAD",
+            "Enlace de imágen": "https://cdn.shopify.com/s/files/1/1338/0845/products/foundations-lineup_800x1200.jpg?v=1528927785",
+            "producto_enlace": "https://colourpop.com/products/base-mate-sin-filtro",
+            "enlace de página web": "https://colourpop.com/products/base-mate-sin-filtro",
+            "descripción": "Desarrollada para la era de las selfies, nuestra base mate natural de cobertura completa construible brinda una piel de aspecto impecable del día a la noche. La fórmula liviana y sin aceite se mezcla suavemente y se puede personalizar fácilmente para crear la cobertura que desea. Constrúyalo o límpialo, fue desarrollado con pigmentos innovadores que difuminan suavemente para brindar un color verdadero mientras se ve y se siente natural. ¡La bomba bloqueable es fácil de usar y mantiene su rutina libre de desorden! Como siempre, 100% libre de crueldad y vegano. ",
             "clasificación": null,
             "categoría": "líquido",
             "tipo de producto": "fundamento",
@@ -41771,51 +41771,51 @@
             "productos_colores": [
                 {
                     "valor_hexadecimal": "#F2DEC3",
-                    "color_name": "Feria 05"
+                    "color_nombre": "Feria 05"
                 },
                 {
                     "valor_hexadecimal": "#F3DAC4",
-                    "color_name": "Justo 10"
+                    "color_nombre": "Justo 10"
                 },
                 {
                     "valor_hexadecimal": "#F1D9C0",
-                    "color_name": "Feria 15"
+                    "color_nombre": "Feria 15"
                 },
                 {
                     "valor_hexadecimal": "#EFD2BA",
-                    "color_name": "Feria 20"
+                    "color_nombre": "Feria 20"
                 },
                 {
                     "valor_hexadecimal": "#F1D7B3",
-                    "color_name": "Feria 25"
+                    "color_nombre": "Feria 25"
                 },
                 {
                     "valor_hexadecimal": "#EDD0B4",
-                    "color_name": "Feria 30"
+                    "color_nombre": "Feria 30"
                 },
                 {
                     "valor_hexadecimal": "#D9B295",
-                    "color_name": "Feria 35"
+                    "color_nombre": "Feria 35"
                 },
                 {
                     "valor_hexadecimal": "#CAA17B",
-                    "color_name": "Luz 45"
+                    "color_nombre": "Luz 45"
                 },
                 {
                     "valor_hexadecimal": "#E8C2A4",
-                    "color_name": "Luz 50"
+                    "color_nombre": "Luz 50"
                 },
                 {
                     "valor_hexadecimal": "#E8C3A6",
-                    "color_name": "Luz 55"
+                    "color_nombre": "Luz 55"
                 },
                 {
                     "valor_hexadecimal": "#E9C2A4",
-                    "color_name": "Luz 60"
+                    "color_nombre": "Luz 60"
                 },
                 {
                     "valor_hexadecimal": "#E1B68E",
-                    "color_name": "Luz 65"
+                    "color_nombre": "Luz 65"
                 },
                 {
                     "valor_hexadecimal": "#E4C096",
@@ -41915,38 +41915,38 @@
                 },
                 {
                     "valor_hexadecimal": "#A07967",
-                    "color_name": "Oscuridad profunda 115"
+                    "color_nombre": "Oscuridad profunda 115"
                 },
                 {
                     "valor_hexadecimal": "#946D5A",
-                    "color_name": "Oscuridad profunda 115"
+                    "color_nombre": "Oscuridad profunda 115"
                 },
                 {
                     "valor_hexadecimal": "#865F4D",
-                    "color_name": "Oscuridad profunda 115"
+                    "color_nombre": "Oscuridad profunda 115"
                 },
                 {
                     "valor_hexadecimal": "#896A5A",
-                    "color_name": "Oscuridad profunda 80"
+                    "color_nombre": "Oscuridad profunda 80"
                 },
                 {
                     "valor_hexadecimal": "#795F52",
-                    "color_name": "Oscuridad profunda 80"
+                    "color_nombre": "Oscuridad profunda 80"
                 },
                 {
                     "valor_hexadecimal": "#6B5148",
-                    "color_name": "Oscuridad profunda 80"
+                    "color_nombre": "Oscuridad profunda 80"
                 }
             ]
         },
         {
-            "id": 1043,
-            "brand": "deciem",
-            "name": "Base de suero",
-            "price": "6.7",
-            "price_sign": "$",
-            "currency": "CAD",
-            "image_link": "https://3bc01d2807fb1bc0d25c-a86d2521f1af8989841b9619f5314be5.ssl.cf1.rackcdn.com/products/market-img/rdn-serum-foundation-30-r-30ml.png?v=6ab9fcb8ca2abb9828afcf9dcdad9f94",
+            "identificación": 1043,
+            "marca": "deciem",
+            "nombre": "Base de suero",
+            "precio": "6.7",
+            "precio_signo": "$",
+            "divisa": "CAD",
+            "Enlace de imágen": "https://3bc01d2807fb1bc0d25c-a86d2521f1af8989841b9619f5314be5.ssl.cf1.rackcdn.com/products/market-img/rdn-serum-foundation-30-r-30ml.png?v=6ab9fcb8ca2abb9828afcf9dcdad9f94",
             "product_link": "https://deciem.com/product/rdn-serum-foundation-30-r-30ml",
             "website_link": "https://deciem.com/",
             "description": "Serum Foundations are lightweight medium-coverage formulations available in a comprehensive shade range across 21 shades. These foundations offer moderate coverage that looks natural with a very lightweight serum feel. They are very low in viscosity and are dispensed with the supplied pump or with the optional glass dropper available for purchase separately if preferred. ",
@@ -49627,15 +49627,15 @@
             "productos_colores": [
                 {
                     "valor_hexadecimal": "#EFC698",
-                    "color_name": "Porcelana"
+                    "color_nombre": "Porcelana"
                 },
                 {
                     "valor_hexadecimal": "#EBB579",
-                    "color_name": "desnudo"
+                    "color_nombre": "desnudo"
                 },
                 {
                     "valor_hexadecimal": "#D99A67",
-                    "color_name": "Beige"
+                    "color_nombre": "Beige"
                 }
             ]
         },
@@ -50925,7 +50925,7 @@
             "image_link": "https://d3t32hsnjxo7q6.cloudfront.net/i/4e90929a9c24a51c3db3988b205f3b43_ra,w158,h184_pa,w158,h184.jpeg",
             "product_link": "https://well.ca/products/covergirl-clean-glow-bronzer_78622.html",
             "website_link": "https://well.ca",
-            "description": "Flaunt the coveted beach-bronze glow in one simple step. This versatile \n3-in-1 multi-shade compact lets you customize your color to create a \nradiant effect. Use just one color or all three!Features: Beautiful bronze glow in just one stepBlendable, multi-shade compactClean and natural lookHow to Apply: Dip powder brush in bronzer and tap off any excess.\nSweep bronzer on your cheeks and temples.\nUsing a lighter touch, sweep bronzer where the sun naturally hits your face, including your nose, chin, and forehead.",
+            "description": "Flaunt the coveted beach-bronze glow in one simple step. This versatile \n3-in-1 multi-shade compact lets you customize your color to create a \nradiant effect. Use just one color or all three!Features: Beautiful bronze glow in just one stepBlendable, multi-shade compactClean and natural lookHow to Apply: Dip powder brush in bronzer and tap off any excess.\nSweep bronzer on your cheeks and temples.\nUsing a lighter touch, sweep bronzer where the sun naturally hits your face, including your nose, chin, and forehead.\n                            ",
             "rating": 5.0,
             "category": "N/A",
             "product_type": "bronzer",
@@ -61924,7 +61924,7 @@
             "image_link": "https://d3t32hsnjxo7q6.cloudfront.net/i/4e90929a9c24a51c3db3988b205f3b43_ra,w158,h184_pa,w158,h184.jpeg",
             "product_link": "https://well.ca/products/covergirl-clean-glow-bronzer_78622.html",
             "website_link": "https://well.ca",
-            "description": "Flaunt the coveted beach-bronze glow in one simple step. This versatile \n3-in-1 multi-shade compact lets you customize your color to create a \nradiant effect. Use just one color or all three!Features: Beautiful bronze glow in just one stepBlendable, multi-shade compactClean and natural lookHow to Apply: Dip powder brush in bronzer and tap off any excess.\nSweep bronzer on your cheeks and temples.\nUsing a lighter touch, sweep bronzer where the sun naturally hits your face, including your nose, chin, and forehead.",
+            "description": "Flaunt the coveted beach-bronze glow in one simple step. This versatile \n3-in-1 multi-shade compact lets you customize your color to create a \nradiant effect. Use just one color or all three!Features: Beautiful bronze glow in just one stepBlendable, multi-shade compactClean and natural lookHow to Apply: Dip powder brush in bronzer and tap off any excess.\nSweep bronzer on your cheeks and temples.\nUsing a lighter touch, sweep bronzer where the sun naturally hits your face, including your nose, chin, and forehead.\n                            ",
             "rating": 5.0,
             "category": "N/A",
             "product_type": "bronzer",
@@ -64199,7 +64199,7 @@
                 "image_link": "https://d3t32hsnjxo7q6.cloudfront.net/i/48492123aba0c6d096945d57a070361d_ra,w158,h184_pa,w158,h184.jpeg",
                 "product_link": "https://well.ca/products/covergirl-clean-glow-blush_78620.html",
                 "website_link": "https://well.ca",
-                "description": "Complete your Clean® look with a flush of lightweight, blendable color. \nThis versatile 3-in-1 multi-shade compact lets you customize your color \nto create a radiant effect. Use just one color or all three!Features: 3-in-1 multi-shade compactLightweight, blendable flush of colorClean and natural lookHow to Apply:  Begin with the contour, or darkest, shade in your palette and apply to the hollow space below your cheekbones.\nApply the medium shade to the apples of your cheeks and sweep upwards toward the hairline.\nFor a youthful glow, highlight the tops of your cheeks with the lightest shade.",
+                "description": "Complete your Clean® look with a flush of lightweight, blendable color. \nThis versatile 3-in-1 multi-shade compact lets you customize your color \nto create a radiant effect. Use just one color or all three!Features: 3-in-1 multi-shade compactLightweight, blendable flush of colorClean and natural lookHow to Apply:  Begin with the contour, or darkest, shade in your palette and apply to the hollow space below your cheekbones.\nApply the medium shade to the apples of your cheeks and sweep upwards toward the hairline.\nFor a youthful glow, highlight the tops of your cheeks with the lightest shade.\n                            ",
                 "rating": null,
                 "category": "powder",
                 "product_type": "blush",
