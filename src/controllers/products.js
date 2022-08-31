@@ -9,15 +9,12 @@ const getApiProducts = async (req, res, next) => {
     const api = await axios(URL_API)
     const resultAll = api.data;
     
-    res.send(resultAll);
+    return resultAll;
   
   } catch (error) {
     console.log(error)
-  }
-  
+  } 
 }
-
-
   const getDbProducts =  async(req, res) => { 
     try{
     const dbInfo = await Product.findAll({
@@ -27,29 +24,23 @@ const getApiProducts = async (req, res, next) => {
         through: { attributes: [] },
       },
     });
-    console.log(dbInfo)
-    res.send(dbInfo)
+    return dbInfo
     }catch(error){
       console.log(error)
     }
-
-
   } 
 
-
-
-  
-// const getAllProducts = async (req, res) => {
-//     const apiInfo = await getApiProducts()
+const getAllProducts = async (req, res) => {
+  try {
+    const apiInfo = await getApiProducts()
     
-//     const dbInfo = await getDbProducts()
-//     console.log(apiInfo , dbInfo)
-//     const infoTotal= [...apiInfo, ...dbInfo]
-
-//     res.send(infoTotal)
-// }
-
-
+    const dbInfo = await getDbProducts()
+ 
+    res.send ( [ ...dbInfo, ...apiInfo])
+  } catch (error) {
+    return (error);
+}
+}
 
 /* CREATE NEW PRODUCT IN THE DATABASE */
 const createProduct = async (req, res, next) => {
@@ -157,6 +148,7 @@ const disableProduct = async (req, res, next) => {
 };
 
 module.exports = {
+  getAllProducts,
   getApiProducts,
   getDbProducts,
   createProduct,
