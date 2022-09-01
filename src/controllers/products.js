@@ -1,22 +1,20 @@
 const { Product, Categorie } = require("../db");
-const axios = require("axios")
-const { URL_API } = require("./globalConst")
-
+const axios = require("axios");
+const { URL_API } = require("./globalConst");
 
 /* GET ALL PRODUCTS FROM DB */
 const getApiProducts = async (req, res, next) => {
   try {
-    const api = await axios(URL_API)
+    const api = await axios(URL_API);
     const resultAll = api.data;
-    
+
     return resultAll;
-  
   } catch (error) {
-    console.log(error)
-  } 
-}
-  const getDbProducts =  async(req, res) => { 
-    try{
+    console.log(error);
+  }
+};
+const getDbProducts = async (req, res) => {
+  try {
     const dbInfo = await Product.findAll({
       include: {
         model: Categorie,
@@ -24,47 +22,65 @@ const getApiProducts = async (req, res, next) => {
         through: { attributes: [] },
       },
     });
-    return dbInfo
-    }catch(error){
-      console.log(error)
-    }
-  } 
+    return dbInfo;
+  } catch (error) {
+    console.log(error);
+  }
+};
 
 const getAllProducts = async (req, res) => {
   try {
-    const apiInfo = await getApiProducts()
-    
-    const dbInfo = await getDbProducts()
- 
-    res.send ( [ ...dbInfo, ...apiInfo])
+    const apiInfo = await getApiProducts();
+
+    const dbInfo = await getDbProducts();
+
+    res.send([...dbInfo, ...apiInfo]);
   } catch (error) {
-    return (error);
-}
-}
+    return error;
+  }
+};
 
 /* CREATE NEW PRODUCT IN THE DATABASE */
 const createProduct = async (req, res, next) => {
   try {
     /* ME TRAIGO TODOS LOS VALORES DEL CUERPO DE LA PETICION */
-    const { brand, name,price, currency,image,description, rating, product_type, tag_list, product_colors, categories } =
-      req.body;
+    const {
+      brand,
+      name,
+      price,
+      price_sign,
+      currency,
+      image_link,
+      description,
+      rating,
+      product_type,
+      stock,
+      tag_list,
+      product_colors,
+      status,
+      categories,
+    } = req.body;
     /* CREATE NEW PRODUCT */
     const newProduct = await Product.create({
       brand,
       name,
       price,
+      price_sign,
       currency,
-      image,
+      image_link,
       description,
       rating,
       product_type,
+      stock,
       tag_list,
-      product_colors
+      product_colors,
+      status,
     });
 
-    const categoriesDb = await Categorie.findAll({where: { name: categories }});  
+    const categoriesDb = await Categorie.findAll({
+      where: { name: categories },
+    });
     newProduct.addCategorie(categoriesDb);
- 
 
     res.status(200).json({
       succMsg: "Product Created Successfully!",
@@ -79,8 +95,22 @@ const createProduct = async (req, res, next) => {
 const updateProduct = async (req, res, next) => {
   try {
     const { id } = req.params;
-    const { name, features, price, image, status, stock, category_id } =
-      req.body;
+    const {
+      brand,
+      name,
+      price,
+      price_sign,
+      currency,
+      image_link,
+      description,
+      rating,
+      product_type,
+      stock,
+      tag_list,
+      product_colors,
+      status,
+      categories,
+    } = req.body;
 
     /* BUSCO EL PRODUCT DE LA BD POR EL ID */
     let productDB = await Product.findOne({
@@ -90,13 +120,20 @@ const updateProduct = async (req, res, next) => {
     });
     /* ACTUALIZO EL PRODUCT CON LOS DATOS QUE RECIBO DEL BODY */
     const updatedProduct = await productDB.update({
+      brand,
       name,
-      features,
       price,
-      image,
-      status,
+      price_sign,
+      currency,
+      image_link,
+      description,
+      rating,
+      product_type,
       stock,
-      category_id,
+      tag_list,
+      product_colors,
+      status,
+      categories,
     });
     res.status(200).send({
       succMsg: "Product Updated Successfully!",
@@ -123,25 +160,26 @@ const disableProduct = async (req, res, next) => {
     const disabledProduct = await Product.findByPk(id, {
       attributes: [
         "id",
+        "brand",
         "name",
-        "features",
         "price",
-        "image",
-        "status",
+        "price_sign",
+        "currency",
+        "image_link",
+        "description",
+        "rating",
+        "product_type",
         "stock",
-        "category_id",
+        "tag_list",
+        "product_colors",
+        "status",
       ],
-      include: {
-        model: Categorie,
-        attributes: ["name", "id"],
-      },
     });
 
     res.status(200).json({
       ok: true,
       disabledProduct,
     });
-
   } catch (error) {
     next(error);
   }
