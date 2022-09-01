@@ -13,7 +13,7 @@ module.exports = (sequelize) => {
         allowNull: false,
         validate: {
           isUUID: 4,
-          notNull: { msg: "The category id field cannot be null " },
+          notNull: { msg: "The Category id field cannot be null " },
         },
       },
       name: {
