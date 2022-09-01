@@ -12,22 +12,14 @@ const orderProductsPrice = async (req, res, next) => {
 
     if (orderby === 'max-min') {   
         try {
-            dataApi.sort((a, b) => {
-                if (a.price > b.price) return -1;
-                if (a.price < b.price) return 1;
-                return 0
-            })
+            dataApi.sort((a, b) => {return b.price - a.price})    
             res.send(dataApi)            
         } catch (error) {
             next(error);
         }              //                    
     } else if (orderby === 'min-max') {        
         try {
-            dataApi.sort((a, b) => {
-                if (a.price > b.price) return 1;
-                if (a.price < b.price) return -1;
-                return 0
-            })         
+            dataApi.sort((a, b) => {return a.price - b.price})         
             res.send(dataApi)
         } catch (error) {
             next(error);
