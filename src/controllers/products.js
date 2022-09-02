@@ -5,8 +5,16 @@ const { URL_API } = require("./globalConst");
 /* GET ALL PRODUCTS FROM DB */
 const getApiProducts = async (req, res, next) => {
   try {
+
     const api = await axios(URL_API);
     const resultAll = api.data;
+
+    
+    /* FILTRADO DE PAGINAS CON IMAGENES QUE NO FUNCIONAN */
+    const e = api.data.filter(e => !e.image_link?.includes("purpicks") )
+    const e1 = e.filter(e => !e.image_link?.includes("static-assets.glossier") )
+    const e2 = e1.filter(e => !e.image_link?.includes("imancosmetics") )
+    // const e2 = e1.filter(e => !e.image_link.includes("d3t32hsnjxo7q6.cloudfront.net/") )
 
     return resultAll;
   } catch (error) {
