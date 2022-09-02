@@ -1,7 +1,7 @@
 const server = require('../api/src/app');
 const { database } = require('../api/src/db.js');
 const { uploadCategoryDb } = require('./src/controllers/uploadCategoryDb');
-
+require("dotenv").config(); //para leer las variables de entorno
 
 const PORT = process.env.PORT || 3001;
 
