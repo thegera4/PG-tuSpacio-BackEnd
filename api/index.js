@@ -1,5 +1,5 @@
-const server = require('../api/src/app');
-const { database } = require('../api/src/db.js');
+const server = require('./src/app');
+const { database } = require('./src/db');
 const { uploadCategoryDb } = require('./src/controllers/uploadCategoryDb');
 require("dotenv").config(); //para leer las variables de entorno
 
