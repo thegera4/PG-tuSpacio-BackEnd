@@ -1,5 +1,5 @@
-const server = require('./src/app.js');
-const { database } = require('./src/db.js');
+const server = require('../api/src/app');
+const { database } = require('../api/src/db.js');
 const { uploadCategoryDb, uploadProductDb } = require('./src/controllers/uploadCategoryDb');
 
 
