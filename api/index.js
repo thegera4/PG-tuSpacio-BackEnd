@@ -1,6 +1,6 @@
 const server = require('../api/src/app');
 const { database } = require('../api/src/db.js');
-const { uploadCategoryDb, uploadProductDb } = require('./src/controllers/uploadCategoryDb');
+const { uploadCategoryDb } = require('./src/controllers/uploadCategoryDb');
 
 
 const PORT = process.env.PORT || 3001;
@@ -8,7 +8,7 @@ const PORT = process.env.PORT || 3001;
 // Syncing all the models at once.
 //Con {force:true} ==>es un sincronizado forzado por lo que se reescribe la Bd al recargar la app
 
-database.sync({ force: false }).then(() => {
+database.sync({ force: true }).then(() => {
   uploadCategoryDb()    //  Realiza la carga de la categoria en la db
      
   server.listen(PORT, () => {
