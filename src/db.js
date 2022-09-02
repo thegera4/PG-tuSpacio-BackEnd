@@ -71,8 +71,8 @@ User.belongsToMany(Favorite, { through: "Favorite_Users" });
 Favorite.belongsToMany(User, { through: "Favorite_Users" });
 
 /*===========================RELATION CATEGORY - PRODUCTS N:M==============================*/
-Categorie.belongsToMany(Product, { through: "categoryProduct" });
-Product.belongsToMany(Categorie, { through: "categoryProduct"  });
+Categorie.belongsToMany(Product, { through: "Category_Products" });
+Product.belongsToMany(Categorie, { through: "Category_Products"  });
 
 /*===========================RELATION USER - ORDER 1:1==============================*/
 User.hasMany(Order, { foreignKey: "user_id" });
