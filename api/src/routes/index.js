@@ -1,4 +1,5 @@
 const { Router } = require('express');
+const { requiresAuth } = require('express-openid-connect');
 
 const productsRoute = require('./products');
 const detailProductRoute = require('./detailproduct.js');
@@ -9,13 +10,15 @@ const orderPriceRoute = require('./orderByPrice.js');
 const brandProductsRoute = require('./productsBrand.js');
 const orderNameRoute = require('./orderByName.js');
 const orderCombineRoute = require('./orderCombine.js');
-
+const loginRoute = require('./authorization/login.js')
 
 const categoriesRoute = require('./categories');
 const oneCategoriesRoute = require('./oneCategorie.js') 
 
 
 const router = Router();
+
+router.use('/login', requiresAuth(), loginRoute);
 
 /*_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/
                 RUTAS DE PRODUCTS
