@@ -125,7 +125,7 @@ module.exports = (sequelize) => {
       status: {
         type: DataTypes.BOOLEAN,
         defaultValue: true,
-      },
+      },          
     },
     {
       timestamps: true,
