@@ -118,7 +118,7 @@ module.exports = (sequelize) => {
       },
 
       product_colors: {
-        type: DataTypes.ARRAY(DataTypes.STRING),
+        type: DataTypes.ARRAY(DataTypes.JSONB),
         allowNull: true,
       },
 
