@@ -1,36 +1,34 @@
 const sequelize = require("sequelize");
-const { User, Rol, Categorie } = require("../db");
+const { User, Rol, Categorie } = require("../../db.js")
 
-
-/* GET DETAIL PRODUCT FROM JSON */
+/* INSERT USER IN DB */
 const getLogin = async (req, res, next) => {
+    const rol = "user";
+    const status = false;
+    try {
+        const newUser = await User.findOrCreate({
+            where: { 
+                name: req.oidc.user.name, 
+                nickname: req.oidc.user.nickname, 
+                email: req.oidc.user.email, 
+                email_verified: req.oidc.user.email_verified, 
+                sid: req.oidc.user.sid, 
+                picture: req.oidc.user.picture,
+                status,                
+            },
+        });
+        const role_id = await Rol.findAll({
+            where: { rolName: rol },
+        });
+        // newUser.addRol(role_id);
+        res.status(200).json({
+            succMsg: role_id,
+        });
 
-    const { nickname, name, picture, email, email_verified, sid } = req.oidc.user;
-    // const rol = "user";
-    // // const status 
-    // const newUser = User.create({
-    //     nickname,
-    //     name,
-    //     picture,
-    //     email,
-    //     email_verified,
-    //     sid,
-    //     // status
-    // });
+    } catch (error) {
+        res.send({ error: error.message })
+    }
 
-    const newRol = await Categorie.findAll()
-
-
-console.log(newRol);
-    // const rolId = await Rol.findOrCreate({
-    //     where: { rolName: rol },
-    // });
-    // newUser.addRol(rolId);
-
-    //   res.status(200).json({
-    //     succMsg: "User Created Successfully!",
-    //     newUser,
-    //   });
 
 
     // app.get('/admin',  (req, res) => {
