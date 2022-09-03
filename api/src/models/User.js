@@ -48,14 +48,14 @@ module.exports = (sequelize) => {
       allowNull: false,
       defaultValue: false,
     },  
-    // rol_id: {
-    //   type: DataTypes.UUID,
-    //   allowNull: false,
-    //   references: {
-    //     model: Rol,
-    //     key: "id",
-    //   },
-    // },
+    rol_id: {
+      type: DataTypes.INTEGER,
+      // allowNull: false,
+      references: {
+        model: Rol,
+        key: "id",
+      },
+    },
   });
 };
 

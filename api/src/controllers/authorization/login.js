@@ -8,17 +8,19 @@ const getLogin = async (req, res, next) => {
     try {
         const newUser = await User.findOrCreate({
             where: { 
-                name: req.oidc.user.name, 
+                name: req.oidc.user.name,  //aca
                 nickname: req.oidc.user.nickname, 
                 email: req.oidc.user.email, 
                 email_verified: req.oidc.user.email_verified, 
                 sid: req.oidc.user.sid, 
                 picture: req.oidc.user.picture,
-                status,                
+                status,     
+                role_id : 1           
             },
         });
-        const role_id = await Rol.findAll({
-            where: { rolName: rol },
+        const role_id = await Rol.findOrCreate({
+            // attributes: ["id"],
+            where: { rolName: rol, status: status }
         });
         // newUser.addRol(role_id);
         res.status(200).json({
