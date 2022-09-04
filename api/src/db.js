@@ -63,8 +63,8 @@ const { Product, Review, Categorie, Order, Rol, User, Favorite } =
   sequelize.models; 
 
 /*===========================RELATION Rol - User 1:N==============================*/
-Rol.hasMany(User, { foreignKey: "rol_id" });
-User.belongsTo(Rol, { foreignKey: "rol_id" });
+// Rol.hasMany(User, { foreignKey: "rol_id" });
+// User.belongsTo(Rol, { foreignKey: "rol_id" });
 
 /*===========================RELATION User - Favorite N:M==============================*/
 User.belongsToMany(Favorite, { through: "Favorite_Users" });
@@ -74,9 +74,9 @@ Favorite.belongsToMany(User, { through: "Favorite_Users" });
 Categorie.belongsToMany(Product, { through: "Category_Products" });
 Product.belongsToMany(Categorie, { through: "Category_Products"  });
 
-/*===========================RELATION USER - ORDER 1:1==============================*/
+/*===========================RELATION USER - ORDER 1:N==============================*/
 User.hasMany(Order, { foreignKey: "user_id" });
-Order.belongsTo(User);
+Order.belongsTo(User, { foreignKey: "user_id" }); 
 
 /*===========================RELATION ORDER - PRODUCTS N:M==============================*/
 Order.belongsToMany(Product, { through: "Order_Products" });

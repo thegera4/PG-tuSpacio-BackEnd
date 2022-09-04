@@ -8,14 +8,14 @@ module.exports = (sequelize) => {
       primaryKey: true,
       allowNull: false,
     },
-    quantity: {
+    value: {
       type: DataTypes.INTEGER,
       allowNull: false,
     },
     status: {
-      type: DataTypes.BOOLEAN,
+      type: DataTypes.ENUM('created', 'processing', 'cancelled', 'completed'),
         allowNull: false,
-        defaultValue: false,
+        defaultValue: 'created',
     },
     user_id: {
       type: DataTypes.UUID,
@@ -25,5 +25,9 @@ module.exports = (sequelize) => {
         key: "id",
       },
     },
+    // products_id: { 
+    //   type: DataTypes.ARRAY(DataTypes.UUID),
+    //   // allowNull: false,
+    // },
   });
 };
