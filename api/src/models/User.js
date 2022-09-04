@@ -48,12 +48,16 @@ module.exports = (sequelize) => {
       allowNull: false,
       defaultValue: true,
     },  
-    rol: {
-      type: DataTypes.ENUM('admin', 'user'),
+    rol_id: {
+      type: DataTypes.INTEGER,
       allowNull: false,
-      defaultValue: 'user',
+      references: {
+        model: Rol,
+        key: "id",
       },
+    },
   });
 };
+
 
 // la tabla favorites es una tabla intermedia que relaciona user_id con products_id, se crea en db.js

@@ -1,5 +1,6 @@
 const { Router } = require('express');
 
+
 const productsRoute = require('./products');
 const detailProductRoute = require('./detailproduct.js');
 const searchProductsRoute = require('./searchproducts.js');
@@ -9,14 +10,11 @@ const orderPriceRoute = require('./orderByPrice.js');
 const brandProductsRoute = require('./productsBrand.js');
 const orderNameRoute = require('./orderByName.js');
 const orderCombineRoute = require('./orderCombine.js');
-
-
 const categoriesRoute = require('./categories');
 const oneCategoriesRoute = require('./oneCategorie.js') 
-
 const ordersRoute = require('./orders');
-
 const usersRoute = require('./users');
+const rolsRoute = require('./rols');
 
 
 const router = Router();
@@ -50,5 +48,9 @@ router.use("/orders", ordersRoute);
 _/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/*/
 router.use("/users", usersRoute);
 
+/*_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_ /_/_/_/_/_/_/_/_/_/_/_/_/_/_/_ /_/_/_/_/_/_/_/_/_/_/_/_/_/_/_ 
+                RUTAS DE ROL                                                                  
+_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/*/
+router.use("/rols", rolsRoute);
 
-module.exports = router;
+module.exports = router; 

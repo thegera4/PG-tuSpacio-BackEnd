@@ -32,7 +32,7 @@ const createUser = async (req, res, next) => {
             sid,
             picture,
             status,
-            rol } = req.body;
+            rol_id } = req.body;
 
     /* CREATE NEW USER */
     const newUser = await User.create({
@@ -43,7 +43,7 @@ const createUser = async (req, res, next) => {
         sid,
         picture,
         status,
-        rol,
+        rol_id,
     });
 
     res.status(200).json({
@@ -67,7 +67,7 @@ const updateUser = async (req, res, next) => {
             sid,
             picture,
             status,
-            rol } = req.body;
+            rol_id } = req.body;
             
     /* BUSCO EL USER EN LA BD POR EL ID */
     const userDb = await User.findByPk(id);
@@ -80,7 +80,7 @@ const updateUser = async (req, res, next) => {
         sid,
         picture,
         status,
-        rol,
+        rol_id,
     });
     res.status(200).json({
         succMsg: "User Updated Successfully!",

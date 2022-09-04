@@ -63,8 +63,8 @@ const { Product, Review, Categorie, Order, Rol, User, Favorite } =
   sequelize.models; 
 
 /*===========================RELATION Rol - User 1:N==============================*/
-// Rol.hasMany(User, { foreignKey: "rol_id" });
-// User.belongsTo(Rol, { foreignKey: "rol_id" });
+Rol.hasMany(User, { foreignKey: "rol_id" });
+User.belongsTo(Rol, { foreignKey: "rol_id" });
 
 /*===========================RELATION User - Favorite N:M==============================*/
 User.belongsToMany(Favorite, { through: "Favorite_Users" });
