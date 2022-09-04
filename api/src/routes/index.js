@@ -10,6 +10,7 @@ const orderPriceRoute = require('./orderByPrice.js');
 const brandProductsRoute = require('./productsBrand.js');
 const orderNameRoute = require('./orderByName.js');
 const orderCombineRoute = require('./orderCombine.js');
+const ofertsRoute = require('./oferts.js');
 const categoriesRoute = require('./categories');
 const oneCategoriesRoute = require('./oneCategorie.js') 
 const ordersRoute = require('./orders');
@@ -31,6 +32,9 @@ router.use("/products/rating/", ratingRoute);
 router.use("/products/price/", orderPriceRoute);
 router.use("/products/orderName/", orderNameRoute);
 router.use("/products/orderCombine/", orderCombineRoute);
+router.use("/products/oferts", ofertsRoute);
+
+
 
 /*_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/
                 RUTAS DE CATEGORIES
