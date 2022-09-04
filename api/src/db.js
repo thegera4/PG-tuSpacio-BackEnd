@@ -59,7 +59,7 @@ sequelize.models = Object.fromEntries(capsEntries);
 // Para relacionarlos hacemos un destructuring
 
 // Ejemplo:
-const { Product, Review, Categorie, Order, Rol, User, Favorite } =
+const { Product, Review, Categorie, Order, Rol, User, Favorite, Ofert } =
   sequelize.models; 
 
 /*===========================RELATION Rol - User 1:N==============================*/
@@ -85,6 +85,11 @@ Product.belongsToMany(Order, { through: "Order_Products" });
 /*===========================RELATION PRODUCTS - REVIEWS 1:N==============================*/
 Product.hasMany(Review, { foreignKey: "product_id" });
 Review.belongsTo(Product, { foreignKey: "product_id" });
+
+/*===========================RELATION PRODUCTS - OFERTS N:M==============================*/
+Product.belongsToMany(Ofert, { through: "Product_Oferts" });
+Ofert.belongsToMany(Product, { through: "Product_Oferts" });
+
 
 
 module.exports = {

@@ -9,6 +9,8 @@ const PORT = process.env.PORT || 3001;
 //Con {force:true} ==>es un sincronizado forzado por lo que se reescribe la Bd al recargar la app
 
 database.sync({ force:false}).then(() => {
+
+
   uploadCategoryDb()    //  Realiza la carga de la categoria en la db
      
   server.listen(PORT, () => {

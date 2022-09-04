@@ -1,4 +1,4 @@
-const { Product, Categorie } = require("../db");
+const { Product, Categorie, Ofert } = require("../db");
 const axios = require("axios")
 const { URL_API } = require("./globalConst")
 
@@ -16,10 +16,17 @@ const getDetailProduct = async (req, res, next) => {
         else {
             const dbInfo = await Product.findAll({
                     include: {
-                        model: Categorie,
+                         model: Categorie,
                         attributes: ["name"], 
-                        through: { attributes: [] }
-                    }
+                        through: { attributes: [] },
+
+                    },
+                    include: {
+                        model: Ofert,
+                        attributes: ["startDate", "endDate", "status", "description", "discountPercent"],
+                        through: { attributes: [] },
+                    },
+                                    
                })
               let productDetail = await dbInfo.find(p => p.id === id)
                 
