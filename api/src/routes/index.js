@@ -1,7 +1,5 @@
 const { Router } = require('express');
 
-
-
 const productsRoute = require('./products');
 const detailProductRoute = require('./detailproduct.js');
 const searchProductsRoute = require('./searchproducts.js');
@@ -13,9 +11,10 @@ const orderNameRoute = require('./orderByName.js');
 const orderCombineRoute = require('./orderCombine.js');
 const ofertsRoute = require('./oferts.js');
 
-
 const categoriesRoute = require('./categories');
 const oneCategoriesRoute = require('./oneCategorie.js') 
+
+const checkoutRoute = require('./checkout.js');
 
 
 const router = Router();
@@ -42,6 +41,10 @@ _/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/
 router.use("/categorie", oneCategoriesRoute);
 router.use("/categories", categoriesRoute);
 
+/*_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/
+                RUTA DE PAGO (Checkout)
+_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/*/
 
+router.use("/checkout", checkoutRoute);
 
 module.exports = router;
