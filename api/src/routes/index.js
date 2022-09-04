@@ -17,6 +17,8 @@ const ordersRoute = require('./orders');
 const usersRoute = require('./users');
 const rolsRoute = require('./rols');
 
+const checkoutRoute = require('./checkout.js');
+
 
 const router = Router();
 
@@ -43,6 +45,7 @@ router.use("/categorie", oneCategoriesRoute);
 router.use("/categories", categoriesRoute);
 
 /*_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/
+
                 RUTAS DE ORDERS                                                                  
 _/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/*/
 router.use("/orders", ordersRoute);
@@ -56,5 +59,11 @@ router.use("/users", usersRoute);
                 RUTAS DE ROL                                                                  
 _/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/*/
 router.use("/rols", rolsRoute);
+
+                RUTA DE PAGO (Checkout)
+_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/*/
+
+router.use("/checkout", checkoutRoute);
+
 
 module.exports = router; 
