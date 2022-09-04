@@ -76,7 +76,7 @@ Product.belongsToMany(Categorie, { through: "Category_Products"  });
 
 /*===========================RELATION USER - ORDER 1:N==============================*/
 User.hasMany(Order, { foreignKey: "user_id" });
-Order.belongsTo(User);
+Order.belongsTo(User, { foreignKey: "user_id" }); 
 
 /*===========================RELATION ORDER - PRODUCTS N:M==============================*/
 Order.belongsToMany(Product, { through: "Order_Products" });
