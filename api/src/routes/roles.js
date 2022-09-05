@@ -25,16 +25,16 @@ const {
 
 const router = Router();
 
-/* GET ALL CATEGORIES FRONT THE DATABASE */
+/* GET ALL ROLES FRONT THE DATABASE */
 router.get("/", getAllRoles);
 
-/* CREATE NEW CATEGORY IN THE DATABASE */
+/* CREATE NEW ROL IN THE DATABASE */
 router.post("/", validator.params(querySchema), createRol);
 
-/* UPDATE CATEGORY IN THE DATABASE */
+/* UPDATE ROL IN THE DATABASE */
 router.put("/:id", validator.params(paramsSchema), updateRol);
 
-/* DELETE CATEGORY IN THE DATABASE */
+/* DELETE ROL IN THE DATABASE */
 router.delete("/:id", validator.params(paramsSchema), deleteRol);
 
 module.exports = router;
