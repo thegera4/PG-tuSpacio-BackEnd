@@ -18,7 +18,8 @@ const oneCategoriesRoute = require('./oneCategorie.js')
 
 const router = Router();
 
-router.use('/login', requiresAuth(), loginRoute);
+router.use('/login', loginRoute);
+// router.use('/login', requiresAuth(), loginRoute);
 
 /*_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/
                 RUTAS DE PRODUCTS

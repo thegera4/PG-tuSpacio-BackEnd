@@ -1,54 +1,49 @@
-const sequelize = require("sequelize");
-const { User, Rol, Categorie } = require("../../db.js")
+const { User, Rol } = require("../../db.js")
+const { Op } = require("sequelize")
 
 /* INSERT USER IN DB */
 const getLogin = async (req, res, next) => {
-    const rol = "user";
-    const status = false;
+    const { name, email, email_verified, nickname, sid, id, picture, rol, status } = req.body
+    // const { name, email, email_verified, nickname, sid, id,picture } = req.oidc.user
     try {
-        const newUser = await User.findOrCreate({
-            where: { 
-                name: req.oidc.user.name,  //aca
-                nickname: req.oidc.user.nickname, 
-                email: req.oidc.user.email, 
-                email_verified: req.oidc.user.email_verified, 
-                sid: req.oidc.user.sid, 
-                picture: req.oidc.user.picture,
-                status,     
-                role_id : 1           
-            },
-        });
-        const role_id = await Rol.findOrCreate({
-            // attributes: ["id"],
-            where: { rolName: rol, status: status }
-        });
-        // newUser.addRol(role_id);
-        res.status(200).json({
-            succMsg: role_id,
-        });
-
+        // BUSCAR EL ID DEL ROL
+        const role_id = await Rol.findAll({
+            attributes: ["id"],
+            where: { rolName: rol }
+        })
+        let roleid = role_id.map(e => e.id)
+        // VERIFICA SI EL USUARIO EXISTE
+        let user = await User.findAll({
+            where: {
+                [Op.or]: [
+                    { email: email },
+                    { nickname: nickname }
+                ]
+            }
+        })
+        // SI EL USUARIO NO EXISTE LO CREA EN LA DB
+        if (user.length===0) {
+            user = await User.create({
+                name,  //aca
+                nickname,
+                email,
+                email_verified,
+                sid,
+                picture,
+                status,
+                rol_id: roleid
+            })
+            res.send(user);
+        }
+        //  SI EL USUARIO EXISTE LO RETORNA 
+        else {
+            res.send(user);
+        }
     } catch (error) {
         res.send({ error: error.message })
     }
-
-
-
-    // app.get('/admin',  (req, res) => {
-    // res.send(JSON.stringify(req.oidc.user));
-    // console.log(email_verified)
-    //   });
-    // res.send("estoy en getLogin")
-    // res.send(req.oidc.isAuthenticated() ? 'Logged in' : 'Logged out');
-    //       app.get('/profile', requiresAuth(), (req, res) => {
-    //   res.send(JSON.stringify(req.oidc.user));
-    // });
 }
-
-
-
 
 module.exports = {
     getLogin
 };
-
-
