@@ -9,7 +9,6 @@ const getApiProducts = async (req, res, next) => {
     const api = await axios(URL_API);
     const resultAll = api.data;
 
-    
     /* FILTRADO DE PAGINAS CON IMAGENES QUE NO FUNCIONAN */
     const e = api.data.filter(e => !e.image_link?.includes("purpicks") )
     const e1 = e.filter(e => !e.image_link?.includes("static-assets.glossier") )
