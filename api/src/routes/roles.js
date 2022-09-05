@@ -32,9 +32,9 @@ router.get("/", getAllRoles);
 router.post("/", validator.params(querySchema), createRol);
 
 /* UPDATE CATEGORY IN THE DATABASE */
-router.put("/", validator.params(paramsSchema), updateRol);
+router.put("/:id", validator.params(paramsSchema), updateRol);
 
 /* DELETE CATEGORY IN THE DATABASE */
-router.delete("/", validator.params(paramsSchema), deleteRol);
+router.delete("/:id", validator.params(paramsSchema), deleteRol);
 
 module.exports = router;

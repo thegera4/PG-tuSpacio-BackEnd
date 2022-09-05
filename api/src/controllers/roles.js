@@ -26,18 +26,15 @@ const createRol = async (req, res, next) => {
 
 // MODIFICACION DEL ROL REVISAR
 const updateRol = async (req, res, next) => {
-    const { rolNamePrevious, rolNameNew, status } = req.query
+    const { rolNameNew, status } = req.query
+
     try {
-        const rolId = await Rol.findAll({
-            attributes: ["id"],
+        const rol = await Rol.update({
+            rolName: rolNameNew,
+            status: status
+        }, {
             where: {
-                rolName: rolNamePrevious
-            }
-        })
-        const id = rolId.map(e => e.id)
-        const rol = await Rol.update({ rolName: rolNameNew, status: status }, {
-            where: {
-                id: id
+                id: req.params.id
             }
         })
         res.send(rol)
@@ -48,26 +45,18 @@ const updateRol = async (req, res, next) => {
 
 // ELIMINACION DEL ROL
 const deleteRol = async (req, res, next) => {
-    const { rolName } = req.query
+    const id = req.params.id
     try {
-        const rolId = await Rol.findAll({
-            attributes: ["id"],
-            where: {
-                rolName: rolName
-            }
-        })
-        const id = rolId.map(e => e.id)
-        const rol = await Rol.destroy({
+        await Rol.destroy({
             where: {
                 id: id
             }
         });
-        res.send(rol)
+        res.send({ message: "Usuario Eliminado Exitosamente" })
     } catch (error) {
         next({ message: error.message })
     }
 }
-
 
 module.exports = {
     getAllRoles,
