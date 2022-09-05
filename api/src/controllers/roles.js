@@ -14,7 +14,8 @@ const getAllRoles = async (req, res, next) => {
 const createRol = async (req, res, next) => {
     const { rolName, status } = req.query
     try {
-        const newRol = await Rol.create({
+        const newRol = await Rol.findOrCreate({
+            where: { rolName },
             rolName: rolName,
             status: status
         })
