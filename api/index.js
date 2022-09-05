@@ -10,7 +10,7 @@ const PORT = process.env.PORT || 3001;
 
 database.sync({ force: false }).then(() => {
   uploadCategoryDb()    //  Realiza la carga de la categoria en la db
-     
+
   server.listen(PORT, () => {
     console.log(`Server Listening in http://localhost:${PORT}/`);
   });

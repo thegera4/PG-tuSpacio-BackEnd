@@ -15,6 +15,9 @@ const loginRoute = require('./authorization/login.js')
 const categoriesRoute = require('./categories');
 const oneCategoriesRoute = require('./oneCategorie.js') 
 
+const rolesRoute = require('./roles.js') 
+
+
 
 const router = Router();
 
@@ -40,6 +43,11 @@ _/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/
 router.use("/categorie", oneCategoriesRoute);
 router.use("/categories", categoriesRoute);
 
+
+/*_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/
+                RUTAS DE ROLES
+_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/*/
+router.use("/rol", rolesRoute)
 
 
 module.exports = router;
