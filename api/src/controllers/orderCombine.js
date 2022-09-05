@@ -114,3 +114,6 @@ const orderCombine = async (req, res, next) => {
        msg: "no se pudo realizar la consulta"
     }
 }
+module.exports = {
+    orderCombine
+}
