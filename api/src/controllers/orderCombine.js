@@ -8,9 +8,8 @@ const getOneCategorie = async (category) => {
     const dataApi = resp.data
     try {
         let resultCategory = dataApi.filter(e => e.category === category)
-        let results = resultCategory
-        return results
-    } catch (error) {
+        return resultCategory 
+        } catch (error) {
         next(error);
     }
 }
@@ -19,9 +18,8 @@ const getOneBrand = async (brand) => {
     const resp = await axios.get(URL_API)
     const dataApi = resp.data
     try {
-        let resultCategory = dataApi.filter(e => e.brand === brand)
-        let results = resultCategory
-        return results;
+        let resultBrand = dataApi.filter(e => e.brand === brand)
+        return resultBrand
     } catch (error) {
         next(error);
     }
