@@ -1,4 +1,5 @@
 const { Router } = require('express');
+const { requiresAuth } = require('express-openid-connect');
 
 
 const productsRoute = require('./products');
@@ -11,6 +12,9 @@ const brandProductsRoute = require('./productsBrand.js');
 const orderNameRoute = require('./orderByName.js');
 const orderCombineRoute = require('./orderCombine.js');
 const ofertsRoute = require('./oferts.js');
+
+const loginRoute = require('./authorization/login.js')
+
 const categoriesRoute = require('./categories');
 const oneCategoriesRoute = require('./oneCategorie.js') 
 const ordersRoute = require('./orders');
@@ -19,8 +23,16 @@ const rolsRoute = require('./rols');
 
 const checkoutRoute = require('./checkout.js');
 
+const rolesRoute = require('./roles.js') 
+
+
 
 const router = Router();
+
+/*_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/
+                RUTA DE LOGIN
+_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/*/
+router.use('/login', loginRoute);
 
 /*_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/
                 RUTAS DE PRODUCTS
@@ -45,7 +57,6 @@ router.use("/categorie", oneCategoriesRoute);
 router.use("/categories", categoriesRoute);
 
 /*_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/
-
                 RUTAS DE ORDERS                                                                  
 _/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/*/
 router.use("/orders", ordersRoute);
@@ -63,7 +74,6 @@ router.use("/rols", rolsRoute);
 /*_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_ /_/_/_/_/_/_/_/_/_/_/_/_/_/_/_ /_/_/_/_/_/_/_/_/_/_/_/_/_/_/_ 
                 RUTA DE PAGO (Checkout)
 _/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/*/
-
 router.use("/checkout", checkoutRoute);
 
 

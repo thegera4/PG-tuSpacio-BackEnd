@@ -46,11 +46,12 @@ module.exports = (sequelize) => {
     status: {
       type: DataTypes.BOOLEAN,
       allowNull: false,
-      defaultValue: true,
+
+      defaultValue: false,
     },  
     rol_id: {
       type: DataTypes.INTEGER,
-      allowNull: false,
+      // allowNull: false,
       references: {
         model: Rol,
         key: "id",
