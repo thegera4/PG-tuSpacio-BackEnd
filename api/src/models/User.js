@@ -8,7 +8,11 @@ module.exports = (sequelize) => {
       primaryKey: true,
       allowNull: false,
     },
-    username: {
+    nickname: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
+    name: {
       type: DataTypes.STRING,
       allowNull: false,
     },
@@ -16,27 +20,37 @@ module.exports = (sequelize) => {
       type: DataTypes.STRING,
       allowNull: false,
     },
-    password: {
+    email_verified: {
+      type: DataTypes.BOOLEAN,
+      allowNull: false,
+      defaultValue: false,
+    },
+    sid: {
       type: DataTypes.STRING,
       allowNull: false,
     },
-    image: {
+    // password: {
+    //   type: DataTypes.STRING,
+    //   allowNull: false,
+    // },
+    picture: {
       type: DataTypes.STRING(1234),
       allowNull: true,
       defaultValue: null,
     },
 
-    address: {
-      type: DataTypes.STRING,
-      allowNull: false,
-    },
+    // address: {
+    //   type: DataTypes.STRING,
+    //   allowNull: false,
+    // },
     status: {
       type: DataTypes.BOOLEAN,
       allowNull: false,
+      defaultValue: false,
     },  
     rol_id: {
-      type: DataTypes.UUID,
-      allowNull: false,
+      type: DataTypes.INTEGER,
+      // allowNull: false,
       references: {
         model: Rol,
         key: "id",

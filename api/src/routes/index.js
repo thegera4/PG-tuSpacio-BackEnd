@@ -1,4 +1,5 @@
 const { Router } = require('express');
+const { requiresAuth } = require('express-openid-connect');
 
 const productsRoute = require('./products');
 const detailProductRoute = require('./detailproduct.js');
@@ -9,13 +10,19 @@ const orderPriceRoute = require('./orderByPrice.js');
 const brandProductsRoute = require('./productsBrand.js');
 const orderNameRoute = require('./orderByName.js');
 const orderCombineRoute = require('./orderCombine.js');
-
+const loginRoute = require('./authorization/login.js')
 
 const categoriesRoute = require('./categories');
 const oneCategoriesRoute = require('./oneCategorie.js') 
 
+const rolesRoute = require('./roles.js') 
+
+
 
 const router = Router();
+
+router.use('/login', loginRoute);
+// router.use('/login', requiresAuth(), loginRoute);
 
 /*_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/
                 RUTAS DE PRODUCTS
@@ -36,6 +43,11 @@ _/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/
 router.use("/categorie", oneCategoriesRoute);
 router.use("/categories", categoriesRoute);
 
+
+/*_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/
+                RUTAS DE ROLES
+_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/*/
+router.use("/rol", rolesRoute)
 
 
 module.exports = router;
