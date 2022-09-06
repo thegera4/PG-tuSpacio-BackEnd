@@ -13,7 +13,7 @@ const getDbOferts = async (req, res) => {
         through: { attributes: [] },
       },
     });
-    res.send(dbInfo);
+    res.send(dbInfo); 
   } catch (error) {
     console.log(error);
   }
@@ -27,6 +27,7 @@ const createOfert = async (req, res, next) => {
         startDate,
         endDate,
         status,
+        image,
         description,
         discountPercent,
         products_id,
@@ -36,6 +37,7 @@ const createOfert = async (req, res, next) => {
         startDate,
         endDate,
         status,
+        image,
         description,
         discountPercent,
         products_id, // ESTO ES UN ARRAY DE ID DE PRODUCTOS
@@ -63,6 +65,7 @@ const updateOfert = async (req, res, next) => {
         startDate,
         endDate,
         status,
+        image,
         description,
         discountPercent,
         products_id,
@@ -79,6 +82,7 @@ const updateOfert = async (req, res, next) => {
         startDate,
         endDate,
         status,
+        image,
         description,
         discountPercent,
         products_id,
@@ -111,6 +115,7 @@ const disableOfert = async (req, res, next) => {
         "startDate",
         "endDate",
         "status",
+        "image",
         "description",
         "discountPercent",
         "products_id",       
