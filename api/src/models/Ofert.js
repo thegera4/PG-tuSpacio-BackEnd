@@ -31,7 +31,13 @@ module.exports = (sequelize) => {
           type: DataTypes.BOOLEAN,
           allowNull: false,
           defaultValue: false,
-
+        },
+        image: {
+          type: DataTypes.TEXT,
+          allowNull: false,
+          validate: {
+            isUrl: true,
+          },
         },
         description: {
           type: DataTypes.STRING,
@@ -41,6 +47,7 @@ module.exports = (sequelize) => {
             notEmpty: true,
         }
         },
+
         discountPercent : {
           type: DataTypes.INTEGER,
           allowNull: false,
