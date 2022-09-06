@@ -20,7 +20,6 @@ require('dotenv').config();
 require('./db.js');
 
 const server = express();
-
 // server.use(auth(config));
 
 server.name = 'API';
@@ -39,8 +38,6 @@ server.use((req, res, next) => {
 });
 
 server.use('/api', routes);
-
-
 
 // Error catching endware.
 server.use((err, req, res, next) => { 
