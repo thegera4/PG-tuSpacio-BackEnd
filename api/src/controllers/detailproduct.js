@@ -10,29 +10,28 @@ const getDetailProduct = async (req, res, next) => {
     const resp = await axios.get(URL_API)
     const detail = resp.data
     try {
-        if(id.length < 8) {
+        if (id.length < 8) {
             let productDetail = detail.find(e => e.id == id)
-            res.send(productDetail);}
+            res.send(productDetail);
+        }
         else {
             const dbInfo = await Product.findAll({
-                    include: {
-                        model: Categorie,
-                        attributes: ["name"], 
-                        through: { attributes: [] }
-                    }
-               })
-              let productDetail = await dbInfo.find(p => p.id === id)
-                
-             
-              res.send(productDetail);
-            }
-                } catch (error) {
-                    next(error);
+                include: {
+                    model: Categorie,
+                    attributes: ["name"],
+                    through: { attributes: [] }
                 }
-            }
-        
-        module.exports = {
-            getDetailProduct
-        };
+            })
+            let productDetail = await dbInfo.find(p => p.id === id)
 
 
+            res.send(productDetail);
+        }
+    } catch (error) {
+        next(error);
+    }
+}
+
+module.exports = {
+    getDetailProduct
+};

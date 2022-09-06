@@ -29,20 +29,15 @@ module.exports = (sequelize) => {
       type: DataTypes.STRING,
       allowNull: false,
     },
-    // password: {
-    //   type: DataTypes.STRING,
-    //   allowNull: false,
-    // },
     picture: {
       type: DataTypes.STRING(1234),
       allowNull: true,
       defaultValue: null,
     },
-
-    // address: {
-    //   type: DataTypes.STRING,
-    //   allowNull: false,
-    // },
+    address: {
+      type: DataTypes.STRING,
+      allowNull: true,
+    },
     status: {
       type: DataTypes.BOOLEAN,
       allowNull: false,
@@ -50,7 +45,6 @@ module.exports = (sequelize) => {
     },  
     rol_id: {
       type: DataTypes.INTEGER,
-      // allowNull: false,
       references: {
         model: Rol,
         key: "id",
