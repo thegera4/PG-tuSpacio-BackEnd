@@ -41,6 +41,7 @@ module.exports = (sequelize) => {
     status: {
       type: DataTypes.BOOLEAN,
       allowNull: false,
+
       defaultValue: false,
     },  
     rol_id: {
@@ -52,3 +53,6 @@ module.exports = (sequelize) => {
     },
   });
 };
+
+// la tabla favorites es una tabla intermedia que relaciona user_id con products_id, se crea en db.js
+

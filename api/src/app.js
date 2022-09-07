@@ -4,22 +4,23 @@ const bodyParser = require('body-parser');
 const morgan = require('morgan');
 const routes = require('./routes/index.js');
 const cors = require("cors");
-const { auth } = require('express-openid-connect');
 require('dotenv').config();
+// const { auth } = require('express-openid-connect');
 
-const config = {
-  authRequired: false,
-  auth0Logout: true,
-  secret: process.env.SECRET,
-  baseURL: process.env.BASE_URL,
-  clientID: process.env.CLIENT_ID,
-  issuerBaseURL: process.env.ISSUER_BASE_URL
-};
+// const config = {
+//   authRequired: false,
+//   auth0Logout: true,
+//   secret: process.env.SECRET,
+//   baseURL: process.env.BASE_URL,
+//   clientID: process.env.CLIENT_ID,
+//   issuerBaseURL: process.env.ISSUER_BASE_URL
+// };
+
 
 require('./db.js');
 
 const server = express();
-server.use(auth(config));
+// server.use(auth(config));
 
 server.name = 'API';
 
@@ -38,8 +39,6 @@ server.use((req, res, next) => {
 
 server.use('/api', routes);
 
-
-
 // Error catching endware.
 server.use((err, req, res, next) => { 
   const status = err.status || 500;
@@ -48,4 +47,7 @@ server.use((err, req, res, next) => {
   res.status(status).send(message);
 });
 
+
 module.exports = server;
+
+
