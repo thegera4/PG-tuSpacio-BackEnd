@@ -29,20 +29,15 @@ module.exports = (sequelize) => {
       type: DataTypes.STRING,
       allowNull: false,
     },
-    // password: {
-    //   type: DataTypes.STRING,
-    //   allowNull: false,
-    // },
     picture: {
       type: DataTypes.STRING(1234),
       allowNull: true,
       defaultValue: null,
     },
-
-    // address: {
-    //   type: DataTypes.STRING,
-    //   allowNull: false,
-    // },
+    address: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
     status: {
       type: DataTypes.BOOLEAN,
       allowNull: false,
@@ -50,7 +45,6 @@ module.exports = (sequelize) => {
     },  
     rol_id: {
       type: DataTypes.INTEGER,
-      // allowNull: false,
       references: {
         model: Rol,
         key: "id",
@@ -58,5 +52,3 @@ module.exports = (sequelize) => {
     },
   });
 };
-
-// la tabla favorites es una tabla intermedia que relaciona user_id con products_id, se crea en db.js
