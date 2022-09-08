@@ -19,6 +19,12 @@ module.exports = (sequelize) => {
     score:{
       type: DataTypes.INTEGER,
       allowNull: false,
+      validate: {
+        notNull: { msg: "The score field cannot be null " },
+        isNumeric: true,
+        min: 0,
+        max: 5,
+      },
     },
     product_id: {
       type: DataTypes.UUID,

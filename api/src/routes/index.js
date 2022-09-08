@@ -24,6 +24,8 @@ const checkoutRoute = require('./checkout.js');
 
 const rolesRoute = require('./roles.js') 
 
+const reviewsRoute = require('./reviews.js')    
+
 
 
 const router = Router();
@@ -46,6 +48,7 @@ router.use("/products/price/", orderPriceRoute);
 router.use("/products/orderName/", orderNameRoute);
 router.use("/products/orderCombine/", orderCombineRoute);
 router.use("/products/oferts", ofertsRoute);
+router.use("/products/reviews", reviewsRoute);
 
 
 
