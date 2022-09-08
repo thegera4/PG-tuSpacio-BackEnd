@@ -74,9 +74,8 @@ const getOrdersByUserId = async (req, res, next) => {
 };
 
 /* CREATE NEW ORDER IN THE DATABASE */
-const createOrder = async (req, res, next) => {
+/*const createOrder = async (req, res, next) => {
   try {
-    /* ME TRAIGO TODOS LOS VALORES DEL CUERPO DE LA PETICION */
     const {
             value, 
             status,
@@ -84,15 +83,14 @@ const createOrder = async (req, res, next) => {
             products_id,
         } = req.body;
     
-    /* BUSCO EL USUARIO EN LA BD POR EL ID */
     const userDb = await User.findByPk(user_id);
-    /* CREATE NEW ORDER */
+
     const newOrder = await Order.create({
         value,
         status,
         user_id: userDb.id,
     });
-    /* AGREGO ID DE PRODUCTOS A LA ORDER */
+ 
     const productsDb = await Product.findAll({  
         where: { id: products_id },
     });
@@ -104,7 +102,28 @@ const createOrder = async (req, res, next) => {
   } catch (error) {
     next(error);
   }
+};*/
+
+/* CREATE NEW ORDER IN THE DATABASE WTIH STRIPE INFORMATION*/
+//Create Order
+const createOrder = async (customer, data, lineItems) => {
+  try {
+    const newOrder = await Order.create({
+      number: customer.invoice_prefix,
+      userId: customer.metadata.id, 
+      orderProducts: lineItems.data,
+      subtotal: data.amount_subtotal,
+      total: data.amount_total,
+      shipping: data.customer_details
+    });
+    console.log(customer)
+    console.log(newOrder);
+    //logica para enviar email aqui
+  } catch (error) {
+    console.log(error);
+  }
 };
+//
 
 
 /* UPDATE ONE ORDER IN THE DATABASE */
