@@ -31,6 +31,7 @@ const createUser = async (req, res, next) => {
             email_verified,
             sid,
             picture,
+            address,
             status,
             rol_id } = req.body;
 
@@ -42,6 +43,7 @@ const createUser = async (req, res, next) => {
         email_verified,
         sid,
         picture,
+        address,
         status,
         rol_id,
     });
@@ -66,6 +68,7 @@ const updateUser = async (req, res, next) => {
             email_verified,
             sid,
             picture,
+            address,
             status,
             rol_id } = req.body;
             
@@ -79,6 +82,7 @@ const updateUser = async (req, res, next) => {
         email_verified,
         sid,
         picture,
+        address,
         status,
         rol_id,
     });
@@ -97,8 +101,10 @@ const deleteUser = async (req, res, next) => {
         const { id } = req.params;
         /* BUSCO EL USER EN LA BD POR EL ID */
         const userDb = await User.findByPk(id);
-        /* ELIMINO EL USER */
-        await userDb.destroy();
+        /* MODIFICO EL STATUS DEL USER PARA HACER UN BORRADO LOGICO */
+        const updatedUser = await userDb.update({
+          status: false,
+      });
         res.status(200).json({
             succMsg: "User Deleted Successfully!",
         });
