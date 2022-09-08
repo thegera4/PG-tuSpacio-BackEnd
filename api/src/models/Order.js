@@ -1,15 +1,29 @@
 const { DataTypes } = require('sequelize');
-const {User} = require('./User')
 module.exports = (sequelize) => {
   sequelize.define('order', {
-    id:{
-      type: DataTypes.UUID,
-      defaultValue: DataTypes.UUIDV4,
+    number: {
+      type: DataTypes.STRING,
       primaryKey: true,
       allowNull: false,
     },
-    value: {
+    userId:{
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
+    orderProducts:{
+      type: /*DataTypes.ARRAY(*/DataTypes.JSON/*)*/,
+      allowNull: false,
+    },
+    subtotal: {
       type: DataTypes.INTEGER,
+      allowNull: false,
+    },
+    total:{
+      type: DataTypes.INTEGER,
+      allowNull: false,
+    },
+    shipping:{
+      type: DataTypes.JSON,
       allowNull: false,
     },
     status: {
@@ -17,17 +31,5 @@ module.exports = (sequelize) => {
         allowNull: false,
         defaultValue: 'created',
     },
-    user_id: {
-      type: DataTypes.UUID,
-      allowNull: false,
-      references: {
-        model: User,
-        key: "id",
-      },
-    },
-    // products_id: { 
-    //   type: DataTypes.ARRAY(DataTypes.UUID),
-    //   // allowNull: false,
-    // },
   });
 };
