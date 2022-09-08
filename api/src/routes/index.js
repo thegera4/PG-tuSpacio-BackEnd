@@ -1,37 +1,36 @@
-const { Router } = require('express');
-const { requiresAuth } = require('express-openid-connect');
+const { Router } = require("express");
+const { requiresAuth } = require("express-openid-connect");
 
+const productsRoute = require("./products");
+const detailProductRoute = require("./detailproduct.js");
+const searchProductsRoute = require("./searchproducts.js");
+const ratingRoute = require("./ratingproducts.js");
+const productsNameRoute = require("./productsName.js");
+const orderPriceRoute = require("./orderByPrice.js");
+const brandProductsRoute = require("./productsBrand.js");
+const orderNameRoute = require("./orderByName.js");
+const orderCombineRoute = require("./orderCombine.js");
+const ofertsRoute = require("./oferts.js");
 
-const productsRoute = require('./products');
-const detailProductRoute = require('./detailproduct.js');
-const searchProductsRoute = require('./searchproducts.js');
-const ratingRoute = require('./ratingproducts.js');
-const productsNameRoute = require('./productsName.js');
-const orderPriceRoute = require('./orderByPrice.js');
-const brandProductsRoute = require('./productsBrand.js');
-const orderNameRoute = require('./orderByName.js');
-const orderCombineRoute = require('./orderCombine.js');
-const ofertsRoute = require('./oferts.js');
+const loginRoute = require("./authorization/login.js");
 
-const loginRoute = require('./authorization/login.js')
+const categoriesRoute = require("./categories");
+const oneCategoriesRoute = require("./oneCategorie.js");
+const ordersRoute = require("./orders");
+const usersRoute = require("./users");
 
-const categoriesRoute = require('./categories');
-const oneCategoriesRoute = require('./oneCategorie.js') 
-const ordersRoute = require('./orders');
-const usersRoute = require('./users');
+const checkoutRoute = require("./checkout.js");
 
-const checkoutRoute = require('./checkout.js');
+const rolesRoute = require("./roles.js");
 
-const rolesRoute = require('./roles.js') 
-
-
+const sendEmail = require("./testSendEmail");
 
 const router = Router();
 
 /*_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/
                 RUTA DE LOGIN
 _/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/*/
-router.use('/login', loginRoute);
+router.use("/login", loginRoute);
 
 /*_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/
                 RUTAS DE PRODUCTS
@@ -46,8 +45,6 @@ router.use("/products/price/", orderPriceRoute);
 router.use("/products/orderName/", orderNameRoute);
 router.use("/products/orderCombine/", orderCombineRoute);
 router.use("/products/oferts", ofertsRoute);
-
-
 
 /*_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/
                 RUTAS DE CATEGORIES
@@ -75,5 +72,9 @@ router.use("/rol", rolesRoute);
 _/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/*/
 router.use("/checkout", checkoutRoute);
 
+/*_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_ /_/_/_/_/_/_/_/_/_/_/_/_/_/_/_ /_/_/_/_/_/_/_/_/_/_/_/_/_/_/_ 
+RUTAS DE EMAIL                                                                  
+_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/*/
+router.use("/send-email", sendEmail);
 
-module.exports = router; 
+module.exports = router;
