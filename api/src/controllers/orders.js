@@ -114,7 +114,8 @@ const createOrder = async (customer, data, lineItems) => {
       orderProducts: lineItems.data,
       subtotal: data.amount_subtotal,
       total: data.amount_total,
-      shipping: data.customer_details
+      shipping: data.customer_details,
+      
     });
     console.log(customer)
     console.log(newOrder);
