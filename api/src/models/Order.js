@@ -11,7 +11,7 @@ module.exports = (sequelize) => {
       allowNull: false,
     },
     orderProducts:{
-      type: /*DataTypes.ARRAY(*/DataTypes.JSON/*)*/,
+      type: DataTypes.JSON,
       allowNull: false,
     },
     subtotal: {
@@ -28,8 +28,8 @@ module.exports = (sequelize) => {
     },
     status: {
       type: DataTypes.ENUM('created', 'processing', 'cancelled', 'completed'),
-        allowNull: false,
-        defaultValue: 'created',
+      allowNull: false,
+      defaultValue: 'created',
     },
   });
 };

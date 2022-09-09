@@ -24,12 +24,7 @@ const getOneOrder = async (req, res, next) => {
   const { id } = req.params;
   try {
     const dbInfo = await Order.findOne({
-      /*where: { id },
-      include: {
-        model: Product,
-        attributes: ["id", "name", "price" ],
-            through: { attributes: [] },
-      },*/
+      where: { number: id },
     });
     res.send(dbInfo)
   } catch (error) {
@@ -129,34 +124,30 @@ const createOrder = async (customer, data, lineItems) => {
 
 /* UPDATE ONE ORDER IN THE DATABASE */
 const updateOrder = async (req, res, next) => {
+  const { id } = req.params;
+  const {/*value,*/status/*, user_id, products_id,*/} = req.body;
   try {
-    const { id } = req.params;
-    const {
-        value,
-        status,
-        user_id,
-        products_id,
-    } = req.body;
-
     /* BUSCO LA ORDER EN LA BD POR EL ID */
     let orderDB = await Order.findOne({
       where: {
-        id: id,
+        number: id,
       },
     });
+    //console.log(orderDB)
     /* ACTUALIZO LA ORDER CON LOS DATOS QUE RECIBO DEL BODY */
     const updatedOrder = await orderDB.update({
-        value,
-        status,
-        user_id,
-        products_id,
+        //value,
+        status//,
+        //user_id,
+        //products_id,
     });
     res.status(200).send({
-      succMsg: "Order Updated Successfully!",
+      msg: "Order Status Updated Successfully!",
       updatedOrder,
     });
   } catch (error) {
-    next(error);
+    //next(error);
+    console.log(error);
   }
 };
 
