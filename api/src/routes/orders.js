@@ -52,10 +52,10 @@ router.get("/user/:user_id", getOrdersByUserId);
 router.post("/", validator.body(bodySchema), createOrder);
 
 /* UPDATE ORDER IN THE DATABASE */
-router.put(
+router.patch(
   "/:id",
-  validator.params(paramsSchema),
-  validator.body(bodySchema),
+  //validator.params(paramsSchema),
+  //validator.body(bodySchema),
   updateOrder
 );
 
