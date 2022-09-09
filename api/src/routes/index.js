@@ -1,21 +1,41 @@
-const { Router } = require('express');
+const { Router } = require("express");
+const { requiresAuth } = require("express-openid-connect");
 
-const productsRoute = require('./products');
-const detailProductRoute = require('./detailproduct.js');
-const searchProductsRoute = require('./searchproducts.js');
-const ratingRoute = require('./ratingproducts.js');
-const productsNameRoute = require('./productsName.js');
-const orderPriceRoute = require('./orderByPrice.js');
-const brandProductsRoute = require('./productsBrand.js');
-const orderNameRoute = require('./orderByName.js');
-const orderCombineRoute = require('./orderCombine.js');
+const productsRoute = require("./products");
+const detailProductRoute = require("./detailproduct.js");
+const searchProductsRoute = require("./searchproducts.js");
+const ratingRoute = require("./ratingproducts.js");
+const productsNameRoute = require("./productsName.js");
+const orderPriceRoute = require("./orderByPrice.js");
+const brandProductsRoute = require("./productsBrand.js");
+const orderNameRoute = require("./orderByName.js");
+const orderCombineRoute = require("./orderCombine.js");
+const ofertsRoute = require("./oferts.js");
+
+const loginRoute = require("./authorization/login.js");
+
+const categoriesRoute = require("./categories");
+const oneCategoriesRoute = require("./oneCategorie.js");
+const ordersRoute = require("./orders");
+const usersRoute = require("./users");
+
+const checkoutRoute = require("./checkout.js");
 
 
-const categoriesRoute = require('./categories');
-const oneCategoriesRoute = require('./oneCategorie.js') 
+const reviewsRoute = require('./reviews.js')    
 
+
+const rolesRoute = require("./roles.js");
+
+
+const sendEmail = require("./testSendEmail");
 
 const router = Router();
+
+/*_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/
+                RUTA DE LOGIN
+_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/*/
+router.use("/login", loginRoute);
 
 /*_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/
                 RUTAS DE PRODUCTS
@@ -29,6 +49,8 @@ router.use("/products/rating/", ratingRoute);
 router.use("/products/price/", orderPriceRoute);
 router.use("/products/orderName/", orderNameRoute);
 router.use("/products/orderCombine/", orderCombineRoute);
+router.use("/products/oferts", ofertsRoute);
+router.use("/products/reviews", reviewsRoute);
 
 /*_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/
                 RUTAS DE CATEGORIES
@@ -36,6 +58,29 @@ _/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/
 router.use("/categorie", oneCategoriesRoute);
 router.use("/categories", categoriesRoute);
 
+/*_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/
+                RUTAS DE ORDERS                                                                  
+_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/*/
+router.use("/orders", ordersRoute);
 
+/*_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/
+                RUTAS DE USERS                                                                  
+_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/*/
+router.use("/users", usersRoute);
+
+/*_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_ /_/_/_/_/_/_/_/_/_/_/_/_/_/_/_ /_/_/_/_/_/_/_/_/_/_/_/_/_/_/_ 
+RUTAS DE ROL                                                                  
+_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/*/
+router.use("/rol", rolesRoute);
+
+/*_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_ /_/_/_/_/_/_/_/_/_/_/_/_/_/_/_ /_/_/_/_/_/_/_/_/_/_/_/_/_/_/_ 
+                RUTA DE PAGO (Checkout)
+_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/*/
+router.use("/checkout", checkoutRoute);
+
+/*_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_ /_/_/_/_/_/_/_/_/_/_/_/_/_/_/_ /_/_/_/_/_/_/_/_/_/_/_/_/_/_/_ 
+RUTAS DE EMAIL                                                                  
+_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/*/
+router.use("/send-email", sendEmail);
 
 module.exports = router;

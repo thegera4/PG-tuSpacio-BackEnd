@@ -1,29 +1,35 @@
 const { DataTypes } = require('sequelize');
-const {User} = require('./User')
 module.exports = (sequelize) => {
   sequelize.define('order', {
-    id:{
-      type: DataTypes.UUID,
-      defaultValue: DataTypes.UUIDV4,
+    number: {
+      type: DataTypes.STRING,
       primaryKey: true,
       allowNull: false,
     },
-    quantity: {
+    userId:{
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
+    orderProducts:{
+      type: /*DataTypes.ARRAY(*/DataTypes.JSON/*)*/,
+      allowNull: false,
+    },
+    subtotal: {
       type: DataTypes.INTEGER,
       allowNull: false,
     },
-    status: {
-      type: DataTypes.BOOLEAN,
-        allowNull: false,
-        defaultValue: false,
-    },
-    user_id: {
-      type: DataTypes.UUID,
+    total:{
+      type: DataTypes.INTEGER,
       allowNull: false,
-      references: {
-        model: User,
-        key: "id",
-      },
+    },
+    shipping:{
+      type: DataTypes.JSON,
+      allowNull: false,
+    },
+    status: {
+      type: DataTypes.ENUM('created', 'processing', 'cancelled', 'completed'),
+        allowNull: false,
+        defaultValue: 'created',
     },
   });
 };
