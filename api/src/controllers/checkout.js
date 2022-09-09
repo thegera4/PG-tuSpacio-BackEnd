@@ -8,7 +8,7 @@ const Checkout = async (req, res) => {
 
   const customer = await stripe.customers.create({
     metadata: { 
-      id: id 
+      id: id
     },
   })
 
@@ -36,7 +36,7 @@ const Checkout = async (req, res) => {
       shipping_address_collection: {
         allowed_countries: ['US', 'CA', 'MX', 'AR', 'BR', 'CL', 'CO', 'PE', 'UY', 'VE'],
       },
-    shipping_options: [
+      shipping_options: [
       {
         shipping_rate_data: {
           type: 'fixed_amount',

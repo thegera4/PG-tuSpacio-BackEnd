@@ -7,13 +7,13 @@ const { URL_API } = require("./globalConst");
 const getAllOrders = async (req, res) => {
   try {
     const dbInfo = await Order.findAll({
-      include: {
+      /*include: {
         model: Product,
         attributes: ["id", "name", "price" ],
            through: { attributes: [] },
-      },
+      },*/
     });
-    res.send( dbInfo)
+    res.send(dbInfo)
   } catch (error) {
     console.log(error);
   }
@@ -24,14 +24,14 @@ const getOneOrder = async (req, res, next) => {
   const { id } = req.params;
   try {
     const dbInfo = await Order.findOne({
-      where: { id },
+      /*where: { id },
       include: {
         model: Product,
         attributes: ["id", "name", "price" ],
             through: { attributes: [] },
-      },
+      },*/
     });
-    res.send( dbInfo)
+    res.send(dbInfo)
   } catch (error) {
     console.log(error);
   }
