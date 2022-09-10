@@ -1,4 +1,4 @@
-const { User, Favorite, Order } = require("../db");
+const { User, Product } = require("../db");
 const axios = require("axios");
 const { URL_API } = require("./globalConst");
 
@@ -6,13 +6,7 @@ const { URL_API } = require("./globalConst");
 
 const getAllUsers = async (req, res) => {
   try {
-    const dbInfo = await User.findAll({
-      include: {
-        model: Favorite,
-        attributes: ["id"],
-        through: { attributes: [] },
-      }
-    });
+    const dbInfo = await User.findAll();
     res.send( dbInfo)
   } catch (error) {
     console.log(error);
@@ -113,9 +107,54 @@ const deleteUser = async (req, res, next) => {
     }
 };
 
+/* INSERT FAVORITE PRODUCT TO A USER */
+const addFavorite = async (req, res, next) => {
+  try {
+    const { idUser } = req.params;
+    const { idProduct } = req.params;
+    const userDb = await User.findByPk(idUser);
+    const productDb = await Product.findByPk(idProduct);
+    await userDb.addProduct(productDb);
+    res.status(200).json({
+      succMsg: "Favorite Added Successfully!",
+    });
+  } catch (error) {
+    next(error);
+  }
+};
+/* DELETE FAVORITE PRODUCT TO A USER */
+const deleteFavorite = async (req, res, next) => {
+  try {
+    const { idUser } = req.params;
+    const { idProduct } = req.params;
+    const userDb = await User.findByPk(idUser);
+    const productDb = await Product.findByPk(idProduct);
+    await userDb.removeProduct(productDb);
+    res.status(200).json({
+      succMsg: "Favorite Deleted Successfully!",
+    });
+  } catch (error) {
+    next(error);
+  }
+};
+/* GET ALL FAVORITES FROM A USER */
+const getAllFavorites = async (req, res) => {
+  try {
+    const { idUser } = req.params;
+    const userDb = await User.findByPk(idUser);
+    const favorites = await userDb.getProducts();
+    res.send(favorites.map((favorite) => favorite.id));
+  } catch (error) {
+    console.log(error);
+  }
+};
+
 module.exports = {
     getAllUsers,
     createUser,
     updateUser,
     deleteUser,
+    addFavorite,
+    deleteFavorite,
+    getAllFavorites,
 };

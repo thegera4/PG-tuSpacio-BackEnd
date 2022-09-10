@@ -7,13 +7,13 @@ const { URL_API } = require("./globalConst");
 const getAllOrders = async (req, res) => {
   try {
     const dbInfo = await Order.findAll({
-      include: {
+      /*include: {
         model: Product,
         attributes: ["id", "name", "price" ],
            through: { attributes: [] },
-      },
+      },*/
     });
-    res.send( dbInfo)
+    res.send(dbInfo)
   } catch (error) {
     console.log(error);
   }
@@ -24,14 +24,9 @@ const getOneOrder = async (req, res, next) => {
   const { id } = req.params;
   try {
     const dbInfo = await Order.findOne({
-      where: { id },
-      include: {
-        model: Product,
-        attributes: ["id", "name", "price" ],
-            through: { attributes: [] },
-      },
+      where: { number: id },
     });
-    res.send( dbInfo)
+    res.send(dbInfo)
   } catch (error) {
     console.log(error);
   }
@@ -106,59 +101,76 @@ const getOrdersByUserId = async (req, res, next) => {
 
 /* CREATE NEW ORDER IN THE DATABASE WTIH STRIPE INFORMATION*/
 //Create Order
-const createOrder = async (customer, data, lineItems) => {
+const createOrder = async (req, res) => {
   try {
     const newOrder = await Order.create({
-      number: customer.invoice_prefix,
-      userId: customer.metadata.id, 
-      orderProducts: lineItems.data,
-      subtotal: data.amount_subtotal,
-      total: data.amount_total,
-      shipping: data.customer_details,
-      
+      userId: req.body.user,
+      orderProducts: req.body.cart
     });
-    console.log(customer)
-    console.log(newOrder);
-    //logica para enviar email aqui
+    res.status(200).json({
+      msg: "Temporary Order Created",
+      newOrder,
+    });
   } catch (error) {
     console.log(error);
   }
 };
 //
+// UPDATE ONE ORDER IN THE DATABASE FROM STRIPE //
+const updateOrder = async (customer, data, lineItems) => {
+  try {
+    let temp = await Order.findOne({
+      order: [
+        ['createdAt', 'DESC'],
+      ]
+    });
+    const updatedOrder = await Order.update({
+        number: customer.invoice_prefix ,
+        status: 'created',
+        subtotal: data.amount_subtotal,
+        shipping: data.customer_details,
+        total: data.amount_total,
+    }, {
+    where: { 
+        id: temp.id
+      }
+    });
+    console.log("Successfully updated!")
+  } catch (error) {
+    console.log(error);
+  }
+};
 
 
 /* UPDATE ONE ORDER IN THE DATABASE */
-const updateOrder = async (req, res, next) => {
-  try {
-    const { id } = req.params;
-    const {
-        value,
-        status,
-        user_id,
-        products_id,
-    } = req.body;
+/*const updateOrder = async (req, res, next) => {
+  const { id } = req.params;
 
+ /* try {
     /* BUSCO LA ORDER EN LA BD POR EL ID */
-    let orderDB = await Order.findOne({
+    /*let orderDB = await Order.findOne({
       where: {
-        id: id,
+        number: id,
       },
     });
+    //console.log(orderDB)
     /* ACTUALIZO LA ORDER CON LOS DATOS QUE RECIBO DEL BODY */
-    const updatedOrder = await orderDB.update({
-        value,
-        status,
-        user_id,
-        products_id,
+    /*const updatedOrder = await orderDB.update({
+        //value,
+        status//,
+        //user_id,
+        //products_id,
     });
     res.status(200).send({
-      succMsg: "Order Updated Successfully!",
+      msg: "Order Status Updated Successfully!",
       updatedOrder,
     });
   } catch (error) {
-    next(error);
+    //next(error);
+    console.log(error);
   }
-};
+};*/
+
 
 /* DELETE ONE ORDER IN THE DATABASE */
 const deleteOrder = async (req, res, next) => {
