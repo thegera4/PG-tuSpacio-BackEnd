@@ -49,7 +49,7 @@ router.get("/status/:status", getOrdersByStatus);
 router.get("/user/:user_id", getOrdersByUserId);
 
 /* CREATE NEW ORDER IN THE DATABASE */
-router.post("/", validator.body(bodySchema), createOrder);
+router.post("/", createOrder);
 
 /* UPDATE ORDER IN THE DATABASE */
 router.patch(
