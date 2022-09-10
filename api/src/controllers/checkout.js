@@ -1,4 +1,4 @@
-const { createOrder } = require('./orders');
+const { updateOrder } = require('./orders');
 //Checkout
 const stripe = require('stripe')("sk_test_51Les4YKH7XmQskrVxo1Th9dZWzcjEynmqRUGSXByXhtBh7JbT3Zhvg4JATIIJAKP0XxhPkT1dLO9UdHDhoEiQKm100gdCLwxqr")
 const CLIENT = 'http://localhost:3000';
@@ -121,7 +121,7 @@ const webhook = (req, res) => {
     .then(customer => {
       stripe.checkout.sessions.listLineItems(data.id,{},
         function(err, lineItems) {
-          createOrder(customer, data, lineItems)
+          updateOrder(customer, data, lineItems)
         });
     })
     .catch(err => {

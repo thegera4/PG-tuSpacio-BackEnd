@@ -1,10 +1,14 @@
 const { DataTypes } = require('sequelize');
 module.exports = (sequelize) => {
   sequelize.define('order', {
+    id:{
+      type: DataTypes.UUID,
+      defaultValue: DataTypes.UUIDV4,
+      primaryKey: true,
+    },
     number: {
       type: DataTypes.STRING,
-      primaryKey: true,
-      allowNull: false,
+      allowNull: true,
     },
     userId:{
       type: DataTypes.STRING,
@@ -16,15 +20,15 @@ module.exports = (sequelize) => {
     },
     subtotal: {
       type: DataTypes.INTEGER,
-      allowNull: false,
+      allowNull: true,
     },
     total:{
       type: DataTypes.INTEGER,
-      allowNull: false,
+      allowNull: true,
     },
     shipping:{
       type: DataTypes.JSON,
-      allowNull: false,
+      allowNull: true,
     },
     status: {
       type: DataTypes.ENUM('created', 'processing', 'cancelled', 'completed'),
