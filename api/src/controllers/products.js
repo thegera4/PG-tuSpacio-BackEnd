@@ -1,6 +1,7 @@
 const { Product, Categorie } = require("../db");
 const axios = require("axios");
 const { URL_API } = require("./globalConst");
+const { uploadCategoryDb } = require("../controllers/uploadCategoryDb")
 
 /* GET ALL PRODUCTS FROM DB */
 const getApiProducts = async (req, res, next) => {
@@ -10,9 +11,9 @@ const getApiProducts = async (req, res, next) => {
     const resultAll = api.data;
 
     /* FILTRADO DE PAGINAS CON IMAGENES QUE NO FUNCIONAN */
-    const e = api.data.filter(e => !e.image_link?.includes("purpicks") )
-    const e1 = e.filter(e => !e.image_link?.includes("static-assets.glossier") )
-    const e2 = e1.filter(e => !e.image_link?.includes("imancosmetics") )
+    const e = api.data.filter(e => !e.image_link?.includes("purpicks"))
+    const e1 = e.filter(e => !e.image_link?.includes("static-assets.glossier"))
+    const e2 = e1.filter(e => !e.image_link?.includes("imancosmetics"))
     // const e2 = e1.filter(e => !e.image_link.includes("d3t32hsnjxo7q6.cloudfront.net/") )
 
     return resultAll;
@@ -40,8 +41,8 @@ const getAllProducts = async (req, res) => {
     const apiInfo = await getApiProducts();
 
     const dbInfo = await getDbProducts();
-
-    res.send([...dbInfo, ...apiInfo]);
+    // res.send([...dbInfo, ...apiInfo]);
+    res.send([...dbInfo]);
   } catch (error) {
     return error;
   }
@@ -192,6 +193,25 @@ const disableProduct = async (req, res, next) => {
   }
 };
 
+const getDashboard = async (req, res) => {
+
+  try {
+    // const products = await Product.findAll({
+    //   attributes: ["id", "name", "stock"]
+    // })
+    const apiCategory = await axios(URL_API)
+    let data = await apiCategory.data.map(e => {
+      return {
+      category: e.category,
+      name: e.name
+    }  
+  })
+  res.send(data)
+  } catch (error) {
+    res.send({message: error.message})
+  }
+}
+
 module.exports = {
   getAllProducts,
   getApiProducts,
@@ -199,4 +219,5 @@ module.exports = {
   createProduct,
   updateProduct,
   disableProduct,
+  getDashboard
 };

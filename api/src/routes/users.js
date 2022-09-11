@@ -2,6 +2,7 @@ const { Router } = require("express");
 const Joi = require("joi");
 const validator = require("express-joi-validation").createValidator({});
 
+
 /* LINKS TO DOCS JOI AND EXPRESS-JOI-VALIDATION 
 https://joi.dev/api/?v=17.6.0
 https://github.com/evanshortiss/express-joi-validation#readme
@@ -47,7 +48,7 @@ const router = Router();
 router.get("/", getAllUsers);
 
 /* CREATE NEW PRODUCT IN THE DATABASE */
-router.post("/", validator.body(bodySchema), createUser);
+router.post("/", createUser);
 
 /* UPDATE PRODUCT IN THE DATABASE */
 router.put(
