@@ -5,6 +5,6 @@ const {
 } = require("../../controllers/authorization/login.js");
 
 
-router.get('/', getLogin); 
+router.post('/', getLogin); 
 
 module.exports = router;
