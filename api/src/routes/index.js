@@ -21,7 +21,12 @@ const usersRoute = require("./users");
 
 const checkoutRoute = require("./checkout.js");
 
+
+const reviewsRoute = require('./reviews.js')    
+
+
 const rolesRoute = require("./roles.js");
+
 
 const sendEmail = require("./testSendEmail");
 
@@ -45,6 +50,7 @@ router.use("/products/price/", orderPriceRoute);
 router.use("/products/orderName/", orderNameRoute);
 router.use("/products/orderCombine/", orderCombineRoute);
 router.use("/products/oferts", ofertsRoute);
+router.use("/products/reviews", reviewsRoute);
 
 /*_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/
                 RUTAS DE CATEGORIES

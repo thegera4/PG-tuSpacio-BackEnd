@@ -15,6 +15,8 @@ const querySchema = Joi.object({
 
 const paramsSchema = Joi.object({
   id: Joi.string().regex(/^([a-zA-Z0-9-]+)$/),
+  idUser: Joi.string().regex(/^([a-zA-Z0-9-]+)$/),
+  idProduct: Joi.string().regex(/^([a-zA-Z0-9-]+)$/),
 });
 
 const bodySchema = Joi.object({
@@ -32,7 +34,10 @@ const {
   getAllUsers,
   createUser,
   updateUser,
-  deleteUser
+  deleteUser,
+  addFavorite,
+  deleteFavorite,
+  getAllFavorites
 } = require("../controllers/users");
     
 const router = Router();
@@ -52,6 +57,28 @@ router.put(
   validator.body(bodySchema),
   updateUser
 );
+
+/* INSERT A FAVORITE PRODUCT OF A USER */
+router.put(
+  "/addFavorite/:idUser/:idProduct",
+  validator.params(paramsSchema),
+  validator.body(bodySchema),
+  addFavorite
+);
+
+/* GET ALL FAVORITES OF A USER */
+router.get("/favorites/:idUser", validator.params(paramsSchema),
+  getAllFavorites
+);
+
+/* DELETE A FAVORITE PRODUCT OF A USER */
+router.delete("/deleteFavorite/:idUser/:idProduct",
+  validator.params(paramsSchema),
+  validator.body(bodySchema),
+  deleteFavorite
+);
+
+
 
 /* DELETE PRODUCT IN THE DATABASE */
 router.delete("/:id", validator.params(paramsSchema), deleteUser);
