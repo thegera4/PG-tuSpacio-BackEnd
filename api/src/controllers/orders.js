@@ -125,22 +125,21 @@ const updateOrder = async (customer, data, lineItems) => {
       ]
     });
     const updatedOrder = await Order.update({
-        number: customer.invoice_prefix ,
-        status: 'created',
-        subtotal: data.amount_subtotal,
-        shipping: data.customer_details,
-        total: data.amount_total,
+      number: customer.invoice_prefix ,
+      status: 'created',
+      subtotal: data.amount_subtotal,
+      shipping: data.customer_details,
+      total: data.amount_total,
     }, {
     where: { 
-        id: temp.id
-      }
+      id: temp.id
+    }
     });
     console.log("Successfully updated!")
   } catch (error) {
-    console.log(error);
+        console.log(error);
   }
 };
-
 
 /* UPDATE ONE ORDER IN THE DATABASE */
 /*const updateOrder = async (req, res, next) => {
