@@ -10,11 +10,6 @@ const getApiProducts = async (req, res, next) => {
     const api = await axios(URL_API);
     const resultAll = api.data;
 
-    /* FILTRADO DE PAGINAS CON IMAGENES QUE NO FUNCIONAN */
-    // const e = api.data.filter(e => !e.image_link?.includes("purpicks"))
-    // const e1 = e.filter(e => !e.image_link?.includes("static-assets.glossier"))
-    // const e2 = e1.filter(e => !e.image_link?.includes("imancosmetics"))
-    // const e2 = e1.filter(e => !e.image_link.includes("d3t32hsnjxo7q6.cloudfront.net/") )
     const result = resultAll.map(e => ({
       name: e.name,
       brand: e.brand,
@@ -56,8 +51,10 @@ const getAllProducts = async (req, res) => {
     const apiInfo = await getApiProducts();
 
     const dbInfo = await getDbProducts();
-    // res.send([...dbInfo, ...apiInfo]);
-    res.send([...apiInfo]);
+
+    res.send([...dbInfo, ...apiInfo]);
+    //res.send([...dbInfo]);
+
   } catch (error) {
     return error;
   }
@@ -65,30 +62,6 @@ const getAllProducts = async (req, res) => {
 
 /* CREATE NEW PRODUCT IN THE DATABASE */
 const createProduct = async (req, res, next) => {
-  // const api = await axios(URL_API)
-  // const resApi = api.data
-  // const result = resApi.map(e=> ({
-  //   name: e.name,
-  //   brand: e.brand,
-  //   price: e.price,
-  //   price_sign: e.price_sign,
-  //   currency: e.currency,
-  //   image_link: e.image_link,
-  //   description: e.description,
-  //   rating: e.rating,
-  //   product_type: e.product_type,
-  //   stock:50,
-  //   tag_list: e.tag_list,
-  //   product_colors: e.product_colors,
-  //   categories: e.category,
-  // }))
-
-  // const carga = Product.bulkCreate(result, {
-  //   include: Categorie,
-  // }).then(result=>{
-  //   console.log(result)
-  //   res.send(result)
-  // })
   try {
     /* ME TRAIGO TODOS LOS VALORES DEL CUERPO DE LA PETICION */
     const {

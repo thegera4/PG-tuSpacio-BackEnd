@@ -2865,8 +2865,8 @@ const sendEmail = async (req, res, next) => {
     //     port: 465,
     //     secure: true, // true for 465, false for other ports
     //     auth: {
-    //       user: "hbarberapp@gmail.com", //
-    //       pass: "kgndpwcodkeytdiv", //
+    //       user: "tuspaciopg@gmail.com", //
+    //       pass: "tuSpacio2022", //
     //     },
     //   });
 
@@ -2882,7 +2882,7 @@ const sendEmail = async (req, res, next) => {
 
     const info = await transport.sendMail({
       from: '"Tu spacio, los expertos en belleza! 🛒🎁" <tuspaciopg@gmail.com>',
-      to: ["tuspacio@test.com"],
+      to: ["tuspacio@test.com", "tuspacio@bellleza.com"],
       subject: "Order Successfully Made! ✔",
       html: contentHTML,
     });
