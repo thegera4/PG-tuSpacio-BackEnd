@@ -49,7 +49,7 @@ router.get("/", getAllProducts);
 router.get("/dashboard", getDashboard);
 
 /* CREATE NEW PRODUCT IN THE DATABASE */
-router.post("/", validator.body(bodySchema), createProduct);
+router.post("/", createProduct);
 
 /* UPDATE PRODUCT IN THE DATABASE */
 router.put("/:id", validator.params(paramsSchema), validator.body(bodySchema), updateProduct);
