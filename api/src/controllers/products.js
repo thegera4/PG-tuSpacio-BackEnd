@@ -6,19 +6,8 @@ const { uploadCategoryDb } = require("../controllers/uploadCategoryDb")
 /* GET ALL PRODUCTS FROM DB */
 const getApiProducts = async (req, res, next) => {
   try {
-
     const api = await axios(URL_API);
     const resultAll = api.data;
-
-    /* FILTRADO DE PAGINAS CON IMAGENES QUE NO FUNCIONAN */
-    const e = api.data.filter(e => !e.image_link?.includes("purpicks"))
-    const e1 = e.filter(e => !e.image_link?.includes("static-assets.glossier"))
-    const e2 = e1.filter(e => !e.image_link?.includes("imancosmetics"))
-    // const e2 = e1.filter(e => !e.image_link.includes("d3t32hsnjxo7q6.cloudfront.net/") )
-<<<<<<< Updated upstream
-
-    return resultAll;
-=======
     const result = resultAll.map(e => ({
       name: e.name,
       brand: e.brand,
@@ -36,7 +25,7 @@ const getApiProducts = async (req, res, next) => {
       categories: e.category,
     }))
     return result;
->>>>>>> Stashed changes
+
   } catch (error) {
     console.log(error);
   }
@@ -70,32 +59,6 @@ const getAllProducts = async (req, res) => {
 
 /* CREATE NEW PRODUCT IN THE DATABASE */
 const createProduct = async (req, res, next) => {
-<<<<<<< Updated upstream
-=======
-  // const api = await axios(URL_API)
-  // const resApi = api.data
-  // const result = resApi.map(e=> ({
-  //   name: e.name,
-  //   brand: e.brand,
-  //   price: e.price,
-  //   price_sign: e.price_sign,
-  //   currency: e.currency,
-  //   image_link: e.image_link,
-  //   description: e.description,
-  //   rating: e.rating,
-  //   category: e.category,
-  //   product_type: e.product_type,
-  //   stock:50,
-  //   tag_list: e.tag_list,
-  //   product_colors: e.product_colors,
-  //   categories: e.category,
-  // }))
-
-  // const carga = Product.bulkCreate(result).then(result=>{
-  //   console.log(result)
-  //   res.send(result)
-  // })
->>>>>>> Stashed changes
   try {
     /* ME TRAIGO TODOS LOS VALORES DEL CUERPO DE LA PETICION */
     const {
@@ -240,6 +203,35 @@ const disableProduct = async (req, res, next) => {
 };
 
 const getDashboard = async (req, res) => {
+  try {
+    // const products = await Product.findAll({
+    //   attributes: ["id", "name", "stock"]
+    // })
+    const apiCategory = await axios(URL_API)
+    let data = await apiCategory.data.map(e => {
+      return {
+        category: e.category,
+        name: e.name
+      }
+    })
+    res.send(data)
+  } catch (error) {
+    res.send({ message: error.message })
+  }
+
+  try {
+    const data = await Product.findAll({
+      attributes: ["id", "name", "stock"]
+    })
+    res.send(data)
+  } catch (error) {
+    res.send({ message: error.message })
+  }
+}
+
+/*
+//  FUNCION UTILIZADA PARA LA CARGA MASIVA DE PRODUCTOS EN LA DB
+const getDashboard = async (req, res) => {
   const api = await axios(URL_API)
   const resApi = api.data
   const result = resApi.map(e => ({
@@ -263,36 +255,8 @@ const getDashboard = async (req, res) => {
     console.log(result)
     res.send(result)
   })
-
-<<<<<<< Updated upstream
-  try {
-    // const products = await Product.findAll({
-    //   attributes: ["id", "name", "stock"]
-    // })
-    const apiCategory = await axios(URL_API)
-    let data = await apiCategory.data.map(e => {
-      return {
-      category: e.category,
-      name: e.name
-    }  
-  })
-  res.send(data)
-  } catch (error) {
-    res.send({message: error.message})
-  }
-=======
-
-  // try {
-  //   const data = await Product.findAll({
-  //     attributes: ["id", "name", "stock"]
-  //   })
-  //   res.send(data)
-  // } catch (error) {
-  //   res.send({ message: error.message })
-  // }
->>>>>>> Stashed changes
 }
-
+*/
 module.exports = {
   getAllProducts,
   getApiProducts,
