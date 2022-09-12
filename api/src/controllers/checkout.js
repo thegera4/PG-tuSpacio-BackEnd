@@ -1,4 +1,4 @@
-const { createOrder } = require('./orders');
+const { updateOrder } = require('./orders');
 //Checkout
 const stripe = require('stripe')("sk_test_51Les4YKH7XmQskrVxo1Th9dZWzcjEynmqRUGSXByXhtBh7JbT3Zhvg4JATIIJAKP0XxhPkT1dLO9UdHDhoEiQKm100gdCLwxqr")
 const CLIENT = 'http://localhost:3000';
@@ -8,7 +8,7 @@ const Checkout = async (req, res) => {
 
   const customer = await stripe.customers.create({
     metadata: { 
-      id: id 
+      id: id
     },
   })
 
@@ -36,7 +36,7 @@ const Checkout = async (req, res) => {
       shipping_address_collection: {
         allowed_countries: ['US', 'CA', 'MX', 'AR', 'BR', 'CL', 'CO', 'PE', 'UY', 'VE'],
       },
-    shipping_options: [
+      shipping_options: [
       {
         shipping_rate_data: {
           type: 'fixed_amount',
@@ -121,7 +121,7 @@ const webhook = (req, res) => {
     .then(customer => {
       stripe.checkout.sessions.listLineItems(data.id,{},
         function(err, lineItems) {
-          createOrder(customer, data, lineItems)
+          updateOrder(customer, data, lineItems)
         });
     })
     .catch(err => {

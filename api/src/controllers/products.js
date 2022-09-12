@@ -11,9 +11,7 @@ const getApiProducts = async (req, res, next) => {
     const resultAll = api.data;
 
     /* FILTRADO DE PAGINAS CON IMAGENES QUE NO FUNCIONAN */
-    // const e = api.data.filter(e => !e.image_link?.includes("purpicks"))
-    // const e1 = e.filter(e => !e.image_link?.includes("static-assets.glossier"))
-    // const e2 = e1.filter(e => !e.image_link?.includes("imancosmetics"))
+
     // const e2 = e1.filter(e => !e.image_link.includes("d3t32hsnjxo7q6.cloudfront.net/") )
     const result = resultAll.map(e => ({
       name: e.name,
@@ -56,8 +54,8 @@ const getAllProducts = async (req, res) => {
     const apiInfo = await getApiProducts();
 
     const dbInfo = await getDbProducts();
-    // res.send([...dbInfo, ...apiInfo]);
-    res.send([...apiInfo]);
+    res.send([...dbInfo, ...apiInfo]);
+    //res.send([...dbInfo]);
   } catch (error) {
     return error;
   }
