@@ -6,16 +6,6 @@ module.exports = (sequelize) => {
   sequelize.define(
     "categorie",
     {
-      id: {
-        type: DataTypes.UUID,
-        primaryKey: true,
-        defaultValue: DataTypes.UUIDV4,
-        allowNull: false,
-        validate: {
-          isUUID: 4,
-          notNull: { msg: "The Category id field cannot be null " },
-        },
-      },
       name: {
         type: DataTypes.STRING,
         allowNull: false,

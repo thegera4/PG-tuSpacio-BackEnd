@@ -4,33 +4,7 @@ const { URL_API } = require("./globalConst");
 const { uploadCategoryDb } = require("../controllers/uploadCategoryDb")
 
 /* GET ALL PRODUCTS FROM DB */
-const getApiProducts = async (req, res, next) => {
-  try {
-    const api = await axios(URL_API);
-    const resultAll = api.data;
-    const result = resultAll.map(e => ({
-      name: e.name,
-      brand: e.brand,
-      price: e.price,
-      price_sign: e.price_sign,
-      currency: e.currency,
-      image_link: e.image_link,
-      description: e.description,
-      rating: e.rating,
-      product_type: e.product_type,
-      stock: Math.floor(Math.random() * 99 + 1),
-      tag_list: e.tag_list,
-      product_colors: e.product_colors,
-      status: Math.random() >= 0.5,
-      categories: e.category,
-    }))
-    return result;
-
-  } catch (error) {
-    console.log(error);
-  }
-};
-const getDbProducts = async (req, res) => {
+const getAllProducts = async (req, res, next) => {
   try {
     const dbInfo = await Product.findAll({
       include: {
@@ -45,20 +19,32 @@ const getDbProducts = async (req, res) => {
   }
 };
 
-const getAllProducts = async (req, res) => {
-  try {
-    const apiInfo = await getApiProducts();
-
-    const dbInfo = await getDbProducts();
-    // res.send([...dbInfo, ...apiInfo]);
-    res.send([...dbInfo]);
-  } catch (error) {
-    return error;
-  }
-};
-
 /* CREATE NEW PRODUCT IN THE DATABASE */
 const createProduct = async (req, res, next) => {
+  // const api = await axios(URL_API)
+  // const resApi = api.data
+  // const result = resApi.map(e=> ({
+  //   name: e.name,
+  //   brand: e.brand,
+  //   price: e.price,
+  //   price_sign: e.price_sign,
+  //   currency: e.currency,
+  //   image_link: e.image_link,
+  //   description: e.description,
+  //   rating: e.rating,
+  //   product_type: e.product_type,
+  //   stock:50,
+  //   tag_list: e.tag_list,
+  //   product_colors: e.product_colors,
+  //   categories: e.category,
+  // }))
+
+  // const carga = Product.bulkCreate(result, {
+  //   include: Categorie,
+  // }).then(result=>{
+  //   console.log(result)
+  //   res.send(result)
+  // })
   try {
     /* ME TRAIGO TODOS LOS VALORES DEL CUERPO DE LA PETICION */
     const {
@@ -149,9 +135,13 @@ const updateProduct = async (req, res, next) => {
       stock,
       tag_list,
       product_colors,
-      status,
-      categories,
+      status
     });
+    const categoriesDb = await Categorie.findAll({
+      where: { name: categories },
+    });
+    updatedProduct.addCategorie(categoriesDb);
+    
     res.status(200).send({
       succMsg: "Product Updated Successfully!",
       updatedProduct,
@@ -203,21 +193,6 @@ const disableProduct = async (req, res, next) => {
 };
 
 const getDashboard = async (req, res) => {
-  try {
-    // const products = await Product.findAll({
-    //   attributes: ["id", "name", "stock"]
-    // })
-    const apiCategory = await axios(URL_API)
-    let data = await apiCategory.data.map(e => {
-      return {
-        category: e.category,
-        name: e.name
-      }
-    })
-    res.send(data)
-  } catch (error) {
-    res.send({ message: error.message })
-  }
 
   try {
     const data = await Product.findAll({
@@ -229,40 +204,14 @@ const getDashboard = async (req, res) => {
   }
 }
 
-/*
-//  FUNCION UTILIZADA PARA LA CARGA MASIVA DE PRODUCTOS EN LA DB
-const getDashboard = async (req, res) => {
-  const api = await axios(URL_API)
-  const resApi = api.data
-  const result = resApi.map(e => ({
-    name: e.name,
-    brand: e.brand,
-    price: e.price,
-    price_sign: e.price_sign,
-    currency: e.currency,
-    image_link: e.image_link,
-    description: e.description,
-    rating: e.rating,
-    category: e.category,
-    product_type: e.product_type,
-    stock: Math.floor(Math.random() * 99 + 1),
-    tag_list: e.tag_list,
-    product_colors: e.product_colors,
-    status: Math.random() >= 0.5,
-    category: e.category,
-  }))
-  const carga = Product.bulkCreate(result).then(result => {
-    console.log(result)
-    res.send(result)
-  })
-}
-*/
+
+
+
+
 module.exports = {
   getAllProducts,
-  getApiProducts,
-  getDbProducts,
   createProduct,
   updateProduct,
   disableProduct,
-  getDashboard
+  getDashboard,
 };

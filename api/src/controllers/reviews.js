@@ -2,15 +2,26 @@ const { Product, Review } = require("../db");
 const axios = require("axios");
 const { URL_API } = require("./globalConst");
 
-/* GET ALL REVIEWS OF A PRODUCT */
+/* UPDATE RATING OF A PRODUCT */
 
-const getAllReviewsOfAProduct = async (req, res) => {
+const updateRatingOfAProduct = async (req, res) => {
   const { product_id} = req.params;
   try {
     const dbInfo = await Review.findAll({
       where: { product_id },
     });
-    res.send( dbInfo)
+    const result = dbInfo.map(e => ({
+      score: e.score,
+    }))
+    let rating = result.reduce((acc, e) => acc + e.score, 0) / result.length
+    rating= rating.toFixed(1)
+    const updateRating = await Product.update(
+    
+        { rating: rating },
+    { where: { id: product_id } },
+    );
+    res.send(updateRating);
+    
   } catch (error) {
     console.log(error);
   }
@@ -58,7 +69,7 @@ const createReview = async (req, res, next) => {
 };
 
 module.exports = {
-    getAllReviewsOfAProduct,
+    updateRatingOfAProduct,
     getOneReview,
     createReview,   
 };

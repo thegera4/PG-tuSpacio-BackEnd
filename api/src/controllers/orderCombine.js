@@ -1,7 +1,7 @@
 const { Product } = require("../db");
 const axios = require("axios")
 const { URL_API } = require("./globalConst")
-const {getApiProducts} = require('./products.js')
+const {getAllProducts} = require('./products.js')
 
 /* ORDER BY PRICE */
 const orderPrice =async (data, price) => {
@@ -60,7 +60,7 @@ const orderRating = async (data, rating) => {
 /COMBINATIONS OF QUERYS/
 const orderCombine = async (req, res, next) => {
     const { alpha , category, price, brand, rating } = req.query; 
-    let result = await getApiProducts()
+    let result = await getAllProducts()
     try {
  
         if(category) result = result.filter(e => e.category === category)

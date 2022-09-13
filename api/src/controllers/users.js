@@ -1,5 +1,5 @@
 
-const { User, Favorite, Order, Rol } = require("../db");
+const { User, Rol, Product } = require("../db");
 
 const axios = require("axios");
 const { URL_API } = require("./globalConst");
@@ -43,7 +43,7 @@ const createUser = async (req, res, next) => {
         ]
       }
     })
-    // SI EL USUARIO NO EXISTE LO CREA EN LA DB
+   // SI EL USUARIO NO EXISTE LO CREA EN LA DB
     if (user.length === 0) {
       user = await User.create({
         name,  //aca
