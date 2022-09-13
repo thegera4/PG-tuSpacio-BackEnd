@@ -10,6 +10,7 @@ const orderPriceRoute = require("./orderByPrice.js");
 const brandProductsRoute = require("./productsBrand.js");
 const orderNameRoute = require("./orderByName.js");
 const orderCombineRoute = require("./orderCombine.js");
+const orderRoute = require("./updateOrderStatus.js");
 const ofertsRoute = require("./oferts.js");
 
 const loginRoute = require("./authorization/login.js");
@@ -62,6 +63,7 @@ router.use("/categories", categoriesRoute);
                 RUTAS DE ORDERS                                                                  
 _/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/*/
 router.use("/orders", ordersRoute);
+router.use("/order", orderRoute)
 
 /*_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/
                 RUTAS DE USERS                                                                  

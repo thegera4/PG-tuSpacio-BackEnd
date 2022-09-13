@@ -5,12 +5,6 @@ module.exports = (sequelize) => {
   // defino el modelo
   sequelize.define(
     "ofert", {
-      id: {
-        type: DataTypes.UUID,
-        primaryKey: true,
-        defaultValue: DataTypes.UUIDV4,
-        allowNull: false,
-      },
         startDate: {
           type: DataTypes.DATE,
           allowNull: false,

@@ -20,11 +20,11 @@ const bodySchema = Joi.object({
   title: Joi.string(),  
   text: Joi.string(),
   score: Joi.number().min(1).max(5).precision(1).required(),
-  product_id: Joi.string().regex(/^([a-zA-Z0-9-]+)$/),
+  product_id: Joi.number().min(1).required(),
 });
 
 const {
-    getAllReviewsOfAProduct,
+    updateRatingOfAProduct,
     getOneReview,
     createReview,
     
@@ -34,7 +34,7 @@ const router = Router();
 /* SE ARMAN LAS RUTAS PASANDO LAS VALIDACIONES COMO MIDDLEWARES */
 
 /* GET ALL REVIEWS OF A PRODUCT FROM THE DATABASE */
-router.get("/productId/:product_id", getAllReviewsOfAProduct);
+router.get("/productId/:product_id", updateRatingOfAProduct);
 
 /* GET ONE REVIEW FROM THE DATABASE */
 router.get("/reviewId/:id", validator.params(paramsSchema), getOneReview);

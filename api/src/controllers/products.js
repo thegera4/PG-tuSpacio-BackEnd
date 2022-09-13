@@ -1,26 +1,10 @@
 const { Product, Categorie } = require("../db");
 const axios = require("axios");
 const { URL_API } = require("./globalConst");
+const { uploadCategoryDb } = require("../controllers/uploadCategoryDb")
 
 /* GET ALL PRODUCTS FROM DB */
-const getApiProducts = async (req, res, next) => {
-  try {
-
-    const api = await axios(URL_API);
-    const resultAll = api.data;
-
-    /* FILTRADO DE PAGINAS CON IMAGENES QUE NO FUNCIONAN */
-    const e = api.data.filter(e => !e.image_link?.includes("purpicks") )
-    const e1 = e.filter(e => !e.image_link?.includes("static-assets.glossier") )
-    const e2 = e1.filter(e => !e.image_link?.includes("imancosmetics") )
-    // const e2 = e1.filter(e => !e.image_link.includes("d3t32hsnjxo7q6.cloudfront.net/") )
-
-    return resultAll;
-  } catch (error) {
-    console.log(error);
-  }
-};
-const getDbProducts = async (req, res) => {
+const getAllProducts = async (req, res, next) => {
   try {
     const dbInfo = await Product.findAll({
       include: {
@@ -35,20 +19,32 @@ const getDbProducts = async (req, res) => {
   }
 };
 
-const getAllProducts = async (req, res) => {
-  try {
-    const apiInfo = await getApiProducts();
-
-    const dbInfo = await getDbProducts();
-
-    res.send([...dbInfo, ...apiInfo]);
-  } catch (error) {
-    return error;
-  }
-};
-
 /* CREATE NEW PRODUCT IN THE DATABASE */
 const createProduct = async (req, res, next) => {
+  // const api = await axios(URL_API)
+  // const resApi = api.data
+  // const result = resApi.map(e=> ({
+  //   name: e.name,
+  //   brand: e.brand,
+  //   price: e.price,
+  //   price_sign: e.price_sign,
+  //   currency: e.currency,
+  //   image_link: e.image_link,
+  //   description: e.description,
+  //   rating: e.rating,
+  //   product_type: e.product_type,
+  //   stock:50,
+  //   tag_list: e.tag_list,
+  //   product_colors: e.product_colors,
+  //   categories: e.category,
+  // }))
+
+  // const carga = Product.bulkCreate(result, {
+  //   include: Categorie,
+  // }).then(result=>{
+  //   console.log(result)
+  //   res.send(result)
+  // })
   try {
     /* ME TRAIGO TODOS LOS VALORES DEL CUERPO DE LA PETICION */
     const {
@@ -139,9 +135,13 @@ const updateProduct = async (req, res, next) => {
       stock,
       tag_list,
       product_colors,
-      status,
-      categories,
+      status
     });
+    const categoriesDb = await Categorie.findAll({
+      where: { name: categories },
+    });
+    updatedProduct.addCategorie(categoriesDb);
+    
     res.status(200).send({
       succMsg: "Product Updated Successfully!",
       updatedProduct,
@@ -192,11 +192,26 @@ const disableProduct = async (req, res, next) => {
   }
 };
 
+const getDashboard = async (req, res) => {
+
+  try {
+    const data = await Product.findAll({
+      attributes: ["id", "name", "stock"]
+    })
+    res.send(data)
+  } catch (error) {
+    res.send({ message: error.message })
+  }
+}
+
+
+
+
+
 module.exports = {
   getAllProducts,
-  getApiProducts,
-  getDbProducts,
   createProduct,
   updateProduct,
   disableProduct,
+  getDashboard,
 };
