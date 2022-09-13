@@ -26,10 +26,6 @@ module.exports = (sequelize) => {
         },
       },
 
-      category: {
-        type: DataTypes.STRING,
-      },
-
       price: {
         type: DataTypes.DECIMAL(10, 2),
         allowNull: false,

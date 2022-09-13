@@ -4,33 +4,7 @@ const { URL_API } = require("./globalConst");
 const { uploadCategoryDb } = require("../controllers/uploadCategoryDb")
 
 /* GET ALL PRODUCTS FROM DB */
-const getApiProducts = async (req, res, next) => {
-  try {
-
-    const api = await axios(URL_API);
-    const resultAll = api.data;
-    const result = resultAll.map(e => ({
-      name: e.name,
-      brand: e.brand,
-      price: e.price,
-      price_sign: e.price_sign,
-      currency: e.currency,
-      image_link: e.image_link,
-      description: e.description,
-      rating: e.rating,
-      product_type: e.product_type,
-      stock: Math.floor(Math.random()* 99 + 1 ),
-      tag_list: e.tag_list,
-      product_colors: e.product_colors,
-      status: Math.random() >= 0.5,
-      categories: e.category,
-    }))
-    return result;
-  } catch (error) {
-    console.log(error);
-  }
-};
-const getDbProducts = async (req, res) => {
+const getAllProducts = async (req, res, next) => {
   try {
     const dbInfo = await Product.findAll({
       include: {
@@ -42,20 +16,6 @@ const getDbProducts = async (req, res) => {
     return dbInfo;
   } catch (error) {
     console.log(error);
-  }
-};
-
-const getAllProducts = async (req, res) => {
-  try {
-    const apiInfo = await getApiProducts();
-
-    const dbInfo = await getDbProducts();
-
-    res.send([...dbInfo, ...apiInfo]);
-    //res.send([...dbInfo]);
-
-  } catch (error) {
-    return error;
   }
 };
 
@@ -175,9 +135,13 @@ const updateProduct = async (req, res, next) => {
       stock,
       tag_list,
       product_colors,
-      status,
-      categories,
+      status
     });
+    const categoriesDb = await Categorie.findAll({
+      where: { name: categories },
+    });
+    updatedProduct.addCategorie(categoriesDb);
+    
     res.status(200).send({
       succMsg: "Product Updated Successfully!",
       updatedProduct,
@@ -243,12 +207,11 @@ const getDashboard = async (req, res) => {
 
 
 
+
 module.exports = {
   getAllProducts,
-  getApiProducts,
-  getDbProducts,
   createProduct,
   updateProduct,
   disableProduct,
-  getDashboard
+  getDashboard,
 };
