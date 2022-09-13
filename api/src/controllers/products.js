@@ -13,7 +13,7 @@ const getAllProducts = async (req, res, next) => {
         through: { attributes: [] },
       },
     });
-    return dbInfo;
+    res.send(dbInfo);
   } catch (error) {
     console.log(error);
   }
