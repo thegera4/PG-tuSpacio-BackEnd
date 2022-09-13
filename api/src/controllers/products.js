@@ -13,7 +13,12 @@ const getAllProducts = async (req, res, next) => {
         through: { attributes: [] },
       },
     });
+<<<<<<< Updated upstream
     return dbInfo;
+=======
+    
+    res.send(dbInfo);
+>>>>>>> Stashed changes
   } catch (error) {
     console.log(error);
   }
