@@ -1,7 +1,22 @@
-const { Product } = require("../db");
+const { Product, Categorie} = require("../db");
 const axios = require("axios")
 const { URL_API } = require("./globalConst")
-const {getAllProducts} = require('./products.js')
+
+/* GET ALL PRODUCTS FROM DB */
+const getAllProducts = async (req, res, next) => {
+    try {
+      const dbInfo = await Product.findAll({
+        include: {
+          model: Categorie,
+          attributes: ["name"],
+          through: { attributes: [] },
+        },
+      });
+      return dbInfo;
+    } catch (error) {
+      console.log(error);
+    }
+  };
 
 /* ORDER BY PRICE */
 const orderPrice =async (data, price) => {
@@ -63,17 +78,23 @@ const orderCombine = async (req, res, next) => {
     let result = await getAllProducts()
     try {
  
-        if(category) result = result.filter(e => e.category === category)
-        if(brand) result = result.filter(e => e.brand === brand)
-        if(alpha) result = await orderName(result, alpha)
-        if(price) result = await orderPrice(result, price)
-        if(rating) result = await orderRating(result, rating)
-
-        res.send(result)
-    }
-    catch (error) {
-        console.log(error)    
-        msg: "no se pudo realizar la consulta"
+        if(category) result = await Product.findAll({
+            include: {
+                model: Categorie,
+                attributes: ["name"],
+                through: { attributes: [] },
+                where: {name: category}
+                },
+            });
+            if(brand) result = result.filter(e => e.brand === brand)
+            if(alpha) result = await orderName(result, alpha)
+            if(price) result = await orderPrice(result, price)
+            if(rating) result = await orderRating(result, rating)
+            res.send(result)
+        } 
+        catch (error) {
+        console.log(error);
+        msg: "No se pudo realizar la busqueda"
     }
 }
 
