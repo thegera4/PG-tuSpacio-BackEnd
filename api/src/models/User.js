@@ -21,7 +21,7 @@ module.exports = (sequelize) => {
     },
     sid: {
       type: DataTypes.STRING,
-      allowNull: false,
+      allowNull: true,
     },
     picture: {
       type: DataTypes.STRING(1234),
@@ -35,7 +35,6 @@ module.exports = (sequelize) => {
     status: {
       type: DataTypes.BOOLEAN,
       allowNull: false,
-
       defaultValue: false,
     },  
     rol_id: {
