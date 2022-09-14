@@ -14,7 +14,6 @@ const getAllProducts = async (req, res, next) => {
       },
     });
     res.send(dbInfo);
-
   } catch (error) {
     console.log(error);
   }
