@@ -25,7 +25,6 @@ const createUser = async (req, res, next) => {
     email_verified,
     picture,
     sid,
-    status
   } = req.body
   try {
     // BUSCAR EL ID DEL ROL
@@ -52,7 +51,6 @@ const createUser = async (req, res, next) => {
         email_verified,
         sid,
         picture,
-        status,
         rol_id: roleid
       })
       res.send(user);

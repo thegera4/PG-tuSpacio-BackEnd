@@ -81,6 +81,6 @@ router.delete("/deleteFavorite/:idUser/:idProduct",
 
 
 /* DELETE PRODUCT IN THE DATABASE */
-router.delete("/:id", validator.params(paramsSchema), deleteUser);
+router.delete("/:id", deleteUser);
 
 module.exports = router;
