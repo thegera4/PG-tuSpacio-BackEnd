@@ -14,5 +14,5 @@ database.sync({ force: false}).then(() => {
     console.log(`Server Listening in http://localhost:${PORT}/`);
   });
 });
-
-
+          
+ 
