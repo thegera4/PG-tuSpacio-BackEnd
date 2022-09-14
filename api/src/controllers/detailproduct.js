@@ -7,7 +7,7 @@ const { URL_API } = require("./globalConst")
 const getDetailProduct = async (req, res, next) => {
     const id = req.params.id;
 
-    const resp = await axios.get(URL_API)
+    const resp = await axios.get(URL_API + "/products")
     const detail = resp.data
     try {
         if(id.length < 8) {
