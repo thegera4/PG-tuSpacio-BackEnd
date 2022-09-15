@@ -7,6 +7,7 @@ const { uploadCategoryDb } = require("../controllers/uploadCategoryDb")
 const getAllProducts = async (req, res, next) => {
   try {
     const dbInfo = await Product.findAll({
+      where: { status: true},
       include: {
         model: Categorie,
         attributes: ["name"],
@@ -21,30 +22,6 @@ const getAllProducts = async (req, res, next) => {
 
 /* CREATE NEW PRODUCT IN THE DATABASE */
 const createProduct = async (req, res, next) => {
-  // const api = await axios(URL_API)
-  // const resApi = api.data
-  // const result = resApi.map(e=> ({
-  //   name: e.name,
-  //   brand: e.brand,
-  //   price: e.price,
-  //   price_sign: e.price_sign,
-  //   currency: e.currency,
-  //   image_link: e.image_link,
-  //   description: e.description,
-  //   rating: e.rating,
-  //   product_type: e.product_type,
-  //   stock:50,
-  //   tag_list: e.tag_list,
-  //   product_colors: e.product_colors,
-  //   categories: e.category,
-  // }))
-
-  // const carga = Product.bulkCreate(result, {
-  //   include: Categorie,
-  // }).then(result=>{
-  //   console.log(result)
-  //   res.send(result)
-  // })
   try {
     /* ME TRAIGO TODOS LOS VALORES DEL CUERPO DE LA PETICION */
     const {
@@ -153,8 +130,22 @@ const updateProduct = async (req, res, next) => {
 
 /* DISABLED ONE PRODUCT IN THE DATABASE */
 const disableProduct = async (req, res, next) => {
+  const { status } = req.query
   try {
     const { id } = req.params;
+
+    if( status === 'on') {
+    await Product.update(
+      { status: true },
+      {
+        where: {
+          id: id,
+        },
+      }
+    )
+  }
+
+  if( status === 'off') {
     await Product.update(
       { status: false },
       {
@@ -162,7 +153,8 @@ const disableProduct = async (req, res, next) => {
           id: id,
         },
       }
-    );
+    )
+  }
 
     const disabledProduct = await Product.findByPk(id, {
       attributes: [
