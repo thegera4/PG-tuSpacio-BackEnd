@@ -153,8 +153,22 @@ const updateProduct = async (req, res, next) => {
 
 /* DISABLED ONE PRODUCT IN THE DATABASE */
 const disableProduct = async (req, res, next) => {
+  const { status } = req.query
   try {
     const { id } = req.params;
+
+    if( status === 'on') {
+    await Product.update(
+      { status: true },
+      {
+        where: {
+          id: id,
+        },
+      }
+    )
+  }
+
+  if( status === 'off') {
     await Product.update(
       { status: false },
       {
@@ -162,7 +176,8 @@ const disableProduct = async (req, res, next) => {
           id: id,
         },
       }
-    );
+    )
+  }
 
     const disabledProduct = await Product.findByPk(id, {
       attributes: [
